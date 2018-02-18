@@ -1,6 +1,6 @@
 
 # This script when run creates a template project folder structure at the current location.
-# The folder contains seven directories: bash/ scripts/ doc/ data/ result/ assignment/ temp/
+# The folder contains seven directories: bash/ bin/ scripts/ doc/ data/ result/ assignment/
 
 
 # Create project folder
@@ -8,7 +8,7 @@ mkdir ./project
 
 
 # Create directories
-for folders in bash scripts doc data temp
+for folders in bash bin scripts doc data
 do
 	mkdir ./project/$folders
 done
