@@ -16,7 +16,7 @@ done
 for folders in result assignment
 do
 	mkdir ./project/$folders
-	for week in week0 week1 week2 week3 week4 
+	for week in week1 week2 week3 week4 week5 week6
 	do
 		mkdir ./project/$folders/$week
 	done
