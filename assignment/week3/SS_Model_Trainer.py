@@ -2,6 +2,7 @@
 
 
 #  Single Sequence Feature Extractor
+#  Single Sequence Model Trainer
 #  This is the python script when runs takes a dataset, creates sequence and feature inputs to sklearn 
 #  and use classifier to train a model
 
@@ -106,10 +107,12 @@ if map_window_input.shape[0] != stc_input.shape[0]:
 #  STEP 8: Train SVM model 
 #  **Notes: predict input set shape should be same as training set, e.g. if test_input.shape[1] = 1 not 20*ws, it should be reshaped first
 #  Use Random Forest Classifier first to roughly test because it is much more faster than SVM
-print('The model is using Random Forest Classifier...')
-clf5 = RandomForestClassifier(min_samples_leaf=20)
+print('The model is using SVM...')
+clf1 = SVC(C=1,kernel='linear')
+#clf5 = RandomForestClassifier(min_samples_leaf=20)
 print('Start model training at '+ str(datetime.now()))
-clf5.fit(map_window_input,stc_input)
+clf1.fit(map_window_input,stc_input)
+#clf5.fit(map_window_input,stc_input)
 print('Finish model training at '+ str(datetime.now()))
 #roughly calucation: 100 samples linear kernel with ws = 1 takes 2 mins ; with ws = 3 takes 6 mins ; with ws = 7 takes 15 mins 
 #roughly calucation: 9000 samples with ws = 14 takes about 2 days
