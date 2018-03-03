@@ -1,7 +1,7 @@
 
 
 #  Single Sequence Predictor
-#  This is the python script when runs takes a sequence a feature 
+#  This is the python script when runs takes a sequence
 #  and create an input to sklearn and predict your feature from a single sequence using one sequence
 
 
