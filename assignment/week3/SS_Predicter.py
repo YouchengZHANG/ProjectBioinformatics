@@ -71,7 +71,7 @@ ws = ws_left + 1 + ws_right
 test = []
 for j in range(0,len(test_seq)):
     if j < ws_left :
-        test.append('X'*int(ws_left-j) + test_seq[j:int(j + ws_right + 1)])
+        test.append('X'*int(ws_left-j) + test_seq[0:int(j + ws_right + 1)])
     elif j >= len(test_seq) - ws_right:
         test.append(test_seq[int(j - ws_left):int(j + ws_right + 1)] + 'X'*int(ws_right + 1 - (len(test_seq) - j)))
     else:
