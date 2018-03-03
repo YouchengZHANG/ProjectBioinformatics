@@ -120,7 +120,7 @@ print('Finish model training at '+ str(datetime.now()))
 
 #  STEP 9: Save the trained model for further reloading in the Single Sequence Predictor Program
 print('Saving trained model as RFC_01.pkl...')
-joblib.dump(clf5, 'RFC_01.pkl')
+joblib.dump(clf1, 'RFC_01.pkl')
 print('Model training program is completed.')
 end_time = datetime.now()
 print('Total Running Time: {}'.format(end_time - start_time))
