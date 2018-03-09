@@ -45,7 +45,7 @@ fr.close()
 #  STEP 4: Build AA_table that convert each amino acid in each sequence into integer form
 #  Create a string with twenty '0' and convert into list as [0,0,0,...,0,0,0]
 #  Twentry common amino acid 'ARNDCQEGHILKMFPSTWYV'
-#print('Creating amino acid table...')
+#  Use function module !
 AA_num = 20
 X = [ int(z) for z in '0'*AA_num ]
 AA_table = {}
@@ -55,7 +55,6 @@ for m,n in enumerate('ARNDCQEGHILKMFPSTWYV'):
     AA_table[n] = X.copy()
     X[m] = int(0)
 #print(AA_table)
-#test_seq_input = [AA_table[AA] for seq_each in seq for AA in seq_each]
 
 
 #  STEP 4: Build int_stc_table that convert each integer form to the structure
@@ -67,8 +66,7 @@ int_stc_table = dict(zip([0,1],list('.S')))
 print(int_stc_table)
 
 
-#  STEP 6: Choose the Window-size [j-ws_left,...,j,...j+ws_right], 
-#  where ws_left/ws_right refers to the number of elements before/after central residue j 
+#  STEP 6: Choose the Window-size [j-ws_left,...,j,...j+ws_right]
 #  Example: If ws_left,ws_right = 3,1 , then the window looks like [j-3,j-2,j-1,j,j+1] and the size of window is 5
 #  For those position with no corresponding residues, 'X' is used
 #  Updates: window-size has been optimized, however there's almost on difference between symmetric and asymmetric window size
