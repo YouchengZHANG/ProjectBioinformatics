@@ -7,6 +7,7 @@
 #  Input the training set used to optimize parameter first (Default: The training set used here is '../data/30train_ts_red_SVM.txt')
 #  Custom the window-size (Default: ws_left,ws_right = 9,9)
 #  Locate to the folder that stores all the pssm files (Default: '../data/pssm/')
+#  Notes: 6 Check -> name.dict, name.log, filename path, pssm path, window-size, model name
 
 
 def SVM_PSSM_Optimizer(filename):
