@@ -7,10 +7,9 @@
 #  Input the training set used to optimize parameter first (Default: The training set used here is '../data/300train_ts_red_70.txt')
 #  Custom the window-size (Default: ws_left,ws_right = 9,9)
 #  Locate to the folder that stores all the pssm files (Default: '../data/pssm/')
-#  Notes: 6 Check -> name.dict, name.log, filename path, pssm path, window-size, model name
 
 
-def RFC_PSSM_Optimizer(filename):
+def SVM_PSSM_Optimizer(filename):
 
 
     #  Open and process dataset file
@@ -129,7 +128,7 @@ if __name__ == '__main__':
     print('Program is running...',file=stot)
 
     #filename = input('Input the training set: ')
-    RFC_PSSM_Optimizer('../data/300train_ts_red_70.txt')
+    SVM_PSSM_Optimizer('../data/300train_ts_red_70.txt')
 
     end_time = datetime.now()
     print('Total Running Time: {}'.format(end_time - start_time),file=stot)
