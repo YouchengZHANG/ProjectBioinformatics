@@ -6,6 +6,7 @@
 #  and also save all the standard output to a log file
 #  Input the training set used to optimize parameter first (Default: The training set used here is 30train_ts_red_SVM.txt)
 #  Custom the window-size (Default: ws_left,ws_right = 9,9)
+#  Notes: 5 Check -> name.dict, name.log, filename path, window-size, model name
 
 
 def SVM_Optimizer(filename):
