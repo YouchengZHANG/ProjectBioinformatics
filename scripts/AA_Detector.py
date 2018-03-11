@@ -3,7 +3,7 @@
 #  This python script when runs detects the uncommon amino acid
 #  This function returns a sorted list that contains all different amino acid
 #  and print out the uncommon amino acid if there is any, otherwise print 'No uncommon amino acid.'
-#  Input the filename below
+#  Input the filename below (Default: '../data/300train_ts_red_70.txt')
 
 
 def AA_Detector(filename):
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     start_time = datetime.now()
 
     #filename = input('Input filename: ')
-    print(AA_Detector('300train_ts_red_70.txt'))
+    print(AA_Detector('../data/300train_ts_red_70.txt'))
     for i in AA_Detector('300train_ts_red_70.txt'):
         if not i in 'ACDEFGHIKLMNPQRSTVWY':
             print(i)

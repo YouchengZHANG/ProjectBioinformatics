@@ -4,7 +4,7 @@
 #  This python script when runs takes the dataset and outputs every protein and its sequence to one individual file
 #  The outputs are .fasta format
 #  This script is for further running PSI-BLAST to get homologs of each protein/sequence
-#  Input the dataset file below
+#  Input the dataset file below (Default: '../data/300train_ts_red_70.txt')
 #  Change the path you want to save the output fasta files (Default: same path/folder of the input dataset file)
 
 
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     print('Program is running...')
     
     #filename = input('Input filename: ')
-    Fasta_Separater('300train_ts_red_70.txt')
+    Fasta_Separater('../data/300train_ts_red_70.txt')
 
     end_time = datetime.now()
     print('Starting from',start_time,'to',end_time)
