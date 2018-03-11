@@ -25,7 +25,7 @@ if __name__ == '__main__':
     start_time = datetime.now()
     print('Program is running...')
     
-    #input = ('Input filename: ')
+    #filename = input('Input filename: ')
     Fasta_Separater('300train_ts_red_70.txt')
 
     end_time = datetime.now()
