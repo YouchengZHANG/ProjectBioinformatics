@@ -22,7 +22,7 @@ if __name__ == '__main__':
     from datetime import datetime
     start_time = datetime.now()
 
-    #input = ('Input filename: ')
+    #filename = input('Input filename: ')
     print(AA_Detector('300train_ts_red_70.txt'))
     for i in AA_Detector('300train_ts_red_70.txt'):
         if not i in 'ACDEFGHIKLMNPQRSTVWY':
