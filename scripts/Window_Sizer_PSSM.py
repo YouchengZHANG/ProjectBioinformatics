@@ -3,7 +3,7 @@
 
 #  Module: Window_Sizer_PSSM
 #  This module when runs processes window-size for PSSM model 
-#  and convert seq_window_input that contains window-size processed input (integer format) to map_window_input (array format)
+#  and convert pssm_window_input that contains window-size processed input (integer format) to map_window_input (array format)
 #  then return variable map_window_input
 #  When imported, the function needs to state four variables: 
 #  ws_left(window size left), ws_right(window size right), pid(protein id list), stc(structure list)
@@ -67,8 +67,8 @@ def Window_Sizer_PSSM(ws_left,ws_right,pid,stc):
 
 
     #  STEP 4: Convert input into proper format for model training
-    #  Convert the window-processed seq_window_input to map_window_input array format
-    print('Start converting seq_window_input to proper format for model training...')
+    #  Convert the window-processed pssm_window_input to map_window_input array format
+    print('Start converting pssm_window_input to proper format for model training...')
     map_window_input = np.array(pssm_window_input)
 
 
