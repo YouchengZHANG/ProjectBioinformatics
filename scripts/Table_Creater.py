@@ -3,7 +3,8 @@
 
 #  Module: Table_Creater
 #  This module when runs creates and returns amino acid table, structure table, and residue X
-#  When imported, Table_Creater()[0] refers to AA_table, Table_Creater()[1] refers to stc_table, Table_Creater()[2] refers to X
+#  When imported, Table_Creater()[0] refers to AA_table, Table_Creater()[1] refers to stc_table, 
+#  Table_Creater()[2] refers to X,  Table_Creater()[3] refers to the int_stc_table
 
 
 def Table_Creater():
@@ -27,7 +28,12 @@ def Table_Creater():
     stc_table = dict(zip(list('.STt'),[0,1,0,0]))
 
 
-    # STEP 3: Return two tables and residue X 
-    return AA_table,stc_table,X
+    # STEP 3: Build int_stc_table that convert each integer form back to the structure
+    # Example:  int_stc_table[1] = 'S'; stc_table[0] = '.'
+    int_stc_table = dict(zip([0,1],list('.S')))
+
+
+    # STEP 4: Return three tables and residue X 
+    return AA_table, stc_table, X, int_stc_table
 
 
