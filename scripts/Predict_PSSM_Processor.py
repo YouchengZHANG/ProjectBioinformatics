@@ -46,7 +46,7 @@ def Predict_PSSM_Processor(names,pid,seq,dir_pssm):
         for s in pssm2:
             tmp_str = s.split()[2:22]
             tmp_int_raw = list(map(float,tmp_str))
-            tmp_int = [round(1 / (1 + math.exp(-each_num)),2) for each_num in tmp_int_raw]
+            tmp_int = [1 / (1 + math.exp(-each_num)) for each_num in tmp_int_raw]
             pssm_input.append(tmp_int)
         fpssm.close()
 
