@@ -13,23 +13,24 @@
 
 
 #  STEP 1: Check several essential files and paths
-	[1] The project folder under the home path (e.g.  '$~/')
-	[2] Two predicters in /project/final/ folder (Default:  '~/project/final/)
-	[3] Necessary module scripts in /project/scripts folder
-	[4] Swissprot database in ~/project/data/swissprot (Default: dir_db = '~/project/data/swissprot/uniprot_sprot.fasta')
-	[5] If user-custom, change path in PSSM_Based_Predicter.py and PFM_Based_Predicter.py scripts '# STEP 2: Check Swissprot ...'
+	[1] Three predicters in /project/final/ folder (Default:  '/project/final/)
+	[2] Necessary module scripts in /project/scripts folder (Default:  '/project/scripts/)
+	[3] Swissprot database in /project/data/swissprot (Default: dir_db = '../../../data/swissprot/uniprot_sprot.fasta')
+	[4] If user-custom, change path in PSSM_Based_Predicter.py and PFM_Based_Predicter.py scripts '# STEP 2: Check Swissprot ...'
 
 #  STEP 2: Locate to the /project/final/ folder
 	[1] Run command in the terminal: $ cd ~/project/final/
 
 #  STEP 3: Place your input fasta file in same folder with the predicters (Recommend but not compulsory)
-	[1] Choose the predicter you want to use (e.g. Option 1: PSSM_Based_Predicter or Option 2: PFM_Based_Predicter)
-	[2] If Option 1, Run command: $ python3 PSSM_Based_Predicter.py FILENAME (e.g. 50_proteins_cut.txt)
-	[3] If Option 2, Run command: $ python3 PFM_Based_Predicter.py FILENAME (e.g. 50_proteins_cut.txt)
+	[1] Choose the predicter you want to use 
+	     Option 1: PSSM_Based_Predictor  |  Option 2: PFM_Based_Predictor  |  Option3: Sequences_Based_Predictor
+	[2] If Option 1, Run command: $ python3 PSSM_Based_Predictor.py FILENAME (e.g. 50_proteins_cut.txt)
+	[3] If Option 2, Run command: $ python3 PFM_Based_Predictor.py FILENAME (e.g. 50_proteins_cut.txt)
+	[4] if Option 3, Run command: $ python3 Sequences_Based_Predictor.py FILENAME (e.g. 50_proteins_cut.txt)
 
 #  STEP 4: Check the predicted result
 	[1] When predicters run will first create a folder named FILENAME_result (e.g. /50_proteins_cut_result/)
-	[2] Three subfolders are also created.
+	[2] Three subfolders are also created if run Option 1 and Option 2.
 	     Folder /fasta/ saves separated single protein and its sequence single fasta files
 	     Folder /pssm/ stores PSIBLAST pssm output for further prediction
 	     Folder /align/ saves PSIBLAST text output
