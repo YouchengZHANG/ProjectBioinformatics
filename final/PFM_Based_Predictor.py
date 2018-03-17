@@ -30,8 +30,8 @@ start_time = datetime.now()
 print('Predicting Program is running...')
 
 
-#  STEP 2: Check Swissprot database path (Default: '~/project/data/swissprot/uniprot_sprot.fasta')
-dir_db = '~/project/data/swissprot/uniprot_sprot.fasta'
+#  STEP 2: Check Swissprot database path (Default: '../../../data/swissprot/uniprot_sprot.fasta')
+dir_db = '../../../data/swissprot/uniprot_sprot.fasta'
 
 
 #  STEP 3: Load the trained model
