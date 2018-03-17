@@ -24,17 +24,17 @@
 #  STEP 3: Place your input fasta file in same folder with the predicters (Recommend but not compulsory)
 	[1] Choose the predicter you want to use 
 	     Option 1: PSSM_Based_Predictor  |  Option 2: PFM_Based_Predictor  |  Option3: Sequences_Based_Predictor
-	[2] If Option 1, Run command: $ python3 PSSM_Based_Predictor.py FILENAME (e.g. 50_proteins_cut.txt)
-	[3] If Option 2, Run command: $ python3 PFM_Based_Predictor.py FILENAME (e.g. 50_proteins_cut.txt)
-	[4] if Option 3, Run command: $ python3 Sequences_Based_Predictor.py FILENAME (e.g. 50_proteins_cut.txt)
+	[2] If Option 1, Run command: $ python3 PSSM_Based_Predictor.py FILENAME (e.g. 50_proteins.txt)
+	[3] If Option 2, Run command: $ python3 PFM_Based_Predictor.py FILENAME (e.g. 50_proteins.txt)
+	[4] if Option 3, Run command: $ python3 Sequences_Based_Predictor.py FILENAME (e.g. 50_proteins.txt)
 
 #  STEP 4: Check the predicted result
-	[1] When predicters run will first create a folder named FILENAME_result (e.g. /50_proteins_cut_result/)
+	[1] When predicters run will first create a folder named FILENAME_result (e.g. /50_proteins_result/)
 	[2] Three subfolders are also created if run Option 1 and Option 2.
 	     Folder /fasta/ saves separated single protein and its sequence single fasta files
 	     Folder /pssm/ stores PSIBLAST pssm output for further prediction
 	     Folder /align/ saves PSIBLAST text output
-	[3] In the folder, 'Predict_Result.txt' is the predicted output (e.g. /50_proteins_cut_result/Predict_Result.txt)
+	[3] In the folder, 'Predict_Result.txt' is the predicted output (e.g. /50_proteins_result/Predict_Result.txt)
 
 
 #  Thanks for using.
