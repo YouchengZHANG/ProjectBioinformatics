@@ -1,0 +1,189 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= ATPZ_RHOCA
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|O05329|ATPZ_RHOCA ATP synthase protein I OS=Rhodobacter caps...  223     2e-74
+  sp|P15011|ATPZ_RHORU ATP synthase protein I OS=Rhodospirillum r...  52.8    1e-08
+  sp|Q9ZEC0|Y024_RICPR Uncharacterized protein RP024 OS=Rickettsi...  41.2    1e-04
+
+
+> sp|O05329|ATPZ_RHOCA ATP synthase protein I OS=Rhodobacter capsulatus 
+OX=1061 GN=atpI PE=1 SV=1
+Length=114
+
+ Score = 223 bits (567),  Expect = 2e-74, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MSEEVGGEPDPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGF  60
+            MSEEVGGEPDPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGF
+Sbjct  1    MSEEVGGEPDPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGF  60
+
+Query  61   GIGYGLDAVFGTQPFLMLIFVFLGLAAGVKVMLRSAADLTKAQARAAAAGKEGK  114
+            GIGYGLDAVFGTQPFLMLIFVFLGLAAGVKVMLRSAADLTKAQARAAAAGKEGK
+Sbjct  61   GIGYGLDAVFGTQPFLMLIFVFLGLAAGVKVMLRSAADLTKAQARAAAAGKEGK  114
+
+
+> sp|P15011|ATPZ_RHORU ATP synthase protein I OS=Rhodospirillum 
+rubrum OX=1085 GN=atpI PE=3 SV=1
+Length=123
+
+ Score = 52.8 bits (125),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 33/89 (37%), Positives = 48/89 (54%), Gaps = 5/89 (6%)
+
+Query  11  PERLAALEKRLSQLK---KTEEAPKRAADGDLRMADMA--WRMVIELVSGLGIGFGIGYG  65
+           P  L  + +RL++ K      EA    + G  R + +    R+ IELV+ + +G  IGYG
+Sbjct  7   PPSLEDISRRLTEAKGGADGAEADGAGSSGPARASGLGIGMRISIELVTTIAVGGAIGYG  66
+
+Query  66  LDAVFGTQPFLMLIFVFLGLAAGVKVMLR  94
+           LD+  GT P  M++F+ LG AAGV    R
+Sbjct  67  LDSWLGTSPLAMVVFLVLGGAAGVMNAYR  95
+
+
+> sp|Q9ZEC0|Y024_RICPR Uncharacterized protein RP024 OS=Rickettsia 
+prowazekii (strain Madrid E) OX=272947 GN=RP024 PE=4 SV=1
+Length=82
+
+ Score = 41.2 bits (95),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 20/85 (24%), Positives = 43/85 (51%), Gaps = 5/85 (6%)
+
+Query  10  DPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGFGIGYGLDAV  69
+           + E+L  ++ R+   K       + ++  ++     + + ++LVSG  +G  IG   D  
+Sbjct  2   NTEKLKDIKARIKDFKSY-----KTSNSKIQQKINPFSIALDLVSGTMVGLLIGILTDKF  56
+
+Query  70  FGTQPFLMLIFVFLGLAAGVKVMLR  94
+           F ++P  ++IF  +G+ AG  ++ R
+Sbjct  57  FNSKPLFLIIFTIIGMIAGFNIIRR  81
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.137    0.383    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4927763328
+Results from round 2
+
+
+Query= ATPZ_RHOCA
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|O05329|ATPZ_RHOCA ATP synthase protein I OS=Rhodobacter caps...  151     3e-46
+  sp|Q9ZEC0|Y024_RICPR Uncharacterized protein RP024 OS=Rickettsi...  113     9e-32
+  sp|P15011|ATPZ_RHORU ATP synthase protein I OS=Rhodospirillum r...  95.6    1e-24
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|O05329|ATPZ_RHOCA ATP synthase protein I OS=Rhodobacter capsulatus 
+OX=1061 GN=atpI PE=1 SV=1
+Length=114
+
+ Score = 151 bits (380),  Expect = 3e-46, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MSEEVGGEPDPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGF  60
+            MSEEVGGEPDPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGF
+Sbjct  1    MSEEVGGEPDPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGF  60
+
+Query  61   GIGYGLDAVFGTQPFLMLIFVFLGLAAGVKVMLRSAADLTKAQARAAAAGKEGK  114
+            GIGYGLDAVFGTQPFLMLIFVFLGLAAGVKVMLRSAADLTKAQARAAAAGKEGK
+Sbjct  61   GIGYGLDAVFGTQPFLMLIFVFLGLAAGVKVMLRSAADLTKAQARAAAAGKEGK  114
+
+
+> sp|Q9ZEC0|Y024_RICPR Uncharacterized protein RP024 OS=Rickettsia 
+prowazekii (strain Madrid E) OX=272947 GN=RP024 PE=4 SV=1
+Length=82
+
+ Score = 113 bits (282),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 20/85 (24%), Positives = 43/85 (51%), Gaps = 5/85 (6%)
+
+Query  10  DPERLAALEKRLSQLKKTEEAPKRAADGDLRMADMAWRMVIELVSGLGIGFGIGYGLDAV  69
+           + E+L  ++ R+   K       + ++  ++     + + ++LVSG  +G  IG   D  
+Sbjct  2   NTEKLKDIKARIKDFKSY-----KTSNSKIQQKINPFSIALDLVSGTMVGLLIGILTDKF  56
+
+Query  70  FGTQPFLMLIFVFLGLAAGVKVMLR  94
+           F ++P  ++IF  +G+ AG  ++ R
+Sbjct  57  FNSKPLFLIIFTIIGMIAGFNIIRR  81
+
+
+> sp|P15011|ATPZ_RHORU ATP synthase protein I OS=Rhodospirillum 
+rubrum OX=1085 GN=atpI PE=3 SV=1
+Length=123
+
+ Score = 95.6 bits (236),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 33/89 (37%), Positives = 48/89 (54%), Gaps = 5/89 (6%)
+
+Query  11  PERLAALEKRLSQLK---KTEEAPKRAADGDLRMADMA--WRMVIELVSGLGIGFGIGYG  65
+           P  L  + +RL++ K      EA    + G  R + +    R+ IELV+ + +G  IGYG
+Sbjct  7   PPSLEDISRRLTEAKGGADGAEADGAGSSGPARASGLGIGMRISIELVTTIAVGGAIGYG  66
+
+Query  66  LDAVFGTQPFLMLIFVFLGLAAGVKVMLR  94
+           LD+  GT P  M++F+ LG AAGV    R
+Sbjct  67  LDSWLGTSPLAMVVFLVLGGAAGVMNAYR  95
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.130    0.318    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4927763328
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

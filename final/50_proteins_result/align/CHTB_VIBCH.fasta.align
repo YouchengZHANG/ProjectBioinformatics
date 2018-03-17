@@ -1,0 +1,259 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= CHTB_VIBCH
+
+Length=124
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P01556|CHTB_VIBCH Cholera enterotoxin subunit B OS=Vibrio ch...  260     5e-89
+  sp|P0CK94|ELBH_ECOLX Heat-labile enterotoxin B chain OS=Escheri...  216     2e-71
+  sp|P32890|ELBP_ECOLX Heat-labile enterotoxin B chain OS=Escheri...  211     1e-69
+  sp|D0Z6T1|ELBH_ECOH1 Heat-labile enterotoxin B chain OS=Escheri...  208     2e-68
+
+
+> sp|P01556|CHTB_VIBCH Cholera enterotoxin subunit B OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) 
+OX=243277 GN=ctxB PE=1 SV=1
+Length=124
+
+ Score = 260 bits (665),  Expect = 5e-89, Method: Compositional matrix adjust.
+ Identities = 124/124 (100%), Positives = 124/124 (100%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI
+Sbjct  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI
+Sbjct  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+
+Query  121  SMAN  124
+            SMAN
+Sbjct  121  SMAN  124
+
+
+> sp|P0CK94|ELBH_ECOLX Heat-labile enterotoxin B chain OS=Escherichia 
+coli OX=562 GN=eltB PE=1 SV=1
+Length=124
+
+ Score = 216 bits (549),  Expect = 2e-71, Method: Compositional matrix adjust.
+ Identities = 100/124 (81%), Positives = 111/124 (90%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            M K+KF V FT LLSS  AHG PQ+IT+LC+EYHNTQIYT+NDKI SYTES+AGKREM I
+Sbjct  1    MNKVKFYVLFTALLSSLCAHGAPQSITELCSEYHNTQIYTINDKILSYTESMAGKREMVI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFK+GA FQVEVPGSQHIDSQKKAIERMKDTLRI YLTE K++KLCVWNNKTP++IAAI
+Sbjct  61   ITFKSGATFQVEVPGSQHIDSQKKAIERMKDTLRITYLTETKIDKLCVWNNKTPNSIAAI  120
+
+Query  121  SMAN  124
+            SM N
+Sbjct  121  SMEN  124
+
+
+> sp|P32890|ELBP_ECOLX Heat-labile enterotoxin B chain OS=Escherichia 
+coli OX=562 GN=eltB PE=1 SV=2
+Length=124
+
+ Score = 211 bits (537),  Expect = 1e-69, Method: Compositional matrix adjust.
+ Identities = 98/124 (79%), Positives = 108/124 (87%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            M K+K  V FT LLSS YAHG PQ IT+LC+EY NTQIYT+NDKI SYTES+AGKREM I
+Sbjct  1    MNKVKCYVLFTALLSSLYAHGAPQTITELCSEYRNTQIYTINDKILSYTESMAGKREMVI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFK+G  FQVEVPGSQHIDSQKKAIERMKDTLRI YLTE K++KLCVWNNKTP++IAAI
+Sbjct  61   ITFKSGETFQVEVPGSQHIDSQKKAIERMKDTLRITYLTETKIDKLCVWNNKTPNSIAAI  120
+
+Query  121  SMAN  124
+            SM N
+Sbjct  121  SMKN  124
+
+
+> sp|D0Z6T1|ELBH_ECOH1 Heat-labile enterotoxin B chain OS=Escherichia 
+coli O78:H11 (strain H10407 / ETEC) OX=316401 GN=eltB 
+PE=3 SV=1
+Length=124
+
+ Score = 208 bits (529),  Expect = 2e-68, Method: Compositional matrix adjust.
+ Identities = 97/124 (78%), Positives = 109/124 (88%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            M K+K  V FT LLSS  A+G PQ+IT+LC+EY NTQIYT+NDKI SYTES+AGKREM I
+Sbjct  1    MNKVKCYVLFTALLSSLCAYGAPQSITELCSEYRNTQIYTINDKILSYTESMAGKREMVI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFK+GA FQVEVPGSQHIDSQKKAIERMKDTLRI YLTE K++KLCVWNNKTP++IAAI
+Sbjct  61   ITFKSGATFQVEVPGSQHIDSQKKAIERMKDTLRITYLTETKIDKLCVWNNKTPNSIAAI  120
+
+Query  121  SMAN  124
+            SM N
+Sbjct  121  SMEN  124
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.132    0.379    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4916378907
+Results from round 2
+
+
+Query= CHTB_VIBCH
+
+Length=124
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P01556|CHTB_VIBCH Cholera enterotoxin subunit B OS=Vibrio ch...  232     8e-78
+  sp|P0CK94|ELBH_ECOLX Heat-labile enterotoxin B chain OS=Escheri...  227     5e-76
+  sp|D0Z6T1|ELBH_ECOH1 Heat-labile enterotoxin B chain OS=Escheri...  220     5e-73
+  sp|P32890|ELBP_ECOLX Heat-labile enterotoxin B chain OS=Escheri...  216     1e-71
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P01556|CHTB_VIBCH Cholera enterotoxin subunit B OS=Vibrio 
+cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) 
+OX=243277 GN=ctxB PE=1 SV=1
+Length=124
+
+ Score = 232 bits (591),  Expect = 8e-78, Method: Composition-based stats.
+ Identities = 124/124 (100%), Positives = 124/124 (100%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI
+Sbjct  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI
+Sbjct  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+
+Query  121  SMAN  124
+            SMAN
+Sbjct  121  SMAN  124
+
+
+> sp|P0CK94|ELBH_ECOLX Heat-labile enterotoxin B chain OS=Escherichia 
+coli OX=562 GN=eltB PE=1 SV=1
+Length=124
+
+ Score = 227 bits (579),  Expect = 5e-76, Method: Composition-based stats.
+ Identities = 100/124 (81%), Positives = 111/124 (90%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            M K+KF V FT LLSS  AHG PQ+IT+LC+EYHNTQIYT+NDKI SYTES+AGKREM I
+Sbjct  1    MNKVKFYVLFTALLSSLCAHGAPQSITELCSEYHNTQIYTINDKILSYTESMAGKREMVI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFK+GA FQVEVPGSQHIDSQKKAIERMKDTLRI YLTE K++KLCVWNNKTP++IAAI
+Sbjct  61   ITFKSGATFQVEVPGSQHIDSQKKAIERMKDTLRITYLTETKIDKLCVWNNKTPNSIAAI  120
+
+Query  121  SMAN  124
+            SM N
+Sbjct  121  SMEN  124
+
+
+> sp|D0Z6T1|ELBH_ECOH1 Heat-labile enterotoxin B chain OS=Escherichia 
+coli O78:H11 (strain H10407 / ETEC) OX=316401 GN=eltB 
+PE=3 SV=1
+Length=124
+
+ Score = 220 bits (560),  Expect = 5e-73, Method: Composition-based stats.
+ Identities = 97/124 (78%), Positives = 109/124 (88%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            M K+K  V FT LLSS  A+G PQ+IT+LC+EY NTQIYT+NDKI SYTES+AGKREM I
+Sbjct  1    MNKVKCYVLFTALLSSLCAYGAPQSITELCSEYRNTQIYTINDKILSYTESMAGKREMVI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFK+GA FQVEVPGSQHIDSQKKAIERMKDTLRI YLTE K++KLCVWNNKTP++IAAI
+Sbjct  61   ITFKSGATFQVEVPGSQHIDSQKKAIERMKDTLRITYLTETKIDKLCVWNNKTPNSIAAI  120
+
+Query  121  SMAN  124
+            SM N
+Sbjct  121  SMEN  124
+
+
+> sp|P32890|ELBP_ECOLX Heat-labile enterotoxin B chain OS=Escherichia 
+coli OX=562 GN=eltB PE=1 SV=2
+Length=124
+
+ Score = 216 bits (551),  Expect = 1e-71, Method: Composition-based stats.
+ Identities = 98/124 (79%), Positives = 108/124 (87%), Gaps = 0/124 (0%)
+
+Query  1    MIKLKFGVFFTVLLSSAYAHGTPQNITDLCAEYHNTQIYTLNDKIFSYTESLAGKREMAI  60
+            M K+K  V FT LLSS YAHG PQ IT+LC+EY NTQIYT+NDKI SYTES+AGKREM I
+Sbjct  1    MNKVKCYVLFTALLSSLYAHGAPQTITELCSEYRNTQIYTINDKILSYTESMAGKREMVI  60
+
+Query  61   ITFKNGAIFQVEVPGSQHIDSQKKAIERMKDTLRIAYLTEAKVEKLCVWNNKTPHAIAAI  120
+            ITFK+G  FQVEVPGSQHIDSQKKAIERMKDTLRI YLTE K++KLCVWNNKTP++IAAI
+Sbjct  61   ITFKSGETFQVEVPGSQHIDSQKKAIERMKDTLRITYLTETKIDKLCVWNNKTPNSIAAI  120
+
+Query  121  SMAN  124
+            SM N
+Sbjct  121  SMKN  124
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.136    0.393    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0417    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4916378907
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,359 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= SPY_ECOLI
+
+Length=161
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P77754|SPY_ECOLI Periplasmic chaperone Spy OS=Escherichia co...  327     4e-114
+  sp|C6ECL5|SPY_ECOBD Periplasmic chaperone Spy OS=Escherichia co...  325     2e-113
+  sp|Q8XDZ4|SPY_ECO57 Periplasmic chaperone Spy OS=Escherichia co...  325     3e-113
+  sp|P0AE87|CPXP_SHIFL Periplasmic protein CpxP OS=Shigella flexn...  68.9    1e-13 
+  sp|P0AE85|CPXP_ECOLI Periplasmic protein CpxP OS=Escherichia co...  68.9    1e-13 
+  sp|P0AE86|CPXP_ECOL6 Periplasmic protein CpxP OS=Escherichia co...  68.9    1e-13 
+
+
+> sp|P77754|SPY_ECOLI Periplasmic chaperone Spy OS=Escherichia 
+coli (strain K12) OX=83333 GN=spy PE=1 SV=1
+Length=161
+
+ Score = 327 bits (838),  Expect = 4e-114, Method: Compositional matrix adjust.
+ Identities = 161/161 (100%), Positives = 161/161 (100%), Gaps = 0/161 (0%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA
+Sbjct  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM
+Sbjct  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+            ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE
+Sbjct  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+
+
+> sp|C6ECL5|SPY_ECOBD Periplasmic chaperone Spy OS=Escherichia 
+coli (strain B / BL21-DE3) OX=469008 GN=spy PE=1 SV=1
+Length=161
+
+ Score = 325 bits (834),  Expect = 2e-113, Method: Compositional matrix adjust.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA
+Sbjct  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            QKQQIREIMKGQRDQMKRPPLEERRAMHDII SDTFDKVKAEAQIAKMEEQRKANMLAHM
+Sbjct  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIITSDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+            ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE
+Sbjct  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+
+
+> sp|Q8XDZ4|SPY_ECO57 Periplasmic chaperone Spy OS=Escherichia 
+coli O157:H7 OX=83334 GN=spy PE=1 SV=1
+Length=161
+
+ Score = 325 bits (833),  Expect = 3e-113, Method: Compositional matrix adjust.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA
+Sbjct  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDK KAEAQIAKMEEQRKANMLAHM
+Sbjct  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKAKAEAQIAKMEEQRKANMLAHM  120
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+            ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE
+Sbjct  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+
+
+> sp|P0AE87|CPXP_SHIFL Periplasmic protein CpxP OS=Shigella flexneri 
+OX=623 GN=cpxP PE=3 SV=1
+Length=166
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 45/148 (30%), Positives = 83/148 (56%), Gaps = 10/148 (7%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MR +TA  +ASTLA+  ++L+HAA+  +         +  +      Q  MF  ++LT+ 
+Sbjct  1    MRIVTAAVMASTLAV--SSLSHAAEVGSGDNWHPGEELTQRST----QSHMFDGISLTEH  54
+
+Query  61   QKQQIREIMKGQRDQMKRPPL--EERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLA  118
+            Q+QQ+R++M+  R   ++PP+   E   MH ++ ++ FD+    AQ  KM  ++ A  + 
+Sbjct  55   QRQQMRDLMQQARH--EQPPVNVSELETMHRLVTAENFDENAVRAQAEKMANEQIARQVE  112
+
+Query  119  HMETQNKIYNILTPEQKKQFNANFEKRL  146
+              + +N++Y +LTPEQ+   N   ++R+
+Sbjct  113  MAKVRNQMYRLLTPEQQAVLNEKHQQRM  140
+
+
+> sp|P0AE85|CPXP_ECOLI Periplasmic protein CpxP OS=Escherichia 
+coli (strain K12) OX=83333 GN=cpxP PE=1 SV=1
+Length=166
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 45/148 (30%), Positives = 83/148 (56%), Gaps = 10/148 (7%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MR +TA  +ASTLA+  ++L+HAA+  +         +  +      Q  MF  ++LT+ 
+Sbjct  1    MRIVTAAVMASTLAV--SSLSHAAEVGSGDNWHPGEELTQRST----QSHMFDGISLTEH  54
+
+Query  61   QKQQIREIMKGQRDQMKRPPL--EERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLA  118
+            Q+QQ+R++M+  R   ++PP+   E   MH ++ ++ FD+    AQ  KM  ++ A  + 
+Sbjct  55   QRQQMRDLMQQARH--EQPPVNVSELETMHRLVTAENFDENAVRAQAEKMANEQIARQVE  112
+
+Query  119  HMETQNKIYNILTPEQKKQFNANFEKRL  146
+              + +N++Y +LTPEQ+   N   ++R+
+Sbjct  113  MAKVRNQMYRLLTPEQQAVLNEKHQQRM  140
+
+
+> sp|P0AE86|CPXP_ECOL6 Periplasmic protein CpxP OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=cpxP 
+PE=3 SV=1
+Length=166
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 45/148 (30%), Positives = 83/148 (56%), Gaps = 10/148 (7%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MR +TA  +ASTLA+  ++L+HAA+  +         +  +      Q  MF  ++LT+ 
+Sbjct  1    MRIVTAAVMASTLAV--SSLSHAAEVGSGDNWHPGEELTQRST----QSHMFDGISLTEH  54
+
+Query  61   QKQQIREIMKGQRDQMKRPPL--EERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLA  118
+            Q+QQ+R++M+  R   ++PP+   E   MH ++ ++ FD+    AQ  KM  ++ A  + 
+Sbjct  55   QRQQMRDLMQQARH--EQPPVNVSELETMHRLVTAENFDENAVRAQAEKMANEQIARQVE  112
+
+Query  119  HMETQNKIYNILTPEQKKQFNANFEKRL  146
+              + +N++Y +LTPEQ+   N   ++R+
+Sbjct  113  MAKVRNQMYRLLTPEQQAVLNEKHQQRM  140
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.126    0.347    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7394303162
+Results from round 2
+
+
+Query= SPY_ECOLI
+
+Length=161
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|C6ECL5|SPY_ECOBD Periplasmic chaperone Spy OS=Escherichia co...  203     2e-65
+  sp|P77754|SPY_ECOLI Periplasmic chaperone Spy OS=Escherichia co...  202     6e-65
+  sp|Q8XDZ4|SPY_ECO57 Periplasmic chaperone Spy OS=Escherichia co...  199     9e-64
+  sp|P0AE87|CPXP_SHIFL Periplasmic protein CpxP OS=Shigella flexn...  151     1e-44
+  sp|P0AE85|CPXP_ECOLI Periplasmic protein CpxP OS=Escherichia co...  151     1e-44
+  sp|P0AE86|CPXP_ECOL6 Periplasmic protein CpxP OS=Escherichia co...  151     1e-44
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q08965|BMS1_YEAST Ribosome biogenesis protein BMS1 OS=Saccha...  40.6    0.003
+
+
+> sp|C6ECL5|SPY_ECOBD Periplasmic chaperone Spy OS=Escherichia 
+coli (strain B / BL21-DE3) OX=469008 GN=spy PE=1 SV=1
+Length=161
+
+ Score = 203 bits (516),  Expect = 2e-65, Method: Composition-based stats.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA
+Sbjct  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            QKQQIREIMKGQRDQMKRPPLEERRAMHDII SDTFDKVKAEAQIAKMEEQRKANMLAHM
+Sbjct  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIITSDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+            ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE
+Sbjct  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+
+
+> sp|P77754|SPY_ECOLI Periplasmic chaperone Spy OS=Escherichia 
+coli (strain K12) OX=83333 GN=spy PE=1 SV=1
+Length=161
+
+ Score = 202 bits (513),  Expect = 6e-65, Method: Composition-based stats.
+ Identities = 161/161 (100%), Positives = 161/161 (100%), Gaps = 0/161 (0%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA
+Sbjct  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM
+Sbjct  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+            ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE
+Sbjct  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+
+
+> sp|Q8XDZ4|SPY_ECO57 Periplasmic chaperone Spy OS=Escherichia 
+coli O157:H7 OX=83334 GN=spy PE=1 SV=1
+Length=161
+
+ Score = 199 bits (506),  Expect = 9e-64, Method: Composition-based stats.
+ Identities = 160/161 (99%), Positives = 160/161 (99%), Gaps = 0/161 (0%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA
+Sbjct  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDK KAEAQIAKMEEQRKANMLAHM
+Sbjct  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKAKAEAQIAKMEEQRKANMLAHM  120
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+            ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE
+Sbjct  121  ETQNKIYNILTPEQKKQFNANFEKRLTERPAAKGKMPATAE  161
+
+
+> sp|P0AE87|CPXP_SHIFL Periplasmic protein CpxP OS=Shigella flexneri 
+OX=623 GN=cpxP PE=3 SV=1
+Length=166
+
+ Score = 151 bits (380),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 43/148 (29%), Positives = 81/148 (55%), Gaps = 6/148 (4%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MR +TA  +ASTLA+  ++L+HAA+  +         +  +      Q  MF  ++LT+ 
+Sbjct  1    MRIVTAAVMASTLAV--SSLSHAAEVGSGDNWHPGEELTQRST----QSHMFDGISLTEH  54
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            Q+QQ+R++M+  R +     + E   MH ++ ++ FD+    AQ  KM  ++ A  +   
+Sbjct  55   QRQQMRDLMQQARHEQPPVNVSELETMHRLVTAENFDENAVRAQAEKMANEQIARQVEMA  114
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTE  148
+            + +N++Y +LTPEQ+   N   ++R+ +
+Sbjct  115  KVRNQMYRLLTPEQQAVLNEKHQQRMEQ  142
+
+
+> sp|P0AE85|CPXP_ECOLI Periplasmic protein CpxP OS=Escherichia 
+coli (strain K12) OX=83333 GN=cpxP PE=1 SV=1
+Length=166
+
+ Score = 151 bits (380),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 43/148 (29%), Positives = 81/148 (55%), Gaps = 6/148 (4%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MR +TA  +ASTLA+  ++L+HAA+  +         +  +      Q  MF  ++LT+ 
+Sbjct  1    MRIVTAAVMASTLAV--SSLSHAAEVGSGDNWHPGEELTQRST----QSHMFDGISLTEH  54
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            Q+QQ+R++M+  R +     + E   MH ++ ++ FD+    AQ  KM  ++ A  +   
+Sbjct  55   QRQQMRDLMQQARHEQPPVNVSELETMHRLVTAENFDENAVRAQAEKMANEQIARQVEMA  114
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTE  148
+            + +N++Y +LTPEQ+   N   ++R+ +
+Sbjct  115  KVRNQMYRLLTPEQQAVLNEKHQQRMEQ  142
+
+
+> sp|P0AE86|CPXP_ECOL6 Periplasmic protein CpxP OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=cpxP 
+PE=3 SV=1
+Length=166
+
+ Score = 151 bits (380),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 43/148 (29%), Positives = 81/148 (55%), Gaps = 6/148 (4%)
+
+Query  1    MRKLTALFVASTLALGAANLAHAADTTTAAPADAKPMMHHKGKFGPHQDMMFKDLNLTDA  60
+            MR +TA  +ASTLA+  ++L+HAA+  +         +  +      Q  MF  ++LT+ 
+Sbjct  1    MRIVTAAVMASTLAV--SSLSHAAEVGSGDNWHPGEELTQRST----QSHMFDGISLTEH  54
+
+Query  61   QKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQRKANMLAHM  120
+            Q+QQ+R++M+  R +     + E   MH ++ ++ FD+    AQ  KM  ++ A  +   
+Sbjct  55   QRQQMRDLMQQARHEQPPVNVSELETMHRLVTAENFDENAVRAQAEKMANEQIARQVEMA  114
+
+Query  121  ETQNKIYNILTPEQKKQFNANFEKRLTE  148
+            + +N++Y +LTPEQ+   N   ++R+ +
+Sbjct  115  KVRNQMYRLLTPEQQAVLNEKHQQRMEQ  142
+
+
+> sp|Q08965|BMS1_YEAST Ribosome biogenesis protein BMS1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=BMS1 PE=1 SV=1
+Length=1183
+
+ Score = 40.6 bits (93),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 19/86 (22%), Positives = 39/86 (45%), Gaps = 0/86 (0%)
+
+Query  53   KDLNLTDAQKQQIREIMKGQRDQMKRPPLEERRAMHDIIASDTFDKVKAEAQIAKMEEQR  112
+             D + T+   ++ +++   Q  +M     E+ RA  +I   + F +     +     E +
+Sbjct  695  DDNSFTNFDAEEKKDLTMEQEREMNAAKKEKLRAQFEIEEGENFKEDDENNEYDTWYELQ  754
+
+Query  113  KANMLAHMETQNKIYNILTPEQKKQF  138
+            KA +   +E  N  Y  +TPEQ+++ 
+Sbjct  755  KAKISKQLEINNIEYQEMTPEQRQRI  780
+
+
+
+Lambda      K        H        a         alpha
+   0.303    0.120    0.304    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0356    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7394303162
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,189 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= IPHP_NOSCO
+
+Length=294
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q05918|IPHP_NOSCO Tyrosine-protein phosphatase OS=Nostoc com...  592     0.0  
+  sp|P40289|Y669_CUPNH Putative tyrosine-protein phosphatase H16_...  53.5    6e-07
+
+
+> sp|Q05918|IPHP_NOSCO Tyrosine-protein phosphatase OS=Nostoc commune 
+OX=1178 GN=iphP PE=1 SV=1
+Length=294
+
+ Score = 592 bits (1526),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 294/294 (100%), Positives = 294/294 (100%), Gaps = 0/294 (0%)
+
+Query  1    MKTHHANLALALMLGLSSSATAVAADAPQAVATKAAAPNVKPVAADAHGVIPDGAPGMCA  60
+            MKTHHANLALALMLGLSSSATAVAADAPQAVATKAAAPNVKPVAADAHGVIPDGAPGMCA
+Sbjct  1    MKTHHANLALALMLGLSSSATAVAADAPQAVATKAAAPNVKPVAADAHGVIPDGAPGMCA  60
+
+Query  61   RSPACRATAIPADAFVRTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDD  120
+            RSPACRATAIPADAFVRTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDD
+Sbjct  61   RSPACRATAIPADAFVRTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDD  120
+
+Query  121  RFDYQRISLMGTEKMDLQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRIAAQQDGAVLF  180
+            RFDYQRISLMGTEKMDLQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRIAAQQDGAVLF
+Sbjct  121  RFDYQRISLMGTEKMDLQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRIAAQQDGAVLF  180
+
+Query  181  HCTAGKDRTGIIAGLLLDLAGVPKAEIVHNYAISAHYLEGQPKDSDERADHGAGQAEPGD  240
+            HCTAGKDRTGIIAGLLLDLAGVPKAEIVHNYAISAHYLEGQPKDSDERADHGAGQAEPGD
+Sbjct  181  HCTAGKDRTGIIAGLLLDLAGVPKAEIVHNYAISAHYLEGQPKDSDERADHGAGQAEPGD  240
+
+Query  241  RPQDGGHGRYRAGQHGAVLAALHSQYGGAEGYLKSIGVSEQEIQQLKVRLGQAG  294
+            RPQDGGHGRYRAGQHGAVLAALHSQYGGAEGYLKSIGVSEQEIQQLKVRLGQAG
+Sbjct  241  RPQDGGHGRYRAGQHGAVLAALHSQYGGAEGYLKSIGVSEQEIQQLKVRLGQAG  294
+
+
+> sp|P40289|Y669_CUPNH Putative tyrosine-protein phosphatase H16_A0669 
+OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 
+428 / Stanier 337) OX=381666 GN=H16_A0669 PE=3 SV=2
+Length=273
+
+ Score = 53.5 bits (127),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 43/130 (33%), Positives = 68/130 (52%), Gaps = 7/130 (5%)
+
+Query  87   ADRDALAALGVKLDIDLRTADEEAQSPDLLARDDRFDYQRISLM-GTEKMD--LQKMMTS  143
+            AD + L  LG+ + +D R+  E  +SP+  A   RF +    ++ G+  MD  + ++  S
+Sbjct  71   ADLERLQTLGLDMVVDFRSPGE--KSPEEAAFGQRFHWVAAPVLEGSMAMDVLMPRLRAS  128
+
+Query  144  FPDSLGEAYVQWLGHSQPQFKQVFQRI--AAQQDGAVLFHCTAGKDRTGIIAGLLLDLAG  201
+             P  +    ++  G    ++++ F      AQ    +LFHCTAGKDRTG  A LLL   G
+Sbjct  129  TPAQMDAFMLEVYGDFPVRYREAFAGFMRTAQGGKTLLFHCTAGKDRTGFAALLLLAALG  188
+
+Query  202  VPKAEIVHNY  211
+            V + +I+ NY
+Sbjct  189  VAQDDILANY  198
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.132    0.384    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23807160033
+Results from round 2
+
+
+Query= IPHP_NOSCO
+
+Length=294
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q05918|IPHP_NOSCO Tyrosine-protein phosphatase OS=Nostoc com...  507     0.0  
+  sp|P40289|Y669_CUPNH Putative tyrosine-protein phosphatase H16_...  173     2e-50
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q05918|IPHP_NOSCO Tyrosine-protein phosphatase OS=Nostoc commune 
+OX=1178 GN=iphP PE=1 SV=1
+Length=294
+
+ Score = 507 bits (1306),  Expect = 0.0, Method: Composition-based stats.
+ Identities = 294/294 (100%), Positives = 294/294 (100%), Gaps = 0/294 (0%)
+
+Query  1    MKTHHANLALALMLGLSSSATAVAADAPQAVATKAAAPNVKPVAADAHGVIPDGAPGMCA  60
+            MKTHHANLALALMLGLSSSATAVAADAPQAVATKAAAPNVKPVAADAHGVIPDGAPGMCA
+Sbjct  1    MKTHHANLALALMLGLSSSATAVAADAPQAVATKAAAPNVKPVAADAHGVIPDGAPGMCA  60
+
+Query  61   RSPACRATAIPADAFVRTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDD  120
+            RSPACRATAIPADAFVRTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDD
+Sbjct  61   RSPACRATAIPADAFVRTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDD  120
+
+Query  121  RFDYQRISLMGTEKMDLQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRIAAQQDGAVLF  180
+            RFDYQRISLMGTEKMDLQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRIAAQQDGAVLF
+Sbjct  121  RFDYQRISLMGTEKMDLQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRIAAQQDGAVLF  180
+
+Query  181  HCTAGKDRTGIIAGLLLDLAGVPKAEIVHNYAISAHYLEGQPKDSDERADHGAGQAEPGD  240
+            HCTAGKDRTGIIAGLLLDLAGVPKAEIVHNYAISAHYLEGQPKDSDERADHGAGQAEPGD
+Sbjct  181  HCTAGKDRTGIIAGLLLDLAGVPKAEIVHNYAISAHYLEGQPKDSDERADHGAGQAEPGD  240
+
+Query  241  RPQDGGHGRYRAGQHGAVLAALHSQYGGAEGYLKSIGVSEQEIQQLKVRLGQAG  294
+            RPQDGGHGRYRAGQHGAVLAALHSQYGGAEGYLKSIGVSEQEIQQLKVRLGQAG
+Sbjct  241  RPQDGGHGRYRAGQHGAVLAALHSQYGGAEGYLKSIGVSEQEIQQLKVRLGQAG  294
+
+
+> sp|P40289|Y669_CUPNH Putative tyrosine-protein phosphatase H16_A0669 
+OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 
+428 / Stanier 337) OX=381666 GN=H16_A0669 PE=3 SV=2
+Length=273
+
+ Score = 173 bits (439),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 44/140 (31%), Positives = 72/140 (51%), Gaps = 7/140 (5%)
+
+Query  77   RTADLGRLTDADRDALAALGVKLDIDLRTADEEAQSPDLLARDDRFDYQRISLM-GTEKM  135
+            R+ +    + AD + L  LG+ + +D R+  E  +SP+  A   RF +    ++ G+  M
+Sbjct  61   RSGNPALASAADLERLQTLGLDMVVDFRSPGE--KSPEEAAFGQRFHWVAAPVLEGSMAM  118
+
+Query  136  D--LQKMMTSFPDSLGEAYVQWLGHSQPQFKQVFQRI--AAQQDGAVLFHCTAGKDRTGI  191
+            D  + ++  S P  +    ++  G    ++++ F      AQ    +LFHCTAGKDRTG 
+Sbjct  119  DVLMPRLRASTPAQMDAFMLEVYGDFPVRYREAFAGFMRTAQGGKTLLFHCTAGKDRTGF  178
+
+Query  192  IAGLLLDLAGVPKAEIVHNY  211
+             A LLL   GV + +I+ NY
+Sbjct  179  AALLLLAALGVAQDDILANY  198
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.132    0.372    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23807160033
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

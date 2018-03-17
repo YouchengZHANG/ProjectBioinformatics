@@ -1,0 +1,4198 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= SGP1_CHRVI
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|O52057|SGP1_ALLVD Sulfur globule protein CV1 OS=Allochromati...  234     2e-78
+  sp|P06914|CSP_PLAYO Circumsporozoite protein OS=Plasmodium yoel...  40.4    0.001
+
+
+> sp|O52057|SGP1_ALLVD Sulfur globule protein CV1 OS=Allochromatium 
+vinosum (strain ATCC 17899 / DSM 180 / NBRC 103801 / NCIMB 
+10441 / D) OX=572477 GN=sgpA PE=1 SV=1
+Length=127
+
+ Score = 234 bits (597),  Expect = 2e-78, Method: Compositional matrix adjust.
+ Identities = 127/127 (100%), Positives = 127/127 (100%), Gaps = 0/127 (0%)
+
+Query  1    MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR  60
+            MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR
+Sbjct  1    MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR  60
+
+Query  61   GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+            GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ
+Sbjct  61   GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+
+Query  121  PQAAPSR  127
+            PQAAPSR
+Sbjct  121  PQAAPSR  127
+
+
+> sp|P06914|CSP_PLAYO Circumsporozoite protein OS=Plasmodium yoelii 
+yoelii OX=73239 PE=3 SV=1
+Length=367
+
+ Score = 40.4 bits (93),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 36/73 (49%), Positives = 38/73 (52%), Gaps = 2/73 (3%)
+
+Query  48   YGDFNMSMGGGG-RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-M  105
+              D N+  G G  +G G   G G   G GAP G GAP G GAP G GAP G GAP G   
+Sbjct  132  VADENVDQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGA  191
+
+Query  106  PYGAMPPQMPAAP  118
+            P G   PQ P AP
+Sbjct  192  PQGPGAPQGPGAP  204
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.143    0.490    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5027495986
+Results from round 2
+
+
+Query= SGP1_CHRVI
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|O52057|SGP1_ALLVD Sulfur globule protein CV1 OS=Allochromati...  149     4e-45
+  sp|P06914|CSP_PLAYO Circumsporozoite protein OS=Plasmodium yoel...  107     4e-27
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q7UZZ9|IF2_PROMP Translation initiation factor IF-2 OS=Proch...  62.8    1e-10
+  sp|P27951|BAG_STRAG IgA FC receptor OS=Streptococcus agalactiae...  58.9    2e-09
+  sp|Q8CQD9|PLS_STAES Accumulation-associated protein OS=Staphylo...  56.6    1e-08
+  sp|Q4U9M9|104K_THEAN 104 kDa microneme/rhoptry antigen OS=Theil...  52.7    2e-07
+  sp|P75100|Y013_MYCPN UPF0134 protein MPN_013 OS=Mycoplasma pneu...  49.7    7e-07
+  sp|Q3AHW1|IF2_SYNSC Translation initiation factor IF-2 OS=Synec...  50.4    1e-06
+  sp|Q32L53|LFG1_BOVIN Protein lifeguard 1 OS=Bos taurus OX=9913 ...  49.7    1e-06
+  sp|A7H9F3|IF2_ANADF Translation initiation factor IF-2 OS=Anaer...  50.1    1e-06
+  sp|Q7Z429|LFG1_HUMAN Protein lifeguard 1 OS=Homo sapiens OX=960...  48.5    3e-06
+  sp|P27177|PRIO_CHICK Major prion protein homolog OS=Gallus gall...  47.4    6e-06
+  sp|A5DIP0|DHH1_PICGU ATP-dependent RNA helicase DHH1 OS=Meyeroz...  47.4    8e-06
+  sp|A2QWA2|VPS27_ASPNC Vacuolar protein sorting-associated prote...  47.0    1e-05
+  sp|Q6P6R0|LFG1_RAT Protein lifeguard 1 OS=Rattus norvegicus OX=...  45.8    2e-05
+  sp|A4J5X2|IF2_DESRM Translation initiation factor IF-2 OS=Desul...  46.2    3e-05
+  sp|Q9VT65|CANB_DROME Calpain-B OS=Drosophila melanogaster OX=72...  45.4    4e-05
+  sp|Q9ESF4|LFG1_MOUSE Protein lifeguard 1 OS=Mus musculus OX=100...  43.9    1e-04
+  sp|P0CQ88|PRP28_CRYNJ Pre-mRNA-splicing ATP-dependent RNA helic...  43.1    2e-04
+  sp|P0CQ89|PRP28_CRYNB Pre-mRNA-splicing ATP-dependent RNA helic...  43.1    2e-04
+  sp|Q9DDT5|SPT5H_DANRE Transcription elongation factor SPT5 OS=D...  42.7    3e-04
+  sp|Q0I7K2|IF2_SYNS3 Translation initiation factor IF-2 OS=Synec...  42.7    3e-04
+  sp|Q0PVD8|SEC24_PICPA Protein transport protein SEC24 OS=Komaga...  42.7    3e-04
+  sp|P0CR70|SPT5_CRYNJ Transcription elongation factor SPT5 OS=Cr...  42.7    3e-04
+  sp|P0CR71|SPT5_CRYNB Transcription elongation factor SPT5 OS=Cr...  42.7    3e-04
+  sp|P19246|NFH_MOUSE Neurofilament heavy polypeptide OS=Mus musc...  42.7    3e-04
+  sp|A6H584|CO6A5_MOUSE Collagen alpha-5(VI) chain OS=Mus musculu...  42.3    4e-04
+  sp|Q801S8|CO6A1_XENLA Collagen alpha-1(VI) chain OS=Xenopus lae...  42.3    4e-04
+  sp|Q5R539|SRRT_PONAB Serrate RNA effector molecule homolog OS=P...  42.0    5e-04
+  sp|A9KNW4|IF2_LACP7 Translation initiation factor IF-2 OS=Lachn...  42.0    5e-04
+  sp|A2AX52|CO6A4_MOUSE Collagen alpha-4(VI) chain OS=Mus musculu...  42.0    6e-04
+  sp|Q01W31|IF2_SOLUE Translation initiation factor IF-2 OS=Solib...  41.6    7e-04
+  sp|Q2HH63|SEC24_CHAGB Protein transport protein SEC24 OS=Chaeto...  41.6    8e-04
+  sp|Q61072|ADAM9_MOUSE Disintegrin and metalloproteinase domain-...  40.8    0.001
+  sp|Q3AZB7|IF2_SYNS9 Translation initiation factor IF-2 OS=Synec...  40.4    0.002
+  sp|A6QPB3|COHA1_BOVIN Collagen alpha-1(XVII) chain OS=Bos tauru...  40.0    0.002
+  sp|Q0KFR8|DNAA_CUPNH Chromosomal replication initiator protein ...  40.0    0.002
+  sp|Q9Y2H5|PKHA6_HUMAN Pleckstrin homology domain-containing fam...  39.6    0.003
+  sp|Q9P7E8|APP1_SCHPO Protein app1 OS=Schizosaccharomyces pombe ...  39.3    0.004
+  sp|A5PMY6|COL12_DANRE Collectin-12 OS=Danio rerio OX=7955 GN=co...  39.3    0.005
+  sp|Q5R9T2|VP37C_PONAB Vacuolar protein sorting-associated prote...  38.5    0.006
+  sp|Q9LFT8|CDKC1_ARATH Cyclin-dependent kinase C-1 OS=Arabidopsi...  38.5    0.007
+  sp|A5GVG4|IF2_SYNR3 Translation initiation factor IF-2 OS=Synec...  38.5    0.007
+  sp|Q60YF6|MED29_CAEBR Mediator of RNA polymerase II transcripti...  38.5    0.007
+  sp|A5D8V6|VP37C_HUMAN Vacuolar protein sorting-associated prote...  38.1    0.008
+  sp|A8IG20|IF2_AZOC5 Translation initiation factor IF-2 OS=Azorh...  38.5    0.008
+  sp|P21917|DRD4_HUMAN D(4) dopamine receptor OS=Homo sapiens OX=...  38.1    0.009
+  sp|B2AWS3|PAN1_PODAN Actin cytoskeleton-regulatory complex prot...  38.1    0.009
+
+
+> sp|O52057|SGP1_ALLVD Sulfur globule protein CV1 OS=Allochromatium 
+vinosum (strain ATCC 17899 / DSM 180 / NBRC 103801 / NCIMB 
+10441 / D) OX=572477 GN=sgpA PE=1 SV=1
+Length=127
+
+ Score = 149 bits (376),  Expect = 4e-45, Method: Composition-based stats.
+ Identities = 127/127 (100%), Positives = 127/127 (100%), Gaps = 0/127 (0%)
+
+Query  1    MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR  60
+            MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR
+Sbjct  1    MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR  60
+
+Query  61   GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+            GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ
+Sbjct  61   GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+
+Query  121  PQAAPSR  127
+            PQAAPSR
+Sbjct  121  PQAAPSR  127
+
+
+> sp|P06914|CSP_PLAYO Circumsporozoite protein OS=Plasmodium yoelii 
+yoelii OX=73239 PE=3 SV=1
+Length=367
+
+ Score = 107 bits (267),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 38/78 (49%), Positives = 40/78 (51%), Gaps = 2/78 (3%)
+
+Query  48   YGDFNMSMGGGG-RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-M  105
+              D N+  G G  +G G   G G   G GAP G GAP G GAP G GAP G GAP G   
+Sbjct  132  VADENVDQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGA  191
+
+Query  106  PYGAMPPQMPAAPAQPQA  123
+            P G   PQ P AP  P A
+Sbjct  192  PQGPGAPQGPGAPQGPGA  209
+
+
+ Score = 85.1 bits (209),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 31/64 (48%), Positives = 32/64 (50%), Gaps = 6/64 (9%)
+
+Query  55   MGGGG-RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQ  113
+             G G  +G G   G G   G GAP G GAP G GAP G GAP G GA     P G   PQ
+Sbjct  169  QGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGA-----PQGPGAPQ  223
+
+Query  114  MPAA  117
+             P A
+Sbjct  224  GPGA  227
+
+
+> sp|Q7UZZ9|IF2_PROMP Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus subsp. pastoris (strain CCMP1986 / NIES-2087 
+/ MED4) OX=59919 GN=infB PE=3 SV=1
+Length=1169
+
+ Score = 62.8 bits (151),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 27/79 (34%), Positives = 31/79 (39%), Gaps = 8/79 (10%)
+
+Query  57   GGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAP--YGAMPYGAMPPQ  113
+             GG+   G     G  Y  G+P   G PY  GAP   G     G P   G  PY    P 
+Sbjct  287  PGGQNRQGVPNREGGPYRQGSPNRPGTPYRQGAPNRPGGQNRQGVPNREGGGPYRQGSPN  346
+
+Query  114  MPAAPAQP-----QAAPSR  127
+             P  P +P     Q AP+R
+Sbjct  347  RPGTPNRPGTPYRQGAPNR  365
+
+
+ Score = 59.3 bits (142),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 32/106 (30%), Positives = 38/106 (36%), Gaps = 8/106 (8%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGY----GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAP  83
+            GGP Y  G  +  G  +  G     G  N        G G  Y +G+    G P   G P
+Sbjct  300  GGP-YRQGSPNRPGTPYRQGAPNRPGGQNRQGVPNREG-GGPYRQGSPNRPGTPNRPGTP  357
+
+Query  84   YGYGAPYGYGAPYGYGAP--YGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            Y  GAP   G     G P   G  PY    P  P  P +  A+  R
+Sbjct  358  YRQGAPNRPGGQNRQGVPNREGGGPYRQGSPNRPGTPYRQGASGIR  403
+
+
+ Score = 51.2 bits (121),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 24/79 (30%), Positives = 27/79 (34%), Gaps = 16/79 (20%)
+
+Query  55   MGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA-------------PYGYGAPYGYGAP  101
+             GGG    G     G     G PY  GAP   G              PY  G+P   G P
+Sbjct  335  EGGGPYRQGSPNRPGTPNRPGTPYRQGAPNRPGGQNRQGVPNREGGGPYRQGSPNRPGTP  394
+
+Query  102  YGAMPYGAMPPQMPAAPAQ  120
+            Y     GA   + P AP +
+Sbjct  395  Y---RQGASGIRKPVAPNE  410
+
+
+> sp|P27951|BAG_STRAG IgA FC receptor OS=Streptococcus agalactiae 
+OX=1311 GN=bag PE=1 SV=1
+Length=1164
+
+ Score = 58.9 bits (141),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 13/63 (21%), Positives = 21/63 (33%), Gaps = 1/63 (2%)
+
+Query  62   YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAAPAQ  120
+                           P+   +P    AP    +P    AP+    P     P++P +P  
+Sbjct  836  PELPQAPDTPQAPDTPHVPESPKAPEAPRVPESPKTPEAPHVPESPKAPEAPRVPESPKT  895
+
+Query  121  PQA  123
+            P+A
+Sbjct  896  PEA  898
+
+
+ Score = 57.8 bits (138),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 13/65 (20%), Positives = 22/65 (34%), Gaps = 1/65 (2%)
+
+Query  60   RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAAP  118
+            +           +   +P    AP    +P    AP+   +P     P     P+ P AP
+Sbjct  840  QAPDTPQAPDTPHVPESPKAPEAPRVPESPKTPEAPHVPESPKAPEAPRVPESPKTPEAP  899
+
+Query  119  AQPQA  123
+              P++
+Sbjct  900  HVPES  904
+
+
+ Score = 57.4 bits (137),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 13/66 (20%), Positives = 16/66 (24%), Gaps = 4/66 (6%)
+
+Query  62   YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA----MPYGAMPPQMPAA  117
+                          AP     P     P     P    AP        P     P +P +
+Sbjct  845  PQAPDTPHVPESPKAPEAPRVPESPKTPEAPHVPESPKAPEAPRVPESPKTPEAPHVPES  904
+
+Query  118  PAQPQA  123
+            P  P+A
+Sbjct  905  PKTPEA  910
+
+
+ Score = 54.7 bits (130),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 12/63 (19%), Positives = 19/63 (30%), Gaps = 1/63 (2%)
+
+Query  62   YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAAPAQ  120
+                           P     P+   +P    AP    +P     P+    P+ P AP  
+Sbjct  830  PDTPKIPELPQAPDTPQAPDTPHVPESPKAPEAPRVPESPKTPEAPHVPESPKAPEAPRV  889
+
+Query  121  PQA  123
+            P++
+Sbjct  890  PES  892
+
+
+ Score = 54.3 bits (129),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 15/85 (18%), Positives = 26/85 (31%), Gaps = 3/85 (4%)
+
+Query  42   DMFGDGYGDFNMSMGGGGRG--YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYG  99
+            ++  D +   N ++    +G                 P     P     P+   +P    
+Sbjct  802  NLVHDAFSKMNATVAKFQKGLETNTPETPDTPKIPELPQAPDTPQAPDTPHVPESPKAPE  861
+
+Query  100  APYGA-MPYGAMPPQMPAAPAQPQA  123
+            AP     P     P +P +P  P+A
+Sbjct  862  APRVPESPKTPEAPHVPESPKAPEA  886
+
+
+ Score = 53.5 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 14/63 (22%), Positives = 20/63 (32%), Gaps = 1/63 (2%)
+
+Query  60   RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAAP  118
+            R           +   +P    AP    +P    AP+   +P     P    PP+ P  P
+Sbjct  864  RVPESPKTPEAPHVPESPKAPEAPRVPESPKTPEAPHVPESPKTPEAPKIPEPPKTPDVP  923
+
+Query  119  AQP  121
+              P
+Sbjct  924  KLP  926
+
+
+ Score = 50.4 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 13/63 (21%), Positives = 21/63 (33%), Gaps = 1/63 (2%)
+
+Query  60   RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAAP  118
+            +     +   +     AP    +P    AP+   +P    AP     P     P++P  P
+Sbjct  870  KTPEAPHVPESPKAPEAPRVPESPKTPEAPHVPESPKTPEAPKIPEPPKTPDVPKLPDVP  929
+
+Query  119  AQP  121
+              P
+Sbjct  930  KLP  932
+
+
+> sp|Q8CQD9|PLS_STAES Accumulation-associated protein OS=Staphylococcus 
+epidermidis (strain ATCC 12228) OX=176280 GN=SE_0175 
+PE=3 SV=1
+Length=1469
+
+ Score = 56.6 bits (135),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 20/73 (27%), Positives = 23/73 (32%), Gaps = 1/73 (1%)
+
+Query  50    DFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYG  108
+             D  +  G      G+    G     G P   G P   G P   G P   G P     P  
+Sbjct  1287  DEIVEYGPTKAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAE  1346
+
+Query  109   AMPPQMPAAPAQP  121
+                P  P  PA+P
+Sbjct  1347  PGKPAEPGKPAEP  1359
+
+
+ Score = 52.4 bits (124),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 18/61 (30%), Positives = 20/61 (33%), Gaps = 1/61 (2%)
+
+Query  62    YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAAPAQ  120
+              G+    G     G P   G P   G P   G P   G P     P     P  P  PA+
+Sbjct  1347  PGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGTPAEPGKPAE  1406
+
+Query  121   P  121
+             P
+Sbjct  1407  P  1407
+
+
+ Score = 52.4 bits (124),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 18/61 (30%), Positives = 20/61 (33%), Gaps = 1/61 (2%)
+
+Query  62    YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAAPAQ  120
+              G+    G     G P   G P   G P   G P   G P     P     P  P  PA+
+Sbjct  1329  PGKPAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAEPGTPAE  1388
+
+Query  121   P  121
+             P
+Sbjct  1389  P  1389
+
+
+ Score = 51.6 bits (122),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 18/61 (30%), Positives = 19/61 (31%), Gaps = 1/61 (2%)
+
+Query  62    YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAAPAQ  120
+              G     G     G P   G P   G P   G P   G P     P     P  P  PA+
+Sbjct  1323  PGTPAEPGKPAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAE  1382
+
+Query  121   P  121
+             P
+Sbjct  1383  P  1383
+
+
+ Score = 50.4 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 18/61 (30%), Positives = 18/61 (30%), Gaps = 1/61 (2%)
+
+Query  62    YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAAPAQ  120
+              G     G     G P   G P   G P   G P   G P     P     P    AP Q
+Sbjct  1359  PGTPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGTPAEPGKPAEPGTPTQSGAPEQ  1418
+
+Query  121   P  121
+             P
+Sbjct  1419  P  1419
+
+
+ Score = 50.4 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 19/63 (30%), Gaps = 1/63 (2%)
+
+Query  62    YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAAPAQ  120
+              G+    G     G P   G P   G P   G P   G P     P     P  P  P Q
+Sbjct  1353  PGKPAEPGTPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGTPAEPGKPAEPGTPTQ  1412
+
+Query  121   PQA  123
+               A
+Sbjct  1413  SGA  1415
+
+
+> sp|Q4U9M9|104K_THEAN 104 kDa microneme/rhoptry antigen OS=Theileria 
+annulata OX=5874 GN=TA08425 PE=3 SV=1
+Length=893
+
+ Score = 52.7 bits (125),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 12/65 (18%), Positives = 20/65 (31%), Gaps = 1/65 (2%)
+
+Query  59   GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAA  117
+             +   R     +     +P    +P     P     P     P     P   + PQ P +
+Sbjct  581  SKSPKRPESPKSPKRPVSPQRPVSPKSPKRPESLDIPKSPKRPESPKSPKRPVSPQRPVS  640
+
+Query  118  PAQPQ  122
+            P +P+
+Sbjct  641  PRRPE  645
+
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 13/65 (20%), Positives = 21/65 (32%), Gaps = 2/65 (3%)
+
+Query  64   RGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYG-AMPYGAMPPQMPAAPAQPQ  122
+            R            P    +P    +P    +P     P    +P     P+ P +P +P 
+Sbjct  574  RPEFPKKSKSPKRPESPKSPKRPVSPQRPVSPKSPKRPESLDIPKSPKRPESPKSPKRP-  632
+
+Query  123  AAPSR  127
+             +P R
+Sbjct  633  VSPQR  637
+
+
+> sp|P75100|Y013_MYCPN UPF0134 protein MPN_013 OS=Mycoplasma pneumoniae 
+(strain ATCC 29342 / M129) OX=272634 GN=MPN_013 PE=3 
+SV=1
+Length=257
+
+ Score = 49.7 bits (117),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 14/70 (20%), Positives = 18/70 (26%), Gaps = 4/70 (6%)
+
+Query  62   YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYG----AMPPQMPAA  117
+              +  G     G   P G   P G   P     P       G    G       P  P+ 
+Sbjct  57   PDQPDGPCITKGPKEPGGPEEPNGPDKPEDPKDPDTPDVSEGPKEQGGQKDPGGPDDPSE  116
+
+Query  118  PAQPQAAPSR  127
+              Q  + P +
+Sbjct  117  GKQKVSKPDK  126
+
+
+> sp|Q3AHW1|IF2_SYNSC Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain CC9605) OX=110662 GN=infB PE=3 SV=1
+Length=1104
+
+ Score = 50.4 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 26/82 (32%), Positives = 29/82 (35%), Gaps = 16/82 (20%)
+
+Query  61   GYGRGYGRGNGYGYGAPY--GYGAPYGYGAPYGYGAPYGYGAPYGAMPY-----------  107
+            G G       G G   P     GAP   GAP   GAP   GAP    P            
+Sbjct  205  GAGSPARPTPGQGQPKPQIIRSGAPSRPGAPTRAGAPAKPGAPSRPTPRPELVGKPVPRR  264
+
+Query  108  --GAMPPQMPAAPAQPQAAPSR  127
+              G   PQ    P++P  AP+R
+Sbjct  265  PAGTGVPQRQGGPSRP-GAPTR  285
+
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 24/116 (21%), Positives = 26/116 (22%), Gaps = 39/116 (34%)
+
+Query  45   GDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPY------------------GYGAPYGY  86
+            G G     +   G     G     G     GAP                   G G P   
+Sbjct  215  GQGQPKPQIIRSGAPSRPGAPTRAGAPAKPGAPSRPTPRPELVGKPVPRRPAGTGVPQRQ  274
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYG---------------------AMPPQMPAAPAQP  121
+            G P   GAP   G P      G                        P  P AP +P
+Sbjct  275  GGPSRPGAPTRQGRPGMPPRSGNTLELVGKPIRRDGSTTGSGRPGAPTRPGAPGRP  330
+
+
+> sp|Q32L53|LFG1_BOVIN Protein lifeguard 1 OS=Bos taurus OX=9913 
+GN=GRINA PE=2 SV=1
+Length=366
+
+ Score = 49.7 bits (117),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 24/89 (27%), Positives = 27/89 (30%), Gaps = 21/89 (24%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYGY------GAPYGY----GAPYGY----GAPYGY----  98
+             G       +        G P G       G P G     G P G     G P G     
+Sbjct  33   PGAPYPQAPFQPSPYGQPGYPQGPSPYPQGGYPQGPYPPGGYPQGPYPPGGYPQGPYPPG  92
+
+Query  99   GAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            G P G  P    PP       QPQA P++
+Sbjct  93   GYPQGPYPQSPFPPNPYG---QPQAFPAQ  118
+
+
+> sp|A7H9F3|IF2_ANADF Translation initiation factor IF-2 OS=Anaeromyxobacter 
+sp. (strain Fw109-5) OX=404589 GN=infB PE=3 SV=1
+Length=970
+
+ Score = 50.1 bits (118),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 24/78 (31%), Gaps = 12/78 (15%)
+
+Query  58   GGRGYGRGYGRGNG----YGYGA-PYGYGA-PYGYGA----PYGYGAPYGYGAPYGAMPY  107
+            G +  G               G  P   G  P G G     P G  AP    AP  A P+
+Sbjct  186  GAQPPGAPVRPAAPGVRPAAPGVRPAAPGVRPTGPGVRPSVPGGPRAPGQPTAPMAAAPH  245
+
+Query  108  GAMPPQMPAAPAQPQAAP  125
+            G      P  PA P   P
+Sbjct  246  GPGA--QPGQPAAPGPDP  261
+
+
+ Score = 39.6 bits (91),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/78 (29%), Positives = 24/78 (31%), Gaps = 6/78 (8%)
+
+Query  56   GGGGR--GYG-RGYGRG-NGYGYGAPYGYGAPYGY--GAPYGYGAPYGYGAPYGAMPYGA  109
+              G R    G R  G G      G P   G P      AP+G GA  G  A  G  P   
+Sbjct  205  APGVRPAAPGVRPTGPGVRPSVPGGPRAPGQPTAPMAAAPHGPGAQPGQPAAPGPDPRTL  264
+
+Query  110  MPPQMPAAPAQPQAAPSR  127
+             P    A        P R
+Sbjct  265  RPTATQAVVISRPLVPVR  282
+
+
+> sp|Q7Z429|LFG1_HUMAN Protein lifeguard 1 OS=Homo sapiens OX=9606 
+GN=GRINA PE=2 SV=1
+Length=371
+
+ Score = 48.5 bits (114),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 25/78 (32%), Positives = 27/78 (35%), Gaps = 18/78 (23%)
+
+Query  64   RGYG-RGNGYGYGA-PYGYGAPYGY----GAPYGY----GAPYGY----GAPYGAMPYGA  109
+              YG  G  +G    P G G P G     G P G     G P G     G P G  P   
+Sbjct  50   SPYGQPGYPHGPSPYPQG-GYPQGPYPQGGYPQGPYPQEGYPQGPYPQGGYPQGPYPQSP  108
+
+Query  110  MPPQMPAAPAQPQAAPSR  127
+             PP       QPQ  P +
+Sbjct  109  FPPNPYG---QPQVFPGQ  123
+
+
+ Score = 39.6 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/91 (26%), Positives = 27/91 (30%), Gaps = 17/91 (19%)
+
+Query  27   WGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGR----GNGYGYGAPYGYGA  82
+            +G PGY +G            Y       G   +G G   G     G   G   P G G 
+Sbjct  52   YGQPGYPHG---------PSPYPQGGYPQGPYPQG-GYPQGPYPQEGYPQGP-YPQG-GY  99
+
+Query  83   PYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQ  113
+            P G   P     P  YG P          PQ
+Sbjct  100  PQGP-YPQSPFPPNPYGQPQVFPGQDPDSPQ  129
+
+
+> sp|P27177|PRIO_CHICK Major prion protein homolog OS=Gallus gallus 
+OX=9031 GN=PRNP PE=1 SV=2
+Length=273
+
+ Score = 47.4 bits (111),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 15/58 (26%), Positives = 23/58 (40%), Gaps = 0/58 (0%)
+
+Query  60   RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAA  117
+            R  G  +  G  +  G P+  G P+  G P+  G P   G P+     G      P++
+Sbjct  48   RQPGYPHNPGYPHNPGYPHNPGYPHNPGYPHNPGYPQNPGYPHNPGYPGWGQGYNPSS  105
+
+
+> sp|A5DIP0|DHH1_PICGU ATP-dependent RNA helicase DHH1 OS=Meyerozyma 
+guilliermondii (strain ATCC 6260 / CBS 566 / DSM 6381 
+/ JCM 1539 / NBRC 10279 / NRRL Y-324) OX=294746 GN=DHH1 PE=3 
+SV=1
+Length=547
+
+ Score = 47.4 bits (111),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 25/77 (32%), Positives = 33/77 (43%), Gaps = 11/77 (14%)
+
+Query  60   RGYGRGYG-RGNGYG-YGAPYG--YGAPYG--YGAPYG--YGAPYGY-GAPYGAMPYGAM  110
+            +G  +  G +G+  G  G+P G   G+P G   G P G   G P    G P G  P G  
+Sbjct  458  QGSPQAQGLQGSPQGLQGSPQGIPQGSPQGIPQGIPQGLPQGVPQFPQGYPQGIPPQGPQ  517
+
+Query  111  PPQMPAAPAQPQAAPSR  127
+              Q    P  PQ  P++
+Sbjct  518  AYQNYQIP--PQQVPAQ  532
+
+
+> sp|A2QWA2|VPS27_ASPNC Vacuolar protein sorting-associated protein 
+27 OS=Aspergillus niger (strain CBS 513.88 / FGSC A1513) 
+OX=425011 GN=vps27 PE=3 SV=1
+Length=703
+
+ Score = 47.0 bits (110),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 21/58 (36%), Positives = 22/58 (38%), Gaps = 0/58 (0%)
+
+Query  68   RGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAP  125
+            R   Y   AP     P   G   GYG       P  A+ Y   PPQ    PA PQ AP
+Sbjct  607  RETPYQPTAPSAPDLPADQGPASGYGLQRQPTDPSAALYYAPQPPQGTPYPAYPQGAP  664
+
+
+> sp|Q6P6R0|LFG1_RAT Protein lifeguard 1 OS=Rattus norvegicus OX=10116 
+GN=Grina PE=2 SV=1
+Length=348
+
+ Score = 45.8 bits (107),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 23/65 (35%), Positives = 24/65 (37%), Gaps = 11/65 (17%)
+
+Query  62   YGRGYGRGNGYGYGA-PYGYGAPYGYGA----PYG-YGAPYGYGA-PYGAMPYGAMP---  111
+             G   G          P   GAPY   A    PYG  G P+G G  P G  P G  P   
+Sbjct  19   PGYPVGPQAPMPPYVQPPYPGAPYPQAAFQPSPYGQPGYPHGPGPYPQGGYPQGPYPQGG  78
+
+Query  112  -PQMP  115
+             PQ P
+Sbjct  79   YPQGP  83
+
+
+ Score = 41.6 bits (96),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 27/84 (32%), Positives = 31/84 (37%), Gaps = 22/84 (26%)
+
+Query  62   YGRGYGRGN----GYG-YGAPYGYGA-PYGYGAPYGYGAPYGYGAPYGAMPYGAMPP---  112
+             G  Y +       YG  G P+G G  P G G P G   P G G P G  P    PP   
+Sbjct  38   PGAPYPQAAFQPSPYGQPGYPHGPGPYPQG-GYPQGP-YPQG-GYPQGPYPQSPFPPNPY  94
+
+Query  113  ------QMPAAPA----QPQAAPS  126
+                  Q P +P     Q +  PS
+Sbjct  95   GQPPPFQDPGSPQHGNYQEEGPPS  118
+
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 17/52 (33%), Positives = 18/52 (35%), Gaps = 3/52 (6%)
+
+Query  71   GYGYGAPYGYGAPYGYGA-PYGYGAPYGYGAPYGAMPYG-AMPPQMPAAPAQ  120
+                G P G  AP      P   GAPY   A +   PYG    P  P    Q
+Sbjct  16   PPNPGYPVGPQAPMPPYVQPPYPGAPY-PQAAFQPSPYGQPGYPHGPGPYPQ  66
+
+
+> sp|A4J5X2|IF2_DESRM Translation initiation factor IF-2 OS=Desulfotomaculum 
+reducens (strain MI-1) OX=349161 GN=infB PE=3 
+SV=1
+Length=985
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 34/88 (39%), Positives = 38/88 (43%), Gaps = 8/88 (9%)
+
+Query  45   GDGYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAPYGYGAPYGYGAPYGYGAPYG---YG  99
+            G  YGD     GG  R YG R  G +G  YG     G G  YG     G G P G    G
+Sbjct  269  GRPYGDR--PQGGQSRPYGDRPQGGQGRPYGDRPQGGQGRHYGDRPQGGQGRPQGAGRPG  326
+
+Query  100  APYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            A  GA P    PP+  A P +P  AP +
+Sbjct  327  ANRGAGPSIPKPPEQVAQP-KPTKAPDK  353
+
+
+ Score = 44.3 bits (103),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 31/81 (38%), Positives = 32/81 (40%), Gaps = 11/81 (14%)
+
+Query  55   MGGGGR--------GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMP  106
+             GG GR        G GR YG     G G PYG     G G PYG     G G PYG  P
+Sbjct  181  QGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRP  240
+
+Query  107  YGAMPPQMPAAPAQPQAAPSR  127
+             G    Q      +PQ   SR
+Sbjct  241  QGG---QGRPYGDRPQGGQSR  258
+
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 37/100 (37%), Positives = 39/100 (39%), Gaps = 19/100 (19%)
+
+Query  45   GDGYGDFNMSMGGGGR--------GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPY  96
+            G  YGD     GG GR        G GR YG     G G PYG     G G PYG     
+Sbjct  185  GRPYGDR--PQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQG  242
+
+Query  97   GYGAPYG-------AMPYGAMPPQMPAAP--AQPQAAPSR  127
+            G G PYG       + PYG  P      P   +PQ   SR
+Sbjct  243  GQGRPYGDRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQSR  282
+
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 32/91 (35%), Positives = 33/91 (36%), Gaps = 11/91 (12%)
+
+Query  45   GDGYGDFNMSMGGGGRGYG--------RGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPY  96
+            G G    N   G  GR YG        R YG     G G PYG     G G PYG     
+Sbjct  147  GQGRPQANRPQGSQGRPYGGRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQG  206
+
+Query  97   GYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            G G PYG  P G    Q      +PQ    R
+Sbjct  207  GQGRPYGDRPQGG---QGRPYGDRPQGGQGR  234
+
+
+ Score = 42.3 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 40/123 (33%), Positives = 42/123 (34%), Gaps = 30/123 (24%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYG--------RGYGRGNGYGYGAP  77
+            GG G  YG+      G  +GD         GG GR YG        R YG     G G P
+Sbjct  218  GGQGRPYGDRPQGGQGRPYGD------RPQGGQGRPYGDRPQGGQSRPYGDRPQGGQGRP  271
+
+Query  78   YGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGA-------------MPPQMPAAP-AQPQA  123
+            YG     G   PYG     G G PYG  P G                PQ    P A   A
+Sbjct  272  YGDRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQGRHYGDRPQGGQGRPQGAGRPGANRGA  331
+
+Query  124  APS  126
+             PS
+Sbjct  332  GPS  334
+
+
+ Score = 41.6 bits (96),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 39/113 (35%), Positives = 43/113 (38%), Gaps = 20/113 (18%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGD--------GYGDFNMSMGGGGRGYG--------RGYGRG  69
+            GG G  YG+      G  +GD         YGD     GG GR YG        R YG  
+Sbjct  230  GGQGRPYGDRPQGGQGRPYGDRPQGGQSRPYGDR--PQGGQGRPYGDRPQGGQSRPYGDR  287
+
+Query  70   NGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQ  122
+               G G PYG     G G  YG     G G P GA   GA     P+ P  P+
+Sbjct  288  PQGGQGRPYGDRPQGGQGRHYGDRPQGGQGRPQGAGRPGANRGAGPSIPKPPE  340
+
+
+ Score = 41.2 bits (95),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 35/104 (34%), Positives = 38/104 (37%), Gaps = 8/104 (8%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGD----GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYG  81
+            GG G  YG+      G  +GD    G G        GG+G  R YG     G G PYG  
+Sbjct  194  GGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQG--RPYGDRPQGGQGRPYGDR  251
+
+Query  82   APYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAP  125
+               G   PYG     G G PYG  P G         P   Q  P
+Sbjct  252  PQGGQSRPYGDRPQGGQGRPYGDRPQGGQSRPYGDRPQGGQGRP  295
+
+
+> sp|Q9VT65|CANB_DROME Calpain-B OS=Drosophila melanogaster OX=7227 
+GN=CalpB PE=1 SV=2
+Length=925
+
+ Score = 45.4 bits (106),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 26/89 (29%), Positives = 31/89 (35%), Gaps = 16/89 (18%)
+
+Query  52   NMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMP  111
+            N+S           Y  G  Y  G P     PY   AP         G P   MPY  MP
+Sbjct  117  NVSSLPYPTAPMAPYPTGMPYPTGMPQ-PNLPY-PAAPLAPYPSAMPGLPGMPMPYAPMP  174
+
+Query  112  ----PQM---------PAAPAQPQAAPSR  127
+                PQ          P AP  P++AP++
+Sbjct  175  TSPAPQHNIGFPALPYPTAPP-PESAPTQ  202
+
+
+> sp|Q9ESF4|LFG1_MOUSE Protein lifeguard 1 OS=Mus musculus OX=10090 
+GN=Grina PE=2 SV=1
+Length=345
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 25/85 (29%), Positives = 30/85 (35%), Gaps = 19/85 (22%)
+
+Query  57   GGGRGYGRGYGRGNGYG-YGAPYGYGA-PYGYGAPYGYGAPYGYGAPYGAMPYGAMPP--  112
+             G       +   + YG  G P+G    P G G P G   P G G P G  P    PP  
+Sbjct  35   PGAPYPQAPFQP-SPYGQPGYPHGPSPYPQG-GYPQGP-YPQG-GYPQGPYPQSPFPPNP  90
+
+Query  113  -------QMPAAPA----QPQAAPS  126
+                   Q P +P     Q +  PS
+Sbjct  91   YGQPPPFQDPGSPQHGNYQEEGPPS  115
+
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 21/53 (40%), Positives = 24/53 (45%), Gaps = 6/53 (11%)
+
+Query  65   GYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYG-YGAPYGAMPYGAMP-PQMP  115
+                   Y   APY  GAPY   AP+   +PYG  G P+G  PY     PQ P
+Sbjct  22   PQAPMPPY-VQAPY-PGAPY-PQAPFQP-SPYGQPGYPHGPSPYPQGGYPQGP  70
+
+
+ Score = 41.2 bits (95),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 26/78 (33%), Positives = 27/78 (35%), Gaps = 22/78 (28%)
+
+Query  63   GRGYGRGNGYGYGAPYGY--GAPYGYGAPYG-----------YGAPYGY------GAPYG  103
+            G  Y   N  G  AP      APY  GAPY             G P+G       G P G
+Sbjct  11   GDSYPPQNIVGPQAPMPPYVQAPY-PGAPYPQAPFQPSPYGQPGYPHGPSPYPQGGYPQG  69
+
+Query  104  AMPYGAMPPQMPAAPAQP  121
+              P G   PQ P  P  P
+Sbjct  70   PYPQG-GYPQGP-YPQSP  85
+
+
+> sp|P0CQ88|PRP28_CRYNJ Pre-mRNA-splicing ATP-dependent RNA helicase 
+PRP28 OS=Cryptococcus neoformans var. neoformans serotype 
+D (strain JEC21 / ATCC MYA-565) OX=214684 GN=PRP28 PE=3 
+SV=1
+Length=738
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 36/86 (42%), Gaps = 15/86 (17%)
+
+Query  54   SMGGGGR----GYGR-GYGRGNGYGYG------APYGYGAPYGYGAPYGYGAPY---GYG  99
+            + G  GR    GYGR GYGR N  G+G       P     P G   P G  +     G G
+Sbjct  80   NAGPSGRNDRDGYGRDGYGRDNRRGFGDRRDGSGPAIPSGPRGAALPVGPRSMQSRNGGG  139
+
+Query  100  APYGAMPYGAMPPQMPAAPAQPQAAP  125
+             PY     G+ P Q+ + P    A+P
+Sbjct  140  LPYDGFAQGS-PSQLSSTPVAGSASP  164
+
+
+> sp|P0CQ89|PRP28_CRYNB Pre-mRNA-splicing ATP-dependent RNA helicase 
+PRP28 OS=Cryptococcus neoformans var. neoformans serotype 
+D (strain B-3501A) OX=283643 GN=PRP28 PE=3 SV=1
+Length=738
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 29/86 (34%), Positives = 36/86 (42%), Gaps = 15/86 (17%)
+
+Query  54   SMGGGGR----GYGR-GYGRGNGYGYG------APYGYGAPYGYGAPYGYGAPY---GYG  99
+            + G  GR    GYGR GYGR N  G+G       P     P G   P G  +     G G
+Sbjct  80   NAGPSGRNDRDGYGRDGYGRDNRRGFGDRRDGSGPAIPSGPRGAALPVGPRSMQSRNGGG  139
+
+Query  100  APYGAMPYGAMPPQMPAAPAQPQAAP  125
+             PY     G+ P Q+ + P    A+P
+Sbjct  140  LPYDGFAQGS-PSQLSSTPVAGSASP  164
+
+
+> sp|Q9DDT5|SPT5H_DANRE Transcription elongation factor SPT5 OS=Danio 
+rerio OX=7955 GN=supt5h PE=1 SV=1
+Length=1084
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/89 (26%), Positives = 25/89 (28%), Gaps = 19/89 (21%)
+
+Query  54   SMGGGGRGYGRGYGRGNGYGYGAPYGYG-------APYGYGAPYGYGAPYGYGAPYGAMP  106
+            S   G  G                Y +        +P GYG   G   P   G P    P
+Sbjct  810  SRTPGQSGAWDPNNPNTPSRPDDEYEFAYDDEPSPSPQGYG---GTPNPQTPGYPEVPSP  866
+
+Query  107  Y--GAMPPQMPAAPA-------QPQAAPS  126
+                   PQ P  PA        P AAPS
+Sbjct  867  QVNPQYNPQTPGTPAMYNTDQYSPYAAPS  895
+
+
+> sp|Q0I7K2|IF2_SYNS3 Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain CC9311) OX=64471 GN=infB PE=3 SV=1
+Length=1129
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/79 (27%), Positives = 23/79 (29%), Gaps = 13/79 (16%)
+
+Query  62   YGRGYGRGNGYGYG-APYGYGAPY----GYGAP-----YGYGA---PYGYGAPYGAMPYG  108
+                  RG        P   G P       GAP        G    P G       MP  
+Sbjct  220  PKAPVNRGAPARPAPKPELVGRPQPKRAAPGAPVRQIGQRPGVSPRPSGPPGQRANMPQR  279
+
+Query  109  AMPPQMPAAPAQPQAAPSR  127
+                Q P AP +P  APS+
+Sbjct  280  PAGSQRPGAPTRPGNAPSK  298
+
+
+> sp|Q0PVD8|SEC24_PICPA Protein transport protein SEC24 OS=Komagataella 
+pastoris OX=4922 GN=SEC24 PE=3 SV=1
+Length=960
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/83 (30%), Positives = 29/83 (35%), Gaps = 12/83 (14%)
+
+Query  49   GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPY----GYGAPYGYGAPYGYGAPYGA  104
+            G F      G + YG+ +  G   G       GA      G GAPY  GAP G     G 
+Sbjct  23   GSFGYGQQPGAQAYGQQFTPGA--GIAGQQLPGATQPNLNGQGAPY--GAPGGDQLAQGM  78
+
+Query  105  MPYGAMPPQMPAA----PAQPQA  123
+                  P Q P      P+Q Q 
+Sbjct  79   SSLNIQPNQQPQPVHQFPSQQQG  101
+
+
+> sp|P0CR70|SPT5_CRYNJ Transcription elongation factor SPT5 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain JEC21 
+/ ATCC MYA-565) OX=214684 GN=SPT5 PE=3 SV=1
+Length=1152
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/69 (36%), Positives = 26/69 (38%), Gaps = 4/69 (6%)
+
+Query  55   MGGGGRGYGRGYGRGNGYGYGAPYG--YGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPP  112
+            M      Y   Y      G GAP     G PY   AP  YGAP  Y AP   MP  + P 
+Sbjct  933  MAPPSAPYSAPYSAPTPAGNGAPTPAIPGNPYT--APTPYGAPTPYAAPTPGMPSLSAPT  990
+
+Query  113  QMPAAPAQP  121
+              P A   P
+Sbjct  991  PGPGAGIAP  999
+
+
+ Score = 42.3 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 25/72 (35%), Gaps = 6/72 (8%)
+
+Query  57    GGGRGYGRGYGRGNGYGYGAPYGYGAPYG---YGAPYGYGAPYGYGAPYGAMPYGAMPP-  112
+               G G       GN Y    PYG   PY     G P       G GA     P+GA  P 
+Sbjct  949   PAGNGAPTPAIPGNPYTAPTPYGAPTPYAAPTPGMPSLSAPTPGPGAGIAPTPFGAPTPY  1008
+
+Query  113   --QMPAAPAQPQ  122
+               Q   A AQ Q
+Sbjct  1009  GAQSYGASAQQQ  1020
+
+
+ Score = 38.5 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 24/70 (34%), Positives = 27/70 (39%), Gaps = 4/70 (6%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPA  116
+                 YGR    G+     AP    APY   APY    P G GAP  A+P        P 
+Sbjct  915  PAYGAYGRPEASGSRPSVMAP--PSAPYS--APYSAPTPAGNGAPTPAIPGNPYTAPTPY  970
+
+Query  117  APAQPQAAPS  126
+                P AAP+
+Sbjct  971  GAPTPYAAPT  980
+
+
+> sp|P0CR71|SPT5_CRYNB Transcription elongation factor SPT5 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain B-3501A) 
+OX=283643 GN=SPT5 PE=3 SV=1
+Length=1152
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/69 (36%), Positives = 26/69 (38%), Gaps = 4/69 (6%)
+
+Query  55   MGGGGRGYGRGYGRGNGYGYGAPYG--YGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPP  112
+            M      Y   Y      G GAP     G PY   AP  YGAP  Y AP   MP  + P 
+Sbjct  933  MAPPSAPYSAPYSAPTPAGNGAPTPAIPGNPYT--APTPYGAPTPYAAPTPGMPSLSAPT  990
+
+Query  113  QMPAAPAQP  121
+              P A   P
+Sbjct  991  PGPGAGIAP  999
+
+
+ Score = 42.3 bits (98),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 25/72 (35%), Gaps = 6/72 (8%)
+
+Query  57    GGGRGYGRGYGRGNGYGYGAPYGYGAPYG---YGAPYGYGAPYGYGAPYGAMPYGAMPP-  112
+               G G       GN Y    PYG   PY     G P       G GA     P+GA  P 
+Sbjct  949   PAGNGAPTPAIPGNPYTAPTPYGAPTPYAAPTPGMPSLSAPTPGPGAGIAPTPFGAPTPY  1008
+
+Query  113   --QMPAAPAQPQ  122
+               Q   A AQ Q
+Sbjct  1009  GAQSYGASAQQQ  1020
+
+
+ Score = 38.5 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 24/70 (34%), Positives = 27/70 (39%), Gaps = 4/70 (6%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPA  116
+                 YGR    G+     AP    APY   APY    P G GAP  A+P        P 
+Sbjct  915  PAYGAYGRPEASGSRPSVMAP--PSAPYS--APYSAPTPAGNGAPTPAIPGNPYTAPTPY  970
+
+Query  117  APAQPQAAPS  126
+                P AAP+
+Sbjct  971  GAPTPYAAPT  980
+
+
+> sp|P19246|NFH_MOUSE Neurofilament heavy polypeptide OS=Mus musculus 
+OX=10090 GN=Nefh PE=1 SV=3
+Length=1090
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 12/69 (17%), Positives = 14/69 (20%), Gaps = 1/69 (1%)
+
+Query  59   GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAA  117
+             +  G     G           G     G     G       P     P      + PA 
+Sbjct  521  AKSPGEAKSPGEAKSPAEAKSPGEAKSPGEAKSPGEAKSPAEPKSPAEPKSPAEAKSPAE  580
+
+Query  118  PAQPQAAPS  126
+            P  P    S
+Sbjct  581  PKSPATVKS  589
+
+
+ Score = 41.6 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 13/71 (18%), Positives = 15/71 (21%), Gaps = 1/71 (1%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMP  115
+            G  +  G           G     G     G       P     P           P+ P
+Sbjct  525  GEAKSPGEAKSPAEAKSPGEAKSPGEAKSPGEAKSPAEPKSPAEPKSPAEAKSPAEPKSP  584
+
+Query  116  AAPAQPQAAPS  126
+            A    P  A S
+Sbjct  585  ATVKSPGEAKS  595
+
+
+> sp|A6H584|CO6A5_MOUSE Collagen alpha-5(VI) chain OS=Mus musculus 
+OX=10090 GN=Col6a5 PE=1 SV=4
+Length=2640
+
+ Score = 42.3 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 17/75 (23%), Positives = 20/75 (27%), Gaps = 4/75 (5%)
+
+Query  57    GGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA----MPYGAMPP  112
+                +G     G+    G     G   P G   P G     G     G        G   P
+Sbjct  1580  PSSKGSRGMEGQRGPQGPSGQAGNPGPQGTQGPEGLQGSQGSSGNRGGKGDKGSQGYQGP  1639
+
+Query  113   QMPAAPAQPQAAPSR  127
+             Q    PA P+    R
+Sbjct  1640  QGSPGPAGPRGDIGR  1654
+
+
+> sp|Q801S8|CO6A1_XENLA Collagen alpha-1(VI) chain OS=Xenopus laevis 
+OX=8355 GN=col6a1 PE=1 SV=1
+Length=1045
+
+ Score = 42.3 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 31/109 (28%), Positives = 35/109 (32%), Gaps = 15/109 (14%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRG-------YGRGYGRGNGYGYGAPYGY  80
+            G PG  NGL    G+   +G  D       G RG        G   GRG     G P G 
+Sbjct  418  GDPG-SNGLAGEKGESGDEG--DAGADGSPGKRGEAGELGPPGVSGGRGARGEKGEP-GP  473
+
+Query  81   GAPYGYGAPYGYGAPYGYGAPYGAMPY----GAMPPQMPAAPAQPQAAP  125
+                G   P G     G   P G   Y    G   P+ P  P   +  P
+Sbjct  474  PGDQGRDGPAGPFGDPGEAGPQGPKGYRGDEGPRGPEGPKGPRGAKGLP  522
+
+
+> sp|Q5R539|SRRT_PONAB Serrate RNA effector molecule homolog OS=Pongo 
+abelii OX=9601 GN=SRRT PE=2 SV=1
+Length=871
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 21/60 (35%), Positives = 24/60 (40%), Gaps = 5/60 (8%)
+
+Query  62   YGRGYGRGNGYGYGAPYGYGAPYG---YGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAP  118
+              +  G       G PY +  P G   YG P      YG GA   A+P G  PP  P AP
+Sbjct  766  PAQPPGPAQSLTPGLPYPHQTPQGLMPYGQPRPPILGYGAGAVRPAVPTG-GPPY-PHAP  823
+
+
+> sp|A9KNW4|IF2_LACP7 Translation initiation factor IF-2 OS=Lachnoclostridium 
+phytofermentans (strain ATCC 700394 / DSM 18823 
+/ ISDg) OX=357809 GN=infB PE=3 SV=1
+Length=1131
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 27/90 (30%), Positives = 34/90 (38%), Gaps = 18/90 (20%)
+
+Query  45   GDGYGDFNMSMGGGGRGYGRGYGRGN----GYGYGA----PYGYGAPYGYGAPYGYGA--  94
+            G G        G G  G  R  G+G+      G G+    P G G+ YG   P G G+  
+Sbjct  273  GQGNYGDRRPQGQGSYGDRRPQGQGSYGDRPQGQGSYGDRPQGQGS-YGDRRPQGQGSYG  331
+
+Query  95   ---PYGYGA----PYGAMPYGAMPPQMPAA  117
+               P G G+    P G   YG   PQ   +
+Sbjct  332  DRRPQGQGSYGDRPQGQGSYGDRRPQGQGS  361
+
+
+ Score = 39.6 bits (91),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 26/81 (32%), Positives = 31/81 (38%), Gaps = 10/81 (12%)
+
+Query  45   GDGYGDFNMSMGGGGRGYGRGYGRGN----GYGYGAPYGYGAPYGYGA----PYGYGAPY  96
+            G G        G G  G  R  G+G+      G G+ YG   P G G+    P G G  Y
+Sbjct  315  GQGSYGDRRPQGQGSYGDRRPQGQGSYGDRPQGQGS-YGDRRPQGQGSYGDRPQGQGN-Y  372
+
+Query  97   GYGAPYGAMPYGAMPPQMPAA  117
+            G   P G   YG   PQ   +
+Sbjct  373  GDRRPGGQGSYGDRRPQGQGS  393
+
+
+> sp|A2AX52|CO6A4_MOUSE Collagen alpha-4(VI) chain OS=Mus musculus 
+OX=10090 GN=Col6a4 PE=1 SV=2
+Length=2309
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 17/71 (24%), Positives = 20/71 (28%), Gaps = 3/71 (4%)
+
+Query  57    GGGRGYGRGYGRGNGYGYGAPYG-YGAPYGYGAPYGYGAPYGYGAPYG-AMPYGAMPPQM  114
+              G  G     GR    G+    G  G     G P G     G   P G     G    + 
+Sbjct  1597  PGHPGPQGPRGRQGPPGFFGQKGDPGTQGNPGLP-GPSGSKGPDGPRGLKGEVGPAGERG  1655
+
+Query  115   PAAPAQPQAAP  125
+             P     P+  P
+Sbjct  1656  PRGQQGPRGQP  1666
+
+
+> sp|Q01W31|IF2_SOLUE Translation initiation factor IF-2 OS=Solibacter 
+usitatus (strain Ellin6076) OX=234267 GN=infB PE=3 SV=1
+Length=1001
+
+ Score = 41.6 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 17/79 (22%), Positives = 19/79 (24%), Gaps = 12/79 (15%)
+
+Query  56   GGGGRGYGRGYGRGNGYGYGAPYGYGAP---YGYGAPYGYGAPYGYGAPYGAMPYGAMPP  112
+            G G            G     P     P       AP     P    AP   +P     P
+Sbjct  262  GPGA--PSAPQRPLAGQPAARPVVPPRPDLVAKLSAPRAPVMPQQPAAPRPGVPKAPSAP  319
+
+Query  113  -------QMPAAPAQPQAA  124
+                   + P  P QP  A
+Sbjct  320  VPGQPIYRGPIRPGQPMVA  338
+
+
+> sp|Q2HH63|SEC24_CHAGB Protein transport protein SEC24 OS=Chaetomium 
+globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 / 
+NBRC 6347 / NRRL 1970) OX=306901 GN=SEC24 PE=3 SV=1
+Length=947
+
+ Score = 41.6 bits (96),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 29/88 (33%), Positives = 34/88 (39%), Gaps = 16/88 (18%)
+
+Query  56   GGGGRGYGRGYGRGNGYG-----YGA----PYGYGAPY---GYGAPYGY----GAPYGYG  99
+              G  GY +   +   YG     YGA    PYG  AP    GY AP  Y    GAP   G
+Sbjct  83   APGYGGYPQPEAQPATYGAQPAAYGAQPQQPYGMPAPAPAVGYQAPEPYYPSAGAPPVPG  142
+
+Query  100  APYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+               G     +     P A  QPQ  P++
+Sbjct  143  DVAGLASGMSAMNLGPGAHQQPQQVPAQ  170
+
+
+> sp|Q61072|ADAM9_MOUSE Disintegrin and metalloproteinase domain-containing 
+protein 9 OS=Mus musculus OX=10090 GN=Adam9 PE=1 
+SV=2
+Length=845
+
+ Score = 40.8 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 23/78 (29%), Gaps = 5/78 (6%)
+
+Query  46   DGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM  105
+            DG    N+S   G     R    G       P G G     G P     P G G      
+Sbjct  736  DGRNQANVSRQPGDPSISRP--PGGPNVSRPPGGPGVSRPPGGPGVSRPPGGPGVSRPPP  793
+
+Query  106  PYG---AMPPQMPAAPAQ  120
+             +G    +P      PAQ
+Sbjct  794  GHGNRFPVPTYAAKQPAQ  811
+
+
+> sp|Q3AZB7|IF2_SYNS9 Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain CC9902) OX=316279 GN=infB PE=3 SV=1
+Length=1176
+
+ Score = 40.4 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 24/72 (33%), Gaps = 11/72 (15%)
+
+Query  61   GYGRGY--GRGNGYGYGAPYGYGAPYGYGAPYGYGAPYG-----YGAP---YGAMPYG-A  109
+            G G     G G     G P   GAP   G P     P G      G P    G+   G  
+Sbjct  331  GVGAPQRPGTGVPQRQGGPARPGAPTRTGKPGAPTRPGGNTLELVGKPIRRDGSSASGRP  390
+
+Query  110  MPPQMPAAPAQP  121
+              P  P AP +P
+Sbjct  391  GAPTRPGAPTRP  402
+
+
+ Score = 40.4 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 26/97 (27%), Positives = 28/97 (29%), Gaps = 30/97 (31%)
+
+Query  57   GGGRGYGRGYGRGNGYG--------YGAPYGYGAPYGYGAPYGYGAPY------------  96
+               R        G   G         GAP   G P   GAP   G P             
+Sbjct  265  PTPRPAAAPSRPGAPQGQKPQIVSRAGAPPRPGTPPRVGAPTKTGTPARPTPRPELVGKP  324
+
+Query  97   ------GYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                  G GAP      G   PQ    PA+P  AP+R
+Sbjct  325  VPRRTGGVGAPQRP---GTGVPQRQGGPARP-GAPTR  357
+
+
+> sp|A6QPB3|COHA1_BOVIN Collagen alpha-1(XVII) chain OS=Bos taurus 
+OX=9913 GN=COL17A1 PE=2 SV=1
+Length=1473
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 20/69 (29%), Gaps = 2/69 (3%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYG-YGAPYGYGAPYGYGAPYGYGAPYGAMPYG-AMPPQM  114
+             G +G     G     G     G  G P   G P   G P   G      P G    P  
+Sbjct  730  PGAKGAMGPAGPDGHQGPRGEQGLPGMPGTRGLPGPSGDPGKPGLTGPQGPQGIPGTPGR  789
+
+Query  115  PAAPAQPQA  123
+            P    +P A
+Sbjct  790  PGVKGEPGA  798
+
+
+> sp|Q0KFR8|DNAA_CUPNH Chromosomal replication initiator protein 
+DnaA OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 
+428 / Stanier 337) OX=381666 GN=dnaA PE=3 SV=1
+Length=588
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 30/91 (33%), Positives = 35/91 (38%), Gaps = 14/91 (15%)
+
+Query  45   GDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAP-----YGYGAPYGYGAPYGYG  99
+            G G G +  +   GG+  G+      G   G  YGYG P     YG G P  YG P   G
+Sbjct  110  GTGMGGYPGAQPMGGQAMGQPPFAMPGQQPG--YGYGEPVSAAGYGMGQPP-YGNPGNPG  166
+
+Query  100  APYG-----AMPYGAMPPQMPAAPA-QPQAA  124
+             P G      +P GA     P     QP  A
+Sbjct  167  NPAGMPSAAPVPAGARGQPHPGQHGHQPHGA  197
+
+
+> sp|Q9Y2H5|PKHA6_HUMAN Pleckstrin homology domain-containing family 
+A member 6 OS=Homo sapiens OX=9606 GN=PLEKHA6 PE=1 SV=4
+Length=1048
+
+ Score = 39.6 bits (91),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 22/80 (28%), Positives = 25/80 (31%), Gaps = 12/80 (15%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYGYGAPYGY-----GAPYGYGAPYGYGAPYGAMPYGAMP  111
+               +  G G GRG       P              G P G       G+PY   P G   
+Sbjct  203  PEAKTRGEGDGRGCEKAERRPERPEVKKEPPVKANGLPAGPEPASEPGSPY---PEGPRV  259
+
+Query  112  PQMPAAPAQPQA----APSR  127
+            P     PAQP      +PSR
+Sbjct  260  PGGGEQPAQPNGWQYHSPSR  279
+
+
+> sp|Q9P7E8|APP1_SCHPO Protein app1 OS=Schizosaccharomyces pombe 
+(strain 972 / ATCC 24843) OX=284812 GN=app1 PE=2 SV=1
+Length=857
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/48 (35%), Positives = 20/48 (42%), Gaps = 2/48 (4%)
+
+Query  76   APYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+            AP  +  P    AP    AP    AP   +P     PQ PA P  P+A
+Sbjct  526  APSVHQPPAAPVAPEVPSAPQRPAAP--VVPEAPSVPQRPAVPVVPEA  571
+
+
+> sp|A5PMY6|COL12_DANRE Collectin-12 OS=Danio rerio OX=7955 GN=colec12 
+PE=2 SV=1
+Length=720
+
+ Score = 39.3 bits (90),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 21/62 (34%), Positives = 21/62 (34%), Gaps = 4/62 (6%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYG-YGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMP  115
+             G RG     G     G   P G  G P   G P   G P G   P G  P G   P  P
+Sbjct  494  PGSRGSPGPKGSRGSGGRQGPSGEKGDPGIPGMPGRDGQP-GPTGPQG--PQGLRGPAGP  550
+
+Query  116  AA  117
+            A 
+Sbjct  551  AG  552
+
+
+ Score = 38.1 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 19/60 (32%), Gaps = 2/60 (3%)
+
+Query  63   GRGYGRGNGYGYGAPYGYGAPYGYGAPYG-YGAPYGYGAPYGAMPYGAMPPQMPAAPAQP  121
+            G    RG+  G     G G   G     G  G P   G      P G   PQ    PA P
+Sbjct  492  GPPGSRGSP-GPKGSRGSGGRQGPSGEKGDPGIPGMPGRDGQPGPTGPQGPQGLRGPAGP  550
+
+
+> sp|Q5R9T2|VP37C_PONAB Vacuolar protein sorting-associated protein 
+37C OS=Pongo abelii OX=9601 GN=VPS37C PE=2 SV=1
+Length=355
+
+ Score = 38.5 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 21/74 (28%), Positives = 25/74 (34%), Gaps = 7/74 (9%)
+
+Query  58   GGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPY-------GAMPYGAM  110
+            G  GY     R      G P       G G P   G     G P        G  P   +
+Sbjct  254  GAAGYSWSPQRSTPPRPGYPGTPTGASGPGYPLAGGRALSPGYPQQSPYPATGGKPPYPI  313
+
+Query  111  PPQMPAAPAQPQAA  124
+             PQ+P+ P QPQ +
+Sbjct  314  QPQLPSFPGQPQPS  327
+
+
+> sp|Q9LFT8|CDKC1_ARATH Cyclin-dependent kinase C-1 OS=Arabidopsis 
+thaliana OX=3702 GN=CDKC-1 PE=1 SV=1
+Length=505
+
+ Score = 38.5 bits (88),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 25/106 (24%), Positives = 29/106 (27%), Gaps = 16/106 (15%)
+
+Query  17   AGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNG--YGY  74
+             G S +A  W  GP +                    +  G     YG+  G      Y  
+Sbjct  383  GGQSHAAPHWPAGPNHPTN------------NAPPQVPAGPSHNFYGKPRGPPGPNRYPP  430
+
+Query  75   GAPYGYGAPYGYGA-PYGYGAPYGYGAPYGAMPYGA-MPPQMPAAP  118
+                  G     G    G   P G GAPY A P G    P     P
+Sbjct  431  SGNQSGGYNQSRGGYSSGSYPPQGRGAPYVAGPRGPSGGPYGVGPP  476
+
+
+> sp|A5GVG4|IF2_SYNR3 Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain RCC307) OX=316278 GN=infB PE=3 SV=1
+Length=1106
+
+ Score = 38.5 bits (88),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 22/73 (30%), Positives = 25/73 (34%), Gaps = 9/73 (12%)
+
+Query  60   RGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG---APYGYGAPYGAMPYGAMPPQMPA  116
+            R      GR    G GAP   G P G   P   G        G+          PP  P 
+Sbjct  314  REPNAPQGR---QG-GAPSRPGGPGGMRKPVSPGELMQLQKPGSRPTPGDGPRRPPARPG  369
+
+Query  117  --APAQPQAAPSR  127
+              AP +P  AP+R
+Sbjct  370  SEAPRRPGEAPNR  382
+
+
+> sp|Q60YF6|MED29_CAEBR Mediator of RNA polymerase II transcription 
+subunit 29 OS=Caenorhabditis briggsae OX=6238 GN=mdt-29 
+PE=3 SV=3
+Length=473
+
+ Score = 38.5 bits (88),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 15/75 (20%), Positives = 25/75 (33%), Gaps = 0/75 (0%)
+
+Query  49   GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYG  108
+            G  ++   G     G     G+    G+ +  G+    G+     +  G G P     YG
+Sbjct  190  GPHSVQQPGSVLAPGSIQQPGSLLAPGSMHQPGSVQQPGSLGAPLSHTGAGGPQSVQGYG  249
+
+Query  109  AMPPQMPAAPAQPQA  123
+                Q P +   P +
+Sbjct  250  PGSVQPPGSAQAPSS  264
+
+
+> sp|A5D8V6|VP37C_HUMAN Vacuolar protein sorting-associated protein 
+37C OS=Homo sapiens OX=9606 GN=VPS37C PE=1 SV=2
+Length=355
+
+ Score = 38.1 bits (87),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 21/74 (28%), Positives = 25/74 (34%), Gaps = 7/74 (9%)
+
+Query  58   GGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPY-------GAMPYGAM  110
+            G  GY     R      G P       G G P   G     G P        G  P   +
+Sbjct  254  GAAGYSWSPQRSMPPRPGYPGTPMGASGPGYPLRGGRAPSPGYPQQSPYPATGGKPPYPI  313
+
+Query  111  PPQMPAAPAQPQAA  124
+             PQ+P+ P QPQ +
+Sbjct  314  QPQLPSFPGQPQPS  327
+
+
+> sp|A8IG20|IF2_AZOC5 Translation initiation factor IF-2 OS=Azorhizobium 
+caulinodans (strain ATCC 43989 / DSM 5975 / JCM 20966 
+/ NBRC 14845 / NCIMB 13405 / ORS 571) OX=438753 GN=infB 
+PE=3 SV=1
+Length=1058
+
+ Score = 38.5 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 13/57 (23%), Positives = 14/57 (25%), Gaps = 0/57 (0%)
+
+Query  64   RGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+            R    G      AP   G   G G P    +    G P      G      P    Q
+Sbjct  211  RPAAGGAQRSGAAPQRPGTSGGPGRPGAPASGQRSGGPGSDRRGGPGGQNRPGQNRQ  267
+
+
+> sp|P21917|DRD4_HUMAN D(4) dopamine receptor OS=Homo sapiens OX=9606 
+GN=DRD4 PE=1 SV=2
+Length=467
+
+ Score = 38.1 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 18/70 (26%), Gaps = 9/70 (13%)
+
+Query  64   RGYGRGNGYGYG----APYGYGAPYGY----GAPYGYGAPYGYGAPYGAMPYGAMPPQMP  115
+                 G   G      AP   G P        AP   G P     P    P     P+ P
+Sbjct  263  APPAPGLPRGPCGPDCAPAAPGLPPDPCGPDCAPPAPGLPQDPCGP-DCAPPAPGLPRGP  321
+
+Query  116  AAPAQPQAAP  125
+              P     AP
+Sbjct  322  CGPDCAPPAP  331
+
+
+> sp|B2AWS3|PAN1_PODAN Actin cytoskeleton-regulatory complex protein 
+PAN1 OS=Podospora anserina (strain S / ATCC MYA-4624 / 
+DSM 980 / FGSC 10383) OX=515849 GN=PAN1 PE=3 SV=2
+Length=1441
+
+ Score = 38.1 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 21/86 (24%), Positives = 26/86 (30%), Gaps = 14/86 (16%)
+
+Query  48   YGDFNMSMGGGGRGYGRGY-----GRGNGY------GYGAPYGYGAPYGYGAPYGYGAPY  96
+            Y + N  +GG  +  G+       G G G       G  AP   G          Y    
+Sbjct  2    YSNPNSFLGGNSQRPGQPQYGNQFGAGAGQPQLQQPGPFAPQPTGFGQQPALQQQY---T  58
+
+Query  97   GYGAPYGAMPYGAMPPQMPAAPAQPQ  122
+            GY       P G + PQ       PQ
+Sbjct  59   GYPGLQAPQPTGQLQPQFTGFGQAPQ  84
+
+
+
+Lambda      K        H        a         alpha
+   0.301    0.135    0.430    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0415    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5027495986
+Results from round 3
+
+
+Query= SGP1_CHRVI
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|O52057|SGP1_ALLVD Sulfur globule protein CV1 OS=Allochromati...  89.8    5e-22
+  sp|A6H584|CO6A5_MOUSE Collagen alpha-5(VI) chain OS=Mus musculu...  84.0    8e-18
+  sp|Q7UZZ9|IF2_PROMP Translation initiation factor IF-2 OS=Proch...  81.7    4e-17
+  sp|P27951|BAG_STRAG IgA FC receptor OS=Streptococcus agalactiae...  81.3    6e-17
+  sp|P06914|CSP_PLAYO Circumsporozoite protein OS=Plasmodium yoel...  75.2    2e-15
+  sp|Q4U9M9|104K_THEAN 104 kDa microneme/rhoptry antigen OS=Theil...  73.6    2e-14
+  sp|A4J5X2|IF2_DESRM Translation initiation factor IF-2 OS=Desul...  69.0    8e-13
+  sp|Q61072|ADAM9_MOUSE Disintegrin and metalloproteinase domain-...  68.2    1e-12
+  sp|A2AX52|CO6A4_MOUSE Collagen alpha-4(VI) chain OS=Mus musculu...  68.6    1e-12
+  sp|P75100|Y013_MYCPN UPF0134 protein MPN_013 OS=Mycoplasma pneu...  62.5    2e-11
+  sp|Q801S8|CO6A1_XENLA Collagen alpha-1(VI) chain OS=Xenopus lae...  62.1    2e-10
+  sp|Q32L53|LFG1_BOVIN Protein lifeguard 1 OS=Bos taurus OX=9913 ...  57.8    2e-09
+  sp|Q9VT65|CANB_DROME Calpain-B OS=Drosophila melanogaster OX=72...  58.2    3e-09
+  sp|Q9ESF4|LFG1_MOUSE Protein lifeguard 1 OS=Mus musculus OX=100...  56.7    5e-09
+  sp|P27177|PRIO_CHICK Major prion protein homolog OS=Gallus gall...  55.9    5e-09
+  sp|Q8CQD9|PLS_STAES Accumulation-associated protein OS=Staphylo...  57.5    7e-09
+  sp|A9KNW4|IF2_LACP7 Translation initiation factor IF-2 OS=Lachn...  55.9    2e-08
+  sp|Q7Z429|LFG1_HUMAN Protein lifeguard 1 OS=Homo sapiens OX=960...  55.1    2e-08
+  sp|Q6P6R0|LFG1_RAT Protein lifeguard 1 OS=Rattus norvegicus OX=...  54.4    3e-08
+  sp|Q01W31|IF2_SOLUE Translation initiation factor IF-2 OS=Solib...  54.0    8e-08
+  sp|Q3AHW1|IF2_SYNSC Translation initiation factor IF-2 OS=Synec...  53.6    1e-07
+  sp|Q2HH63|SEC24_CHAGB Protein transport protein SEC24 OS=Chaeto...  53.6    1e-07
+  sp|A2QWA2|VPS27_ASPNC Vacuolar protein sorting-associated prote...  53.2    1e-07
+  sp|P0CR70|SPT5_CRYNJ Transcription elongation factor SPT5 OS=Cr...  52.4    2e-07
+  sp|P0CR71|SPT5_CRYNB Transcription elongation factor SPT5 OS=Cr...  52.4    2e-07
+  sp|A7H9F3|IF2_ANADF Translation initiation factor IF-2 OS=Anaer...  51.3    5e-07
+  sp|A5DIP0|DHH1_PICGU ATP-dependent RNA helicase DHH1 OS=Meyeroz...  50.9    7e-07
+  sp|Q9DDT5|SPT5H_DANRE Transcription elongation factor SPT5 OS=D...  50.5    1e-06
+  sp|Q0I7K2|IF2_SYNS3 Translation initiation factor IF-2 OS=Synec...  49.7    2e-06
+  sp|Q5R539|SRRT_PONAB Serrate RNA effector molecule homolog OS=P...  49.0    3e-06
+  sp|Q3AZB7|IF2_SYNS9 Translation initiation factor IF-2 OS=Synec...  45.9    3e-05
+  sp|P19246|NFH_MOUSE Neurofilament heavy polypeptide OS=Mus musc...  43.6    1e-04
+
+Sequences not found previously or not previously below threshold:
+
+  sp|A8TX70|CO6A5_HUMAN Collagen alpha-5(VI) chain OS=Homo sapien...  58.2    4e-09
+  sp|A8G6Z5|IF2_PROM2 Translation initiation factor IF-2 OS=Proch...  55.9    2e-08
+  sp|A2BYM0|IF2_PROM5 Translation initiation factor IF-2 OS=Proch...  55.9    2e-08
+  sp|A2BT70|IF2_PROMS Translation initiation factor IF-2 OS=Proch...  55.1    3e-08
+  sp|A5PMY6|COL12_DANRE Collectin-12 OS=Danio rerio OX=7955 GN=co...  54.4    5e-08
+  sp|P30204|MSRE_MOUSE Macrophage scavenger receptor types I and ...  54.0    5e-08
+  sp|Q318P8|IF2_PROM9 Translation initiation factor IF-2 OS=Proch...  53.6    1e-07
+  sp|P12111|CO6A3_HUMAN Collagen alpha-3(VI) chain OS=Homo sapien...  52.1    3e-07
+  sp|A1R516|IF2_PAEAT Translation initiation factor IF-2 OS=Paena...  51.3    5e-07
+  sp|Q8C6K9|CO6A6_MOUSE Collagen alpha-6(VI) chain OS=Mus musculu...  49.0    4e-06
+  sp|P15989|CO6A3_CHICK Collagen alpha-3(VI) chain OS=Gallus gall...  46.7    2e-05
+  sp|C0ZYA5|IF2_RHOE4 Translation initiation factor IF-2 OS=Rhodo...  46.3    3e-05
+  sp|A6QPB3|COHA1_BOVIN Collagen alpha-1(XVII) chain OS=Bos tauru...  45.5    4e-05
+  sp|Q7S4P3|SEC24_NEUCR Protein transport protein sec24 OS=Neuros...  45.1    5e-05
+  sp|Q99PG2|OGFR_MOUSE Opioid growth factor receptor OS=Mus muscu...  45.1    5e-05
+  sp|Q9JMH4|COHA1_MESAU Collagen alpha-1(XVII) chain OS=Mesocrice...  44.4    1e-04
+  sp|A1VG83|IF2_DESVV Translation initiation factor IF-2 OS=Desul...  44.0    1e-04
+  sp|Q72ER1|IF2_DESVH Translation initiation factor IF-2 OS=Desul...  44.0    1e-04
+  sp|Q08DF4|DYN1_BOVIN Dynamin-1 OS=Bos taurus OX=9913 GN=DNM1 PE...  44.0    1e-04
+  sp|P25439|BRM_DROME ATP-dependent helicase brm OS=Drosophila me...  43.6    2e-04
+  sp|A0JUU0|IF2_ARTS2 Translation initiation factor IF-2 OS=Arthr...  43.2    2e-04
+  sp|P15988|CO6A2_CHICK Collagen alpha-2(VI) chain OS=Gallus gall...  42.8    3e-04
+  sp|P12110|CO6A2_HUMAN Collagen alpha-2(VI) chain OS=Homo sapien...  42.8    3e-04
+  sp|P0CP46|PABP_CRYNJ Polyadenylate-binding protein, cytoplasmic...  42.4    3e-04
+  sp|P0CP47|PABP_CRYNB Polyadenylate-binding protein, cytoplasmic...  42.4    3e-04
+  sp|Q9PU36|PCLO_CHICK Protein piccolo (Fragment) OS=Gallus gallu...  42.8    4e-04
+  sp|A5GNJ0|IF2_SYNPW Translation initiation factor IF-2 OS=Synec...  42.4    4e-04
+  sp|Q67P86|IF2_SYMTH Translation initiation factor IF-2 OS=Symbi...  42.0    5e-04
+  sp|P14106|C1QB_MOUSE Complement C1q subcomponent subunit B OS=M...  41.7    5e-04
+  sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 G...  42.0    5e-04
+  sp|Q02788|CO6A2_MOUSE Collagen alpha-2(VI) chain OS=Mus musculu...  41.7    6e-04
+  sp|Q9LFT8|CDKC1_ARATH Cyclin-dependent kinase C-1 OS=Arabidopsi...  41.7    6e-04
+  sp|P15711|104K_THEPA 104 kDa microneme/rhoptry antigen OS=Theil...  41.7    7e-04
+  sp|A5GVG4|IF2_SYNR3 Translation initiation factor IF-2 OS=Synec...  41.7    7e-04
+  sp|A8IG20|IF2_AZOC5 Translation initiation factor IF-2 OS=Azorh...  41.7    7e-04
+  sp|P20785|CO6A1_CHICK Collagen alpha-1(VI) chain OS=Gallus gall...  41.7    7e-04
+  sp|C0ZPK5|FTSH_RHOE4 ATP-dependent zinc metalloprotease FtsH OS...  41.3    0.001
+  sp|P0CQ80|DHH1_CRYNJ ATP-dependent RNA helicase DHH1 OS=Cryptoc...  40.9    0.001
+  sp|P0CQ81|DHH1_CRYNB ATP-dependent RNA helicase DHH1 OS=Cryptoc...  40.9    0.001
+  sp|Q46J13|IF2_PROMT Translation initiation factor IF-2 OS=Proch...  41.3    0.001
+  sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=1011...  41.3    0.001
+  sp|P21575|DYN1_RAT Dynamin-1 OS=Rattus norvegicus OX=10116 GN=D...  40.5    0.002
+  sp|Q05193|DYN1_HUMAN Dynamin-1 OS=Homo sapiens OX=9606 GN=DNM1 ...  40.5    0.002
+  sp|P97384|ANX11_MOUSE Annexin A11 OS=Mus musculus OX=10090 GN=A...  40.1    0.002
+  sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 GN...  40.5    0.002
+  sp|B2RNN3|C1T9B_HUMAN Complement C1q and tumor necrosis factor-...  39.7    0.002
+  sp|Q4JV51|IF2_CORJK Translation initiation factor IF-2 OS=Coryn...  39.3    0.004
+  sp|Q4P2B6|SEC31_USTMA Protein transport protein SEC31 OS=Ustila...  39.3    0.004
+  sp|P75330|P30_MYCPN P30 adhesin OS=Mycoplasma pneumoniae (strai...  39.0    0.004
+  sp|Q1IIT3|IF2_KORVE Translation initiation factor IF-2 OS=Korib...  39.0    0.005
+  sp|A0PQC4|IF2_MYCUA Translation initiation factor IF-2 OS=Mycob...  39.0    0.005
+  sp|Q9UMD9|COHA1_HUMAN Collagen alpha-1(XVII) chain OS=Homo sapi...  39.0    0.006
+  sp|P0C862|C1T9A_HUMAN Complement C1q and tumor necrosis factor-...  38.6    0.006
+  sp|Q2UY09|COSA1_HUMAN Collagen alpha-1(XXVIII) chain OS=Homo sa...  38.6    0.006
+  sp|P39053|DYN1_MOUSE Dynamin-1 OS=Mus musculus OX=10090 GN=Dnm1...  38.6    0.008
+  sp|Q04118|PRB3_HUMAN Basic salivary proline-rich protein 3 OS=H...  38.2    0.008
+  sp|A6W7Z2|IF2_KINRD Translation initiation factor IF-2 OS=Kineo...  38.2    0.009
+
+
+> sp|O52057|SGP1_ALLVD Sulfur globule protein CV1 OS=Allochromatium 
+vinosum (strain ATCC 17899 / DSM 180 / NBRC 103801 / NCIMB 
+10441 / D) OX=572477 GN=sgpA PE=1 SV=1
+Length=127
+
+ Score = 89.8 bits (221),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 55/55 (100%), Positives = 55/55 (100%), Gaps = 0/55 (0%)
+
+Query  1   MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSM  55
+           MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSM
+Sbjct  1   MIKSNRITACALAALFAGASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSM  55
+
+
+> sp|A6H584|CO6A5_MOUSE Collagen alpha-5(VI) chain OS=Mus musculus 
+OX=10090 GN=Col6a5 PE=1 SV=4
+Length=2640
+
+ Score = 84.0 bits (206),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 23/108 (21%), Positives = 29/108 (27%), Gaps = 8/108 (7%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGY----GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAP  83
+             G PG  + +    G+    G     G          +G     G+    G     G   P
+Sbjct  1547  GDPGKDSNIKGQKGEKGERGRQGITGQKGTHGRPSSKGSRGMEGQRGPQGPSGQAGNPGP  1606
+
+Query  84    YGYGAPYGYGAPYGYGAPYGA----MPYGAMPPQMPAAPAQPQAAPSR  127
+              G   P G     G     G        G   PQ    PA P+    R
+Sbjct  1607  QGTQGPEGLQGSQGSSGNRGGKGDKGSQGYQGPQGSPGPAGPRGDIGR  1654
+
+
+ Score = 46.3 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 20/105 (19%), Positives = 25/105 (24%), Gaps = 13/105 (12%)
+
+Query  31    GYGNGLWDNMGDMFGDGYGD-FNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGY--  86
+             G+  G     GD    GY      +   G +G  G     G         G     G   
+Sbjct  1511  GFRGG-KGQKGDPGNQGYPGIRGAAGEDGEKGFPGDPGDPGKDSNIKGQKGEKGERGRQG  1569
+
+Query  87    --------GAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+                     G P   G+    G      P G      P     P+ 
+Sbjct  1570  ITGQKGTHGRPSSKGSRGMEGQRGPQGPSGQAGNPGPQGTQGPEG  1614
+
+
+ Score = 43.6 bits (101),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 23/100 (23%), Positives = 28/100 (28%), Gaps = 1/100 (1%)
+
+Query  29    GPGYGNGLWDNMGDMFGDGYGDFNMSMGG-GGRGYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+             GP    G   + G+  G G        G  G  G     G     G+G   G     G  
+Sbjct  1611  GPEGLQGSQGSSGNRGGKGDKGSQGYQGPQGSPGPAGPRGDIGRPGFGGRKGEPGVPGGP  1670
+
+Query  88    APYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+              P G     G    YG   YG    +    P      P +
+Sbjct  1671  GPVGPPGQRGKQGDYGIPGYGQTGRKGVKGPTGFPGDPGQ  1710
+
+
+> sp|Q7UZZ9|IF2_PROMP Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus subsp. pastoris (strain CCMP1986 / NIES-2087 
+/ MED4) OX=59919 GN=infB PE=3 SV=1
+Length=1169
+
+ Score = 81.7 bits (200),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 28/106 (26%), Positives = 32/106 (30%), Gaps = 14/106 (13%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGY----GDFNMSMGG-----GGRGYGRGYGRGNGYGYGAPY  78
+            GGP Y  G  +  G  +  G     G  N          G    G     G     G PY
+Sbjct  300  GGP-YRQGSPNRPGTPYRQGAPNRPGGQNRQGVPNREGGGPYRQGSPNRPGTPNRPGTPY  358
+
+Query  79   GYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAA  124
+              GAP   G     G P       G  PY    P  P  P +  A+
+Sbjct  359  RQGAPNRPGGQNRQGVPNR----EGGGPYRQGSPNRPGTPYRQGAS  400
+
+
+ Score = 77.1 bits (188),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 29/101 (29%), Positives = 34/101 (34%), Gaps = 9/101 (9%)
+
+Query  34   NGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+            N    N      +     N   G   +  G     G  Y  G+P   G PY  GAP   G
+Sbjct  267  NRPNSNSRQPSSNTQISANRPGGQNRQ--GVPNREGGPYRQGSPNRPGTPYRQGAPNRPG  324
+
+Query  94   APYGYGAP--YGAMPYGAMPPQMPAAPAQP-----QAAPSR  127
+                 G P   G  PY    P  P  P +P     Q AP+R
+Sbjct  325  GQNRQGVPNREGGGPYRQGSPNRPGTPNRPGTPYRQGAPNR  365
+
+
+ Score = 72.5 bits (176),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 25/102 (25%), Positives = 33/102 (32%), Gaps = 14/102 (14%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+            GG     G+ +  G  +  G  +            G  Y +G     G     G P   G
+Sbjct  288  GGQN-RQGVPNREGGPYRQGSPNR----------PGTPYRQGAPNRPGGQNRQGVPNREG  336
+
+Query  88   A-PYGYGAPYGYGAP-YGAMPYGAMPPQMPAAPAQPQAAPSR  127
+              PY  G+P   G P     PY    P  P    + Q  P+R
+Sbjct  337  GGPYRQGSPNRPGTPNRPGTPYRQGAPNRPGGQNR-QGVPNR  377
+
+
+ Score = 59.0 bits (141),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 25/89 (28%), Gaps = 17/89 (19%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY-  86
+            GG  Y  G  +  G                     G  Y +G     G     G P    
+Sbjct  336  GGGPYRQGSPNRPGTPNR----------------PGTPYRQGAPNRPGGQNRQGVPNREG  379
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPPQMP  115
+            G PY  G+P   G PY     G   P  P
+Sbjct  380  GGPYRQGSPNRPGTPYRQGASGIRKPVAP  408
+
+
+> sp|P27951|BAG_STRAG IgA FC receptor OS=Streptococcus agalactiae 
+OX=1311 GN=bag PE=1 SV=1
+Length=1164
+
+ Score = 81.3 bits (199),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 16/98 (16%), Positives = 30/98 (31%), Gaps = 15/98 (15%)
+
+Query  42   DMFGDGYGDFNMSMGGGGRG--------------YGRGYGRGNGYGYGAPYGYGAPYGYG  87
+            ++  D +   N ++    +G                             P+   +P    
+Sbjct  802  NLVHDAFSKMNATVAKFQKGLETNTPETPDTPKIPELPQAPDTPQAPDTPHVPESPKAPE  861
+
+Query  88   APYGYGAPYGYGAPYGA-MPYGAMPPQMPAAPAQPQAA  124
+            AP    +P    AP+    P     P++P +P  P+A 
+Sbjct  862  APRVPESPKTPEAPHVPESPKAPEAPRVPESPKTPEAP  899
+
+
+ Score = 70.9 bits (172),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 14/87 (16%), Positives = 24/87 (28%), Gaps = 5/87 (6%)
+
+Query  36   LWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAP  95
+            L               ++      +         +     AP+   +P    AP    +P
+Sbjct  838  LPQAPDTP--QAPDTPHVPESP--KAPEAPRVPESPKTPEAPHVPESPKAPEAPRVPESP  893
+
+Query  96   YGYGAPYGA-MPYGAMPPQMPAAPAQP  121
+                AP+    P     P++P  P  P
+Sbjct  894  KTPEAPHVPESPKTPEAPKIPEPPKTP  920
+
+
+ Score = 64.8 bits (156),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 13/67 (19%), Positives = 20/67 (30%), Gaps = 1/67 (1%)
+
+Query  58   GGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPA  116
+              +         +     AP+   +P    AP     P     P    +P     P++P 
+Sbjct  880  SPKAPEAPRVPESPKTPEAPHVPESPKTPEAPKIPEPPKTPDVPKLPDVPKLPDVPKLPD  939
+
+Query  117  APAQPQA  123
+            AP  P  
+Sbjct  940  APKLPDG  946
+
+
+> sp|P06914|CSP_PLAYO Circumsporozoite protein OS=Plasmodium yoelii 
+yoelii OX=73239 PE=3 SV=1
+Length=367
+
+ Score = 75.2 bits (183),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 38/78 (49%), Positives = 40/78 (51%), Gaps = 2/78 (3%)
+
+Query  49   GDFNMSMGGG-GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-P  106
+             D N+  G G  +G G   G G   G GAP G GAP G GAP G GAP G GAP G   P
+Sbjct  133  ADENVDQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAP  192
+
+Query  107  YGAMPPQMPAAPAQPQAA  124
+             G   PQ P AP  P A 
+Sbjct  193  QGPGAPQGPGAPQGPGAP  210
+
+
+ Score = 75.2 bits (183),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 39/88 (44%), Positives = 40/88 (45%), Gaps = 3/88 (3%)
+
+Query  39   NMGDMFGDGYG-DFNMSMGGG-GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPY  96
+              G   G G         G G  +G G   G G   G GAP G GAP G GAP G GAP 
+Sbjct  140  GPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQ  199
+
+Query  97   GYGAPYGAM-PYGAMPPQMPAAPAQPQA  123
+            G GAP G   P G   PQ P AP  P A
+Sbjct  200  GPGAPQGPGAPQGPGAPQGPGAPQGPGA  227
+
+
+ Score = 74.0 bits (180),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 36/77 (47%), Positives = 37/77 (48%), Gaps = 2/77 (3%)
+
+Query  50   DFNMSMGGG-GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PY  107
+                  G G  +G G   G G   G GAP G GAP G GAP G GAP G GAP G   P 
+Sbjct  146  GPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQ  205
+
+Query  108  GAMPPQMPAAPAQPQAA  124
+            G   PQ P AP  P A 
+Sbjct  206  GPGAPQGPGAPQGPGAP  222
+
+
+ Score = 59.8 bits (143),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 34/86 (40%), Positives = 35/86 (41%), Gaps = 6/86 (7%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYG-DFNMSMGGG-GRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            G   G G     G   G G         G G  +G G   G G   G GAP G GAP G 
+Sbjct  142  GAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGPGAPQGP  201
+
+Query  87   GAPYGYGAPYGYGAPYGAM----PYG  108
+            GAP G GAP G GAP G      P  
+Sbjct  202  GAPQGPGAPQGPGAPQGPGAPQGPGA  227
+
+
+> sp|Q4U9M9|104K_THEAN 104 kDa microneme/rhoptry antigen OS=Theileria 
+annulata OX=5874 GN=TA08425 PE=3 SV=1
+Length=893
+
+ Score = 73.6 bits (179),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 12/65 (18%), Positives = 20/65 (31%), Gaps = 1/65 (2%)
+
+Query  59   GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA-MPYGAMPPQMPAA  117
+             +   R     +     +P    +P     P     P     P     P   + PQ P +
+Sbjct  581  SKSPKRPESPKSPKRPVSPQRPVSPKSPKRPESLDIPKSPKRPESPKSPKRPVSPQRPVS  640
+
+Query  118  PAQPQ  122
+            P +P+
+Sbjct  641  PRRPE  645
+
+
+ Score = 41.3 bits (95),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 5/49 (10%), Positives = 10/49 (20%), Gaps = 2/49 (4%)
+
+Query  50   DFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGY  98
+                 +    +   R            P    +P    +P    +P   
+Sbjct  598  SPQRPVSP--KSPKRPESLDIPKSPKRPESPKSPKRPVSPQRPVSPRRP  644
+
+
+> sp|A4J5X2|IF2_DESRM Translation initiation factor IF-2 OS=Desulfotomaculum 
+reducens (strain MI-1) OX=349161 GN=infB PE=3 
+SV=1
+Length=985
+
+ Score = 69.0 bits (167),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 38/113 (34%), Positives = 44/113 (39%), Gaps = 14/113 (12%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGD------GYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAP  77
+            GG G  YG+         +GD      G    +   GG  R YG R  G +G  YG    
+Sbjct  242  GGQGRPYGDRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQSRPYGDRPQGGQGRPYGDRPQ  301
+
+Query  78   YGYGAPYGYGAPYGYGAPYG---YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+             G G  YG     G G P G    GA  GA P    PP+  A P  P  AP +
+Sbjct  302  GGQGRHYGDRPQGGQGRPQGAGRPGANRGAGPSIPKPPEQVAQPK-PTKAPDK  353
+
+
+ Score = 60.9 bits (146),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 35/107 (33%), Positives = 39/107 (36%), Gaps = 13/107 (12%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAPYGYGAP  83
+            GG G  YG+      G  +GD         GG GR YG R  G +G  YG     G G P
+Sbjct  182  GGQGRPYGDRPQGGQGRPYGD------RPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRP  235
+
+Query  84   YGYGAPYGYGAPYG---YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            YG     G G PYG    G             Q      +PQ   SR
+Sbjct  236  YGDRPQGGQGRPYGDRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQSR  282
+
+
+ Score = 60.1 bits (144),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 34/113 (30%), Positives = 39/113 (35%), Gaps = 13/113 (12%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGD------GYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAP  77
+            GG G  YG+      G  +GD      G    +   GG GR YG R  G +G  YG    
+Sbjct  194  GGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQ  253
+
+Query  78   YGYGAPYGYGAPYGYGAPYG---YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+             G   PYG     G G PYG    G             Q      +PQ    R
+Sbjct  254  GGQSRPYGDRPQGGQGRPYGDRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQGR  306
+
+
+ Score = 57.5 bits (137),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 33/113 (29%), Positives = 38/113 (34%), Gaps = 13/113 (12%)
+
+Query  28   GGPG--YGNGLWDNMGDMFGD------GYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAP  77
+            GG G  YG+      G  +GD      G    +   GG GR YG R  G +   YG    
+Sbjct  206  GGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQSRPYGDRPQ  265
+
+Query  78   YGYGAPYGYGAPYGYGAPYG---YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+             G G PYG     G   PYG    G             Q      +PQ    R
+Sbjct  266  GGQGRPYGDRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQGRHYGDRPQGGQGR  318
+
+
+ Score = 56.7 bits (135),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 32/104 (31%), Positives = 35/104 (34%), Gaps = 11/104 (11%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAPYGYGAPYGY  86
+            G  YG          +GD         GG GR YG R  G +G  YG     G G PYG 
+Sbjct  161  GRPYGGRPQGGQSRPYGD------RPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGD  214
+
+Query  87   GAPYGYGAPYG---YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                G G PYG    G             Q      +PQ   SR
+Sbjct  215  RPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQSR  258
+
+
+ Score = 54.8 bits (130),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 29/104 (28%), Positives = 33/104 (32%), Gaps = 11/104 (11%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAPYGYGAPYGY  86
+            G    N    + G  +G          GG  R YG R  G +G  YG     G G PYG 
+Sbjct  149  GRPQANRPQGSQGRPYG------GRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQGRPYGD  202
+
+Query  87   GAPYGYGAPYG---YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                G G PYG    G             Q      +PQ    R
+Sbjct  203  RPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGRPYGDRPQGGQGR  246
+
+
+ Score = 45.9 bits (107),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 28/94 (30%), Gaps = 11/94 (12%)
+
+Query  36   LWDNMGDMFGDGYGDFNMSMGGGGRGYG-RGYG-RGNGYGYGAPYGYGAPYGYGAPYGYG  93
+                     G G    N   G  GR YG R  G +   YG     G G PYG     G G
+Sbjct  138  PRQGSAQQSGQGRPQANRPQGSQGRPYGGRPQGGQSRPYGDRPQGGQGRPYGDRPQGGQG  197
+
+Query  94   APYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+             PYG               Q      +PQ    R
+Sbjct  198  RPYGD---------RPQGGQGRPYGDRPQGGQGR  222
+
+
+ Score = 38.2 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 16/77 (21%), Positives = 20/77 (26%), Gaps = 3/77 (4%)
+
+Query  54   SMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYG---YGAPYGAMPYGAM  110
+                  +G  +  G+G           G PYG     G   PYG    G           
+Sbjct  134  EQTAPRQGSAQQSGQGRPQANRPQGSQGRPYGGRPQGGQSRPYGDRPQGGQGRPYGDRPQ  193
+
+Query  111  PPQMPAAPAQPQAAPSR  127
+              Q      +PQ    R
+Sbjct  194  GGQGRPYGDRPQGGQGR  210
+
+
+> sp|Q61072|ADAM9_MOUSE Disintegrin and metalloproteinase domain-containing 
+protein 9 OS=Mus musculus OX=10090 GN=Adam9 PE=1 
+SV=2
+Length=845
+
+ Score = 68.2 bits (165),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 23/78 (29%), Gaps = 5/78 (6%)
+
+Query  46   DGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM  105
+            DG    N+S   G     R    G       P G G     G P     P G G      
+Sbjct  736  DGRNQANVSRQPGDPSISRP--PGGPNVSRPPGGPGVSRPPGGPGVSRPPGGPGVSRPPP  793
+
+Query  106  PYG---AMPPQMPAAPAQ  120
+             +G    +P      PAQ
+Sbjct  794  GHGNRFPVPTYAAKQPAQ  811
+
+
+ Score = 40.1 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/67 (22%), Positives = 16/67 (24%), Gaps = 8/67 (12%)
+
+Query  39   NMGDM-FGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY-----GAPYGY  92
+              GD       G  N+S   GG G  R    G       P G G            P   
+Sbjct  746  QPGDPSISRPPGGPNVSRPPGGPGVSRP--PGGPGVSRPPGGPGVSRPPPGHGNRFPVPT  803
+
+Query  93   GAPYGYG  99
+             A     
+Sbjct  804  YAAKQPA  810
+
+
+> sp|A2AX52|CO6A4_MOUSE Collagen alpha-4(VI) chain OS=Mus musculus 
+OX=10090 GN=Col6a4 PE=1 SV=2
+Length=2309
+
+ Score = 68.6 bits (166),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 21/96 (22%), Positives = 27/96 (28%), Gaps = 5/96 (5%)
+
+Query  33    GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYG-YGAPYGYGAPYG  91
+              +GL    G +   G  +       G  G     GR    G+    G  G     G P G
+Sbjct  1575  RHGLPGLKGVLGETG--ELGSRGEPGHPGPQGPRGRQGPPGFFGQKGDPGTQGNPGLP-G  1631
+
+Query  92    YGAPYGYGAPYG-AMPYGAMPPQMPAAPAQPQAAPS  126
+                  G   P G     G    + P     P+  P 
+Sbjct  1632  PSGSKGPDGPRGLKGEVGPAGERGPRGQQGPRGQPG  1667
+
+
+ Score = 58.2 bits (139),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 22/101 (22%), Positives = 24/101 (24%), Gaps = 4/101 (4%)
+
+Query  28    GGPGYG--NGLWDNMGDMFGDGY-GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPY  84
+             G PG+    G     G     G  GD       G  G     G     G     G     
+Sbjct  1595  GEPGHPGPQGPRGRQGPPGFFGQKGDPGTQGNPGLPGPSGSKGPDGPRGLKGEVGPAGER  1654
+
+Query  85    GYGAPYGYGAPYGYGAPYGAMPYGAMPPQM-PAAPAQPQAA  124
+             G     G     G   P G    G    +  P  P  P   
+Sbjct  1655  GPRGQQGPRGQPGLFGPDGHGYPGRKGRKGEPGFPGYPGVQ  1695
+
+
+ Score = 54.4 bits (129),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 20/102 (20%), Positives = 23/102 (23%), Gaps = 5/102 (5%)
+
+Query  29    GPGYGNGLWD---NMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYG  85
+             GP    G        GD    G     +    G +G     G     G     G     G
+Sbjct  1604  GPRGRQGPPGFFGQKGDPGTQGNP--GLPGPSGSKGPDGPRGLKGEVGPAGERGPRGQQG  1661
+
+Query  86    YGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                  G   P G+G P      G                P R
+Sbjct  1662  PRGQPGLFGPDGHGYPGRKGRKGEPGFPGYPGVQGEDGNPGR  1703
+
+
+ Score = 48.2 bits (113),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 23/99 (23%), Positives = 27/99 (27%), Gaps = 3/99 (3%)
+
+Query  28    GGPGYGN--GLWDNMGDMFGDGYGDFNMSMGG-GGRGYGRGYGRGNGYGYGAPYGYGAPY  84
+             G PG     GL    G    DG       +G  G RG     G     G   P G+G P 
+Sbjct  1619  GDPGTQGNPGLPGPSGSKGPDGPRGLKGEVGPAGERGPRGQQGPRGQPGLFGPDGHGYPG  1678
+
+Query  85    GYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+               G     G P   G        G    +        + 
+Sbjct  1679  RKGRKGEPGFPGYPGVQGEDGNPGRGGEKGAKGIRGKRG  1717
+
+
+ Score = 47.1 bits (110),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 24/105 (23%), Positives = 30/105 (29%), Gaps = 6/105 (6%)
+
+Query  28    GGPGYGNGLWDNMGDMFGD-----GYGDFNMSMGGGGRGYGRGYGRGNGYGY-GAPYGYG  81
+              GP    GL  + GD   D       G+       G  G+    G     G  G+   +G
+Sbjct  1518  AGPRGEPGLRGDPGDPGIDNLIQGPKGEKGRRGHQGSPGFHGPLGEAGSVGPRGSLGRHG  1577
+
+Query  82    APYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+              P   G     G     G P    P G    Q P      +  P 
+Sbjct  1578  LPGLKGVLGETGELGSRGEPGHPGPQGPRGRQGPPGFFGQKGDPG  1622
+
+
+ Score = 44.0 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 23/109 (21%), Positives = 28/109 (26%), Gaps = 19/109 (17%)
+
+Query  29    GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY-G  87
+             GP    G     G+   +G G   +    G RG     G     G     G   P G  G
+Sbjct  1465  GPKGARGFSGEKGNPGEEGVG--GLDGEQGDRGAAGPSGEKGSSGSRGLTGLPGPAGPRG  1522
+
+Query  88    APYGYGAPYGYG------APYG----------AMPYGAMPPQMPAAPAQ  120
+              P   G P   G       P G             +G +       P  
+Sbjct  1523  EPGLRGDPGDPGIDNLIQGPKGEKGRRGHQGSPGFHGPLGEAGSVGPRG  1571
+
+
+ Score = 43.2 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 23/103 (22%), Positives = 30/103 (29%), Gaps = 4/103 (4%)
+
+Query  28    GGPGYG--NGLWDNMGDMFGDG-YGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPY  84
+             G  G    +GL  + G+    G  G   +    G  G     G     G+    G     
+Sbjct  1423  GEQGERGLDGLPGHPGEEGDHGQRGPRGLPGLRGEEGCPGVRGPKGARGFSGEKGNPGEE  1482
+
+Query  85    GYGAPYGYGAPYGYGAPYG-AMPYGAMPPQMPAAPAQPQAAPS  126
+             G G   G     G   P G     G+        PA P+  P 
+Sbjct  1483  GVGGLDGEQGDRGAAGPSGEKGSSGSRGLTGLPGPAGPRGEPG  1525
+
+
+ Score = 39.0 bits (89),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 20/100 (20%), Positives = 23/100 (23%), Gaps = 1/100 (1%)
+
+Query  29    GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYG  87
+             GP    G     G     G    +     G +G  G     G     G     G     G
+Sbjct  1649  GPAGERGPRGQQGPRGQPGLFGPDGHGYPGRKGRKGEPGFPGYPGVQGEDGNPGRGGEKG  1708
+
+Query  88    APYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+             A    G     G P  A   G   P         +    R
+Sbjct  1709  AKGIRGKRGNSGFPGLAGTPGDQGPPGKMGTKGSKGLADR  1748
+
+
+> sp|P75100|Y013_MYCPN UPF0134 protein MPN_013 OS=Mycoplasma pneumoniae 
+(strain ATCC 29342 / M129) OX=272634 GN=MPN_013 PE=3 
+SV=1
+Length=257
+
+ Score = 62.5 bits (150),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 14/70 (20%), Positives = 18/70 (26%), Gaps = 4/70 (6%)
+
+Query  62   YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYG----AMPPQMPAA  117
+              +  G     G   P G   P G   P     P       G    G       P  P+ 
+Sbjct  57   PDQPDGPCITKGPKEPGGPEEPNGPDKPEDPKDPDTPDVSEGPKEQGGQKDPGGPDDPSE  116
+
+Query  118  PAQPQAAPSR  127
+              Q  + P +
+Sbjct  117  GKQKVSKPDK  126
+
+
+ Score = 41.3 bits (95),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 10/67 (15%), Positives = 11/67 (16%), Gaps = 0/67 (0%)
+
+Query  45   GDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA  104
+                G           G     G         P       G     G   P G   P   
+Sbjct  58   DQPDGPCITKGPKEPGGPEEPNGPDKPEDPKDPDTPDVSEGPKEQGGQKDPGGPDDPSEG  117
+
+Query  105  MPYGAMP  111
+                + P
+Sbjct  118  KQKVSKP  124
+
+
+> sp|Q801S8|CO6A1_XENLA Collagen alpha-1(VI) chain OS=Xenopus laevis 
+OX=8355 GN=col6a1 PE=1 SV=1
+Length=1045
+
+ Score = 62.1 bits (149),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 31/111 (28%), Positives = 35/111 (32%), Gaps = 15/111 (14%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRG-------YGRGYGRGNGYGYGAPYGY  80
+            G PG  NGL    G+   +G  D       G RG        G   GRG     G P   
+Sbjct  418  GDPG-SNGLAGEKGESGDEG--DAGADGSPGKRGEAGELGPPGVSGGRGARGEKGEPGPP  474
+
+Query  81   GAPYGYGAPYGYGAPYGYGAPYGAMPY----GAMPPQMPAAPAQPQAAPSR  127
+            G   G   P G     G   P G   Y    G   P+ P  P   +  P  
+Sbjct  475  G-DQGRDGPAGPFGDPGEAGPQGPKGYRGDEGPRGPEGPKGPRGAKGLPGE  524
+
+
+ Score = 49.7 bits (117),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 21/92 (23%), Positives = 24/92 (26%), Gaps = 6/92 (7%)
+
+Query  28   GGPGYGNGLWDNMGDMF-GDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            G PG   G    +G      G G        G  G     G    +G     G   P GY
+Sbjct  442  GSPGKR-GEAGELGPPGVSGGRGARGEKGEPGPPGDQGRDGPAGPFGDPGEAGPQGPKGY  500
+
+Query  87   GAPYGYGAPYGYGAPYG----AMPYGAMPPQM  114
+                G   P G   P G        G    + 
+Sbjct  501  RGDEGPRGPEGPKGPRGAKGLPGEQGIAGERG  532
+
+
+ Score = 41.7 bits (96),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 22/106 (21%), Positives = 24/106 (23%), Gaps = 8/106 (8%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDG-YGDFNMSMGGGGRGYGRGYGRGNGYG-YGAPYGYGAPYG  85
+            G  G  +G     GD    G  G        G RG     G     G  G     G    
+Sbjct  475  GDQG-RDGPAGPFGDPGEAGPQGPKGYRGDEGPRGPEGPKGPRGAKGLPGEQGIAGERGD  533
+
+Query  86   YGAPYG-----YGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+             G P        G     G+       G      P      Q  P 
+Sbjct  534  DGRPGNGTDGFPGFQGYPGSRGDPGSNGTKGYPGPKGDEGEQGEPG  579
+
+
+ Score = 38.2 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 25/89 (28%), Gaps = 4/89 (4%)
+
+Query  29   GPGYGNGLWDNMG---DMFGDGYGDFNMSMGGGGRGYGRGYG-RGNGYGYGAPYGYGAPY  84
+            GP    GL    G   +   DG          G +GY    G  G+    G P   G   
+Sbjct  514  GPRGAKGLPGEQGIAGERGDDGRPGNGTDGFPGFQGYPGSRGDPGSNGTKGYPGPKGDEG  573
+
+Query  85   GYGAPYGYGAPYGYGAPYGAMPYGAMPPQ  113
+              G P       G   P GA  Y      
+Sbjct  574  EQGEPGDDNVSPGPPGPKGAKGYRGPEGP  602
+
+
+> sp|Q32L53|LFG1_BOVIN Protein lifeguard 1 OS=Bos taurus OX=9913 
+GN=GRINA PE=2 SV=1
+Length=366
+
+ Score = 57.8 bits (138),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/91 (24%), Positives = 25/91 (27%), Gaps = 6/91 (7%)
+
+Query  40   MGDMFGDGYGDFNMSMGGGGRGYGRGYGRGN-GYGYGAPYG-YGAPYGYG-APYGYGAPY  96
+             G  +       +     G       Y +G    G   P G    PY  G  P G   P 
+Sbjct  33   PGAPYPQAPFQPSPYGQPGYPQGPSPYPQGGYPQGPYPPGGYPQGPYPPGGYPQGPYPPG  92
+
+Query  97   GYGAPYGAMPYGAMPPQMPAAPAQ-PQAAPS  126
+              G P G  P    PP     P   P   P 
+Sbjct  93   --GYPQGPYPQSPFPPNPYGQPQAFPAQDPG  121
+
+
+> sp|Q9VT65|CANB_DROME Calpain-B OS=Drosophila melanogaster OX=7227 
+GN=CalpB PE=1 SV=2
+Length=925
+
+ Score = 58.2 bits (139),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 27/101 (27%), Positives = 32/101 (32%), Gaps = 16/101 (16%)
+
+Query  40   MGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYG  99
+             G          N+S           Y  G  Y  G P     PY   AP         G
+Sbjct  105  PGSGLYPSLPSANVSSLPYPTAPMAPYPTGMPYPTGMPQ-PNLPY-PAAPLAPYPSAMPG  162
+
+Query  100  APYGAMPYGAMP----PQM---------PAAPAQPQAAPSR  127
+             P   MPY  MP    PQ          P AP  P++AP++
+Sbjct  163  LPGMPMPYAPMPTSPAPQHNIGFPALPYPTAPP-PESAPTQ  202
+
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/91 (25%), Positives = 25/91 (27%), Gaps = 15/91 (16%)
+
+Query  41   GDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYG----------APYGYGAPYGYGAPY  90
+            G   G G                  Y  G+G               P    APY  G PY
+Sbjct  79   GPTMGMGMPVPEAPSAPAPYPSATPY-PGSGLYPSLPSANVSSLPYPTAPMAPYPTGMPY  137
+
+Query  91   GYGAPYGYGAPYGAMPYGAMP---PQMPAAP  118
+              G P     PY A P    P   P +P  P
+Sbjct  138  PTGMPQ-PNLPYPAAPLAPYPSAMPGLPGMP  167
+
+
+> sp|A8TX70|CO6A5_HUMAN Collagen alpha-5(VI) chain OS=Homo sapiens 
+OX=9606 GN=COL6A5 PE=1 SV=1
+Length=2615
+
+ Score = 58.2 bits (139),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 26/109 (24%), Positives = 30/109 (28%), Gaps = 10/109 (9%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGY----GDFNMSMGGGGRGY-GRGYGRGNGYGYGAPYGYGA  82
+             G PG  N +    G     G     G   +      RG  GR   RG     G P   G 
+Sbjct  1515  GNPGQNNNIKGQKGSKGEQGRQGRSGQKGVQGSPSSRGSRGREGQRGLRGVSGEPGNPG-  1573
+
+Query  83    PYGYGAPYGYGAPYG----YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+             P G     G   P G     G        G   PQ        + +  R
+Sbjct  1574  PTGTLGAEGLQGPQGSQGNPGRKGEKGSQGQKGPQGSPGLMGAKGSTGR  1622
+
+
+ Score = 55.5 bits (132),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 23/103 (22%), Positives = 29/103 (28%), Gaps = 4/103 (4%)
+
+Query  28    GGPGYGNGL--WDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYG  85
+             G PG       +   G     G    N +   G +G     GR    G     G  +  G
+Sbjct  1494  GSPGSRGAPGQYGEKGFPGDPGNPGQN-NNIKGQKGSKGEQGRQGRSGQKGVQGSPSSRG  1552
+
+Query  86    YGAPYGYGAPYG-YGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                  G     G  G P    P G +  +    P   Q  P R
+Sbjct  1553  SRGREGQRGLRGVSGEPGNPGPTGTLGAEGLQGPQGSQGNPGR  1595
+
+
+ Score = 50.9 bits (120),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 22/107 (21%), Positives = 29/107 (27%), Gaps = 17/107 (16%)
+
+Query  35    GLWDNMGDMFGDGYGDFNMSMG-GGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+             G     G +  +G      S G  G +G     G+      G+P   GA    G P   G
+Sbjct  1570  GNPGPTGTLGAEGLQGPQGSQGNPGRKGEKGSQGQKGPQ--GSPGLMGAKGSTGRPGLLG  1627
+
+Query  94    APYGYGAPYGAMPYGAMPPQM-------PAAPA-------QPQAAPS  126
+                  G P    P G    +        P            P+  P 
+Sbjct  1628  KKGEPGLPGDLGPVGQTGQRGRQGDSGIPGYGQMGRKGVKGPRGFPG  1674
+
+
+ Score = 46.7 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 27/140 (19%), Positives = 35/140 (25%), Gaps = 41/140 (29%)
+
+Query  28    GGPGY--GNGLWDNMGDMFGDG----YGDFNMSMGGGG------RGYGRGYG--------  67
+             G  G     G     G+    G     GD  ++   G       +G+    G        
+Sbjct  1410  GSQGLKGSRGHRGEDGNPGVRGDTGPQGDKGIAGCPGAWGQKGLKGFSGPKGGHGDDGID  1469
+
+Query  68    -----------RGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGA----------MP  106
+                         G     G P   G+P   GAP  YG     G P               
+Sbjct  1470  GLDGEEGCHGFPGIKGEKGDPGSQGSPGSRGAPGQYGEKGFPGDPGNPGQNNNIKGQKGS  1529
+
+Query  107   YGAMPPQMPAAPAQPQAAPS  126
+              G    Q  +     Q +PS
+Sbjct  1530  KGEQGRQGRSGQKGVQGSPS  1549
+
+
+> sp|Q9ESF4|LFG1_MOUSE Protein lifeguard 1 OS=Mus musculus OX=10090 
+GN=Grina PE=2 SV=1
+Length=345
+
+ Score = 56.7 bits (135),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 23/84 (27%), Positives = 27/84 (32%), Gaps = 17/84 (20%)
+
+Query  57   GGGRGYGRGYGRGNGYGYGAPYGY-GAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPP---  112
+             G       +        G P+G    P G G P G   P G G P G  P    PP   
+Sbjct  35   PGAPYPQAPFQPSPYGQPGYPHGPSPYPQG-GYPQGP-YPQG-GYPQGPYPQSPFPPNPY  91
+
+Query  113  ------QMPAAPA----QPQAAPS  126
+                  Q P +P     Q +  PS
+Sbjct  92   GQPPPFQDPGSPQHGNYQEEGPPS  115
+
+
+ Score = 49.0 bits (115),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 18/73 (25%), Positives = 20/73 (27%), Gaps = 7/73 (10%)
+
+Query  56   GGGGRGYGRGYGRGNGYGYGAPYG-YGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMP-PQ  113
+             G         G              GAPY   AP+        G P+G  PY     PQ
+Sbjct  10   SGDSYPPQNIVGPQAPMPPYVQAPYPGAPY-PQAPFQPSPYGQPGYPHGPSPYPQGGYPQ  68
+
+Query  114  MP----AAPAQPQ  122
+             P      P  P 
+Sbjct  69   GPYPQGGYPQGPY  81
+
+
+> sp|P27177|PRIO_CHICK Major prion protein homolog OS=Gallus gallus 
+OX=9031 GN=PRNP PE=1 SV=2
+Length=273
+
+ Score = 55.9 bits (133),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 15/63 (24%), Positives = 23/63 (37%), Gaps = 0/63 (0%)
+
+Query  58   GGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAA  117
+              R  G  +  G  +  G P+  G P+  G P+  G P   G P+     G      P++
+Sbjct  46   YPRQPGYPHNPGYPHNPGYPHNPGYPHNPGYPHNPGYPQNPGYPHNPGYPGWGQGYNPSS  105
+
+Query  118  PAQ  120
+               
+Sbjct  106  GGS  108
+
+
+ Score = 45.1 bits (105),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 17/67 (25%), Positives = 22/67 (33%), Gaps = 11/67 (16%)
+
+Query  56   GGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMP  115
+             G  R        G  +  G P+  G P+  G P+  G P+  G            PQ P
+Sbjct  38   AGSHRQPSYPRQPGYPHNPGYPHNPGYPHNPGYPHNPGYPHNPGY-----------PQNP  86
+
+Query  116  AAPAQPQ  122
+              P  P 
+Sbjct  87   GYPHNPG  93
+
+
+> sp|Q8CQD9|PLS_STAES Accumulation-associated protein OS=Staphylococcus 
+epidermidis (strain ATCC 12228) OX=176280 GN=SE_0175 
+PE=3 SV=1
+Length=1469
+
+ Score = 57.5 bits (137),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 20/76 (26%), Positives = 23/76 (30%), Gaps = 1/76 (1%)
+
+Query  50    DFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYG  108
+             D  +  G      G+    G     G P   G P   G P   G P   G P     P  
+Sbjct  1287  DEIVEYGPTKAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAE  1346
+
+Query  109   AMPPQMPAAPAQPQAA  124
+                P  P  PA+P   
+Sbjct  1347  PGKPAEPGKPAEPGTP  1362
+
+
+ Score = 55.5 bits (132),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 23/96 (24%), Positives = 26/96 (27%), Gaps = 4/96 (4%)
+
+Query  35    GLWDNMGDMFGDGYG-DFNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+             G     G     G   +       G     G+    G     G P   G P   G P   
+Sbjct  1324  GTPAEPGKPAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAEP  1383
+
+Query  93    GAPYGYGAPYGAM-PYGAMPPQMPAAPAQPQAAPSR  127
+             G P   G P     P     P  P  P Q   AP +
+Sbjct  1384  GTPAEPGKPAEPGTPAEPGKPAEPGTPTQ-SGAPEQ  1418
+
+
+ Score = 54.0 bits (128),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 20/83 (24%), Positives = 24/83 (29%), Gaps = 2/83 (2%)
+
+Query  44    FGDGYGDFNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPY  102
+             +G    +       G     G+    G     G P   G P   G P   G P   G P 
+Sbjct  1292  YGPTKAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAEPGKPA  1351
+
+Query  103   GAM-PYGAMPPQMPAAPAQPQAA  124
+                 P     P  P  PA+P   
+Sbjct  1352  EPGKPAEPGTPAEPGKPAEPGKP  1374
+
+
+ Score = 53.6 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 20/95 (21%), Positives = 22/95 (23%), Gaps = 2/95 (2%)
+
+Query  31    GYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPY  90
+             G          +             G      G     G     G P   G P   G P 
+Sbjct  1293  GPTKAEPGKPAEPGKPAEPGKPAEPGK-PAEPGTPAEPGKPAEPGKPAEPGKPAEPGKPA  1351
+
+Query  91    GYGAPYGYGAPYGAM-PYGAMPPQMPAAPAQPQAA  124
+               G P   G P     P     P  P  PA+P   
+Sbjct  1352  EPGKPAEPGTPAEPGKPAEPGKPAEPGKPAEPGTP  1386
+
+
+ Score = 47.8 bits (112),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 21/88 (24%), Positives = 26/88 (30%), Gaps = 4/88 (5%)
+
+Query  41    GDMFGDGYGDFNMSMGGGGRGYGRGYG---RGNGYGYGAPYGYGAPYGYGAPYGYGAPYG  97
+             G+  G+G     ++          G      G     G P   G P   G P   G P  
+Sbjct  1269  GEKVGEGKSTEKVTKQPVDEIVEYGPTKAEPGKPAEPGKPAEPGKPAEPGKPAEPGTPAE  1328
+
+Query  98    YGAPYGAM-PYGAMPPQMPAAPAQPQAA  124
+              G P     P     P  P  PA+P   
+Sbjct  1329  PGKPAEPGKPAEPGKPAEPGKPAEPGKP  1356
+
+
+ Score = 45.9 bits (107),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 17/72 (24%), Positives = 19/72 (26%), Gaps = 2/72 (3%)
+
+Query  35    GLWDNMGDMFGDGYG-DFNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+             G     G     G   +       G     G+    G     G P   G P   G P   
+Sbjct  1348  GKPAEPGKPAEPGTPAEPGKPAEPGKPAEPGKPAEPGTPAEPGKPAEPGTPAEPGKPAEP  1407
+
+Query  93    GAPYGYGAPYGA  104
+             G P   GAP   
+Sbjct  1408  GTPTQSGAPEQP  1419
+
+
+> sp|A9KNW4|IF2_LACP7 Translation initiation factor IF-2 OS=Lachnoclostridium 
+phytofermentans (strain ATCC 700394 / DSM 18823 
+/ ISDg) OX=357809 GN=infB PE=3 SV=1
+Length=1131
+
+ Score = 55.9 bits (133),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 32/115 (28%), Positives = 43/115 (37%), Gaps = 19/115 (17%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGN----GYGYGA----PYG  79
+            G   YG+   ++     G G        G G  G  R  G+G+      G G+    P G
+Sbjct  256  GQGSYGDRRPNSGDRPQGQGNYGDRRPQGQGSYGDRRPQGQGSYGDRPQGQGSYGDRPQG  315
+
+Query  80   YGAPYGYGAPYGYGA-----PYGYGA----PYGAMPYGAMPPQMPAA-PAQPQAA  124
+             G+ YG   P G G+     P G G+    P G   YG   PQ   +   +PQ  
+Sbjct  316  QGS-YGDRRPQGQGSYGDRRPQGQGSYGDRPQGQGSYGDRRPQGQGSYGDRPQGQ  369
+
+
+ Score = 53.2 bits (126),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 30/111 (27%), Positives = 36/111 (32%), Gaps = 16/111 (14%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYG-----APYGYGAP  83
+            G   G+    N     G G        G G  G  R        G G      P G G+ 
+Sbjct  229  GQNSGDRRPYNGDRPQGQGNYGDRRPQGQGSYGDRRPNSGDRPQGQGNYGDRRPQGQGS-  287
+
+Query  84   YGYGAPYGYGA----PYGYGA----PYGAMPYGAMPPQMPAA--PAQPQAA  124
+            YG   P G G+    P G G+    P G   YG   PQ   +    +PQ  
+Sbjct  288  YGDRRPQGQGSYGDRPQGQGSYGDRPQGQGSYGDRRPQGQGSYGDRRPQGQ  338
+
+
+ Score = 51.3 bits (121),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 31/106 (29%), Positives = 38/106 (36%), Gaps = 11/106 (10%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGA----P  83
+            G   YG+      G          +   G G  G  R  G+G+ YG   P G G+    P
+Sbjct  245  GQGNYGDRRPQGQGSYGDRRPNSGDRPQGQGNYGDRRPQGQGS-YGDRRPQGQGSYGDRP  303
+
+Query  84   YGYG----APYGYGAPYGYGAPYGAMPYGAMPPQMPAA-PAQPQAA  124
+             G G     P G G  YG   P G   YG   PQ   +   +PQ  
+Sbjct  304  QGQGSYGDRPQGQG-SYGDRRPQGQGSYGDRRPQGQGSYGDRPQGQ  348
+
+
+ Score = 49.4 bits (116),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 31/109 (28%), Positives = 37/109 (34%), Gaps = 14/109 (13%)
+
+Query  28   GGPGYGNGLWDNMG---DMFGDGYGDFNMSMGGGGRGYGRGYGRGN----GYGYGAPYGY  80
+            G   YG+             G G        G G  G  R  G+G+      G G+ YG 
+Sbjct  295  GQGSYGDRPQGQGSYGDRPQGQGSYGDRRPQGQGSYGDRRPQGQGSYGDRPQGQGS-YGD  353
+
+Query  81   GAPYGYG----APYGYGAPYGYGAPYGAMPYGAMPPQMPAA-PAQPQAA  124
+              P G G     P G G  YG   P G   YG   PQ   +   +PQ  
+Sbjct  354  RRPQGQGSYGDRPQGQGN-YGDRRPGGQGSYGDRRPQGQGSYGDRPQGQ  401
+
+
+ Score = 46.7 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 34/111 (31%), Positives = 40/111 (36%), Gaps = 18/111 (16%)
+
+Query  28   GGPGYGNGLWDNMG----DMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAP  83
+            G   YG+      G       G G        G G  G  R  G+GN YG   P G G+ 
+Sbjct  326  GQGSYGDRRPQGQGSYGDRPQGQGSYGDRRPQGQGSYG-DRPQGQGN-YGDRRPGGQGS-  382
+
+Query  84   YGYGAPYGYGA----PYGYG-----APYGAMPYGAMPPQMPAA-PAQPQAA  124
+            YG   P G G+    P G G      P G   YG   PQ   +   +PQ  
+Sbjct  383  YGDRRPQGQGSYGDRPQGQGNFGDRRPQGQGGYG-GRPQGQGSYGGRPQGQ  432
+
+
+ Score = 45.9 bits (107),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 22/99 (22%), Positives = 26/99 (26%), Gaps = 8/99 (8%)
+
+Query  28   GGPGYGNGLWDNMG----DMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYG--  81
+            G   YG+      G       G G        G G  G  R  G+G+      P G G  
+Sbjct  347  GQGSYGDRRPQGQGSYGDRPQGQGNYGDRRPGGQGSYGDRRPQGQGSYG--DRPQGQGNF  404
+
+Query  82   APYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+                     GYG        YG  P G       +    
+Sbjct  405  GDRRPQGQGGYGGRPQGQGSYGGRPQGQGGYAGRSQGQG  443
+
+
+ Score = 41.7 bits (96),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 28/101 (28%), Positives = 32/101 (32%), Gaps = 14/101 (14%)
+
+Query  28   GGPGYGNGLWD----NMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGA-  82
+            G   YG+              G G        G G  G  R  G+G+ YG   P G G+ 
+Sbjct  337  GQGSYGDRPQGQGSYGDRRPQGQGSYGD-RPQGQGNYGDRRPGGQGS-YGDRRPQGQGSY  394
+
+Query  83   ---PYGYG--APYGYGAPYGYGA-PYGAMPYGAMPPQMPAA  117
+               P G G           GYG  P G   YG   PQ    
+Sbjct  395  GDRPQGQGNFGDRRPQGQGGYGGRPQGQGSYG-GRPQGQGG  434
+
+
+> sp|Q7Z429|LFG1_HUMAN Protein lifeguard 1 OS=Homo sapiens OX=9606 
+GN=GRINA PE=2 SV=1
+Length=371
+
+ Score = 55.1 bits (131),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 26/86 (30%), Positives = 29/86 (34%), Gaps = 17/86 (20%)
+
+Query  58   GGRGYGRGYGRGNGYGYGAPYGY-GAPYGYGAPYGY----GAPYGY----GAPYGAMPYG  108
+            G       +        G P+G    P G G P G     G P G     G P G  P G
+Sbjct  39   GAPYPQPPFQPSPYGQPGYPHGPSPYPQG-GYPQGPYPQGGYPQGPYPQEGYPQGPYPQG  97
+
+Query  109  AMP----PQMPAAPA---QPQAAPSR  127
+              P    PQ P  P    QPQ  P +
+Sbjct  98   GYPQGPYPQSPFPPNPYGQPQVFPGQ  123
+
+
+ Score = 47.8 bits (112),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 27/105 (26%), Positives = 34/105 (32%), Gaps = 17/105 (16%)
+
+Query  30   PGYGNGLWDNMGDMFG-DGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA  88
+            P +    +   G   G   Y       G   +G G   G       G P G   P G G 
+Sbjct  45   PPFQPSPYGQPGYPHGPSPYPQGGYPQGPYPQG-GYPQGP-YPQE-GYPQGP-YPQG-GY  99
+
+Query  89   PYGYGAPYGYGAPYGAMPYGA---MPPQMPAAPA----QPQAAPS  126
+            P G        +P+   PYG     P Q P +P     Q +  PS
+Sbjct  100  PQGPY----PQSPFPPNPYGQPQVFPGQDPDSPQHGNYQEEGPPS  140
+
+
+ Score = 46.7 bits (109),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 23/89 (26%), Positives = 24/89 (27%), Gaps = 30/89 (34%)
+
+Query  68   RGNGYG-----------YGAPYGY------GAPYGY----GAPYGY----GAPYGY----  98
+             G  Y             G P+G       G P G     G P G     G P G     
+Sbjct  38   PGAPYPQPPFQPSPYGQPGYPHGPSPYPQGGYPQGPYPQGGYPQGPYPQEGYPQGPYPQG  97
+
+Query  99   GAPYGAMPYGAMPPQMPAAPAQ-PQAAPS  126
+            G P G  P    PP     P   P   P 
+Sbjct  98   GYPQGPYPQSPFPPNPYGQPQVFPGQDPD  126
+
+
+> sp|A8G6Z5|IF2_PROM2 Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus (strain MIT 9215) OX=93060 GN=infB PE=3 
+SV=1
+Length=1119
+
+ Score = 55.9 bits (133),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 16/96 (17%), Positives = 18/96 (19%), Gaps = 14/96 (15%)
+
+Query  30   PGYGNGL--WDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGA-----  82
+            PG  N        G          N          G     G           G+     
+Sbjct  266  PGLRNKPSDQGRPGSFNRQTNT--NRPGAPSSNKPGMPNRPGLRNKPSDQGRPGSFNRQV  323
+
+Query  83   -PYGYGAPYGYGAPYGYG----APYGAMPYGAMPPQ  113
+                 GAP   G P   G     P        + P 
+Sbjct  324  NTNRSGAPIRPGMPNRPGSKFNGPKSPGMRKPVSPN  359
+
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 17/115 (15%), Positives = 24/115 (21%), Gaps = 27/115 (23%)
+
+Query  36   LWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYG---APYGYGAP---------  83
+              + +G        +   +              G     G    P   G P         
+Sbjct  228  PPELVGAPIRREGPNKQNNKQKTSFKQTVPNRPGMLNRPGLRNKPSDQGRPGSFNRQTNT  287
+
+Query  84   YGYGAPYG--YGAPYGYGAPYGAMPYG-------------AMPPQMPAAPAQPQA  123
+               GAP     G P   G        G             +  P  P  P +P +
+Sbjct  288  NRPGAPSSNKPGMPNRPGLRNKPSDQGRPGSFNRQVNTNRSGAPIRPGMPNRPGS  342
+
+
+> sp|A2BYM0|IF2_PROM5 Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus (strain MIT 9515) OX=167542 GN=infB PE=3 
+SV=1
+Length=1161
+
+ Score = 55.9 bits (133),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 16/91 (18%), Positives = 22/91 (24%), Gaps = 12/91 (13%)
+
+Query  33   GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+                 +   +    G     +S   G    G    +G     G+PY  G P   G     
+Sbjct  295  RQVTPNRPSNPNRQG-----VSNRPG----GGQNRQGVPNRPGSPYRPGNPNRQGMSNRP  345
+
+Query  93   GAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+            G     G      P     P     P +   
+Sbjct  346  GVG---GQNRQGAPNRQGSPYRQGDPNRQGG  373
+
+
+ Score = 55.1 bits (131),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 17/102 (17%), Positives = 21/102 (21%), Gaps = 9/102 (9%)
+
+Query  35   GLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGA  94
+            G      D   +     + S                      P     P   G     G 
+Sbjct  257  GAPIRREDPKINSNRQNSNSRQPPSNIQASPNRPVIPNRQVTPNRPSNPNRQGVSNRPGG  316
+
+Query  95   PYG-YGAP-YGAMPYGAMPPQMPAAPAQP-------QAAPSR  127
+                 G P     PY    P       +P       Q AP+R
+Sbjct  317  GQNRQGVPNRPGSPYRPGNPNRQGMSNRPGVGGQNRQGAPNR  358
+
+
+ Score = 54.8 bits (130),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 20/94 (21%), Positives = 26/94 (28%), Gaps = 7/94 (7%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+            GG     G+ +  G  +  G    N        G G    +G     G+PY  G P   G
+Sbjct  315  GGGQNRQGVPNRPGSPYRPGNP--NRQGMSNRPGVGGQNRQGAPNRQGSPYRQGDPNRQG  372
+
+Query  88   APYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQP  121
+              Y  G             +    P     P  P
+Sbjct  373  GNYRQG-----DLNRSGSKFNNQNPSGIRKPVAP  401
+
+
+ Score = 54.0 bits (128),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 19/99 (19%), Positives = 25/99 (25%), Gaps = 9/99 (9%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGY-GYGAPYGYGAPYGYGA  88
+            P       +             N       +G       G G    G P   G+PY  G 
+Sbjct  280  PSNIQASPNRPVIPNRQ--VTPNRPSNPNRQGVS--NRPGGGQNRQGVPNRPGSPYRPGN  335
+
+Query  89   PYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            P   G     G            P    +P + Q  P+R
+Sbjct  336  PNRQGMSNRPGV---GGQNRQGAPNRQGSPYR-QGDPNR  370
+
+
+> sp|A2BT70|IF2_PROMS Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus (strain AS9601) OX=146891 GN=infB PE=3 
+SV=1
+Length=1126
+
+ Score = 55.1 bits (131),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 16/92 (17%), Positives = 20/92 (22%), Gaps = 14/92 (15%)
+
+Query  50   DFNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAP-------  101
+                S   G     G     G           G+    G P   G+P   G P       
+Sbjct  256  KQTASNRPGSPNRPGMPNRPGLRNKPSDQGRPGSFNRQGNPNRPGSPNRPGMPNRPGLRN  315
+
+Query  102  ------YGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                            P  P +P  P    +R
+Sbjct  316  KPSDQGRPGSFNRQGNPNRPGSPNGPGMPNNR  347
+
+
+ Score = 47.1 bits (110),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 18/94 (19%), Positives = 22/94 (23%), Gaps = 10/94 (11%)
+
+Query  30   PGYGNGL--WDNMGDMFGDGY----GDFNMSMGGGGRG----YGRGYGRGNGYGYGAPYG  79
+            PG  N        G     G     G  N        G           G+    G P  
+Sbjct  275  PGLRNKPSDQGRPGSFNRQGNPNRPGSPNRPGMPNRPGLRNKPSDQGRPGSFNRQGNPNR  334
+
+Query  80   YGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQ  113
+             G+P G G P         G     +     P +
+Sbjct  335  PGSPNGPGMPNNRPGSKFNGQNSSGIRKPVSPNE  368
+
+
+> sp|Q6P6R0|LFG1_RAT Protein lifeguard 1 OS=Rattus norvegicus OX=10116 
+GN=Grina PE=2 SV=1
+Length=348
+
+ Score = 54.4 bits (129),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 27/107 (25%), Positives = 31/107 (29%), Gaps = 19/107 (18%)
+
+Query  36   LWDNMGDMFGDGYGDFNMSMGG--GGRGYGRGYGRGNGYGYGAPYGYG-APYGYGAPYGY  92
+               N G   G              G       +        G P+G G  P G G P G 
+Sbjct  15   PPPNPGYPVGPQAPMPPYVQPPYPGAPYPQAAFQPSPYGQPGYPHGPGPYPQG-GYPQGP  73
+
+Query  93   GAPYGYGAPYGAMPYGAMPP---------QMPAAPA----QPQAAPS  126
+              P G G P G  P    PP         Q P +P     Q +  PS
+Sbjct  74   -YPQG-GYPQGPYPQSPFPPNPYGQPPPFQDPGSPQHGNYQEEGPPS  118
+
+
+> sp|A5PMY6|COL12_DANRE Collectin-12 OS=Danio rerio OX=7955 GN=colec12 
+PE=2 SV=1
+Length=720
+
+ Score = 54.4 bits (129),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 22/105 (21%), Positives = 25/105 (24%), Gaps = 21/105 (20%)
+
+Query  35   GLWDNMGDMFGDGYGDFNMSMGGGGRGY----------------GRGYGRGNGYGYGAPY  78
+            GL    G       G+       G  G                 G    RG+    G+  
+Sbjct  453  GLPGKTG-----PKGEKGEKGAPGDAGPKGEKGPAGPPGVPGLKGPPGSRGSPGPKGSRG  507
+
+Query  79   GYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+              G     G     G P   G      P G   PQ    PA P  
+Sbjct  508  SGGRQGPSGEKGDPGIPGMPGRDGQPGPTGPQGPQGLRGPAGPAG  552
+
+
+ Score = 53.2 bits (126),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 28/94 (30%), Gaps = 2/94 (2%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGG-RGYGRGYGRGNGYGYGAPYGYGAPYGY-  86
+            GP    G     GD    G        G  G +G     G     G     G   P G  
+Sbjct  459  GPKGEKGEKGAPGDAGPKGEKGPAGPPGVPGLKGPPGSRGSPGPKGSRGSGGRQGPSGEK  518
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQ  120
+            G P   G P   G P    P G    + PA PA 
+Sbjct  519  GDPGIPGMPGRDGQPGPTGPQGPQGLRGPAGPAG  552
+
+
+> sp|P30204|MSRE_MOUSE Macrophage scavenger receptor types I and 
+II OS=Mus musculus OX=10090 GN=Msr1 PE=1 SV=3
+Length=458
+
+ Score = 54.0 bits (128),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 20/88 (23%), Positives = 24/88 (27%), Gaps = 10/88 (11%)
+
+Query  34   NGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+             G     G+    G         G     G    RG     G     G P G G P   G
+Sbjct  276  QGPPGPQGEKGDRGL-------TGQTGPPGAPGIRGIPGVKGDRGQIGFPGGRGNPGAPG  328
+
+Query  94   APYGYGAPYGAMPYGAMPPQMPAAPAQP  121
+             P   G+P    P G    +     + P
+Sbjct  329  KPGRSGSP---GPKGQKGEKGSVGGSTP  353
+
+
+> sp|Q01W31|IF2_SOLUE Translation initiation factor IF-2 OS=Solibacter 
+usitatus (strain Ellin6076) OX=234267 GN=infB PE=3 SV=1
+Length=1001
+
+ Score = 54.0 bits (128),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 19/106 (18%), Positives = 22/106 (21%), Gaps = 13/106 (12%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAP---YGY  86
+            PG                  +     G G            G     P     P      
+Sbjct  237  PGAPQRPQAIP-RPPQQVRPESQRPSGPGA--PSAPQRPLAGQPAARPVVPPRPDLVAKL  293
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPP-------QMPAAPAQPQAAP  125
+             AP     P    AP   +P     P       + P  P QP  A 
+Sbjct  294  SAPRAPVMPQQPAAPRPGVPKAPSAPVPGQPIYRGPIRPGQPMVAK  339
+
+
+ Score = 38.6 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 7/77 (9%), Positives = 13/77 (17%), Gaps = 0/77 (0%)
+
+Query  48   YGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPY  107
+              +               +  G      A          G            +P    P 
+Sbjct  182  RPEPPAHHPPSQTPPAAVFAPGRPAPPSAKPLPTTTPRPGQVLSGPRQPFPSSPAPGAPQ  241
+
+Query  108  GAMPPQMPAAPAQPQAA  124
+                   P    +P++ 
+Sbjct  242  RPQAIPRPPQQVRPESQ  258
+
+
+> sp|Q3AHW1|IF2_SYNSC Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain CC9605) OX=110662 GN=infB PE=3 SV=1
+Length=1104
+
+ Score = 53.6 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 21/107 (20%), Positives = 23/107 (21%), Gaps = 17/107 (16%)
+
+Query  33   GNGLWDNMGDMFGDGYG-DFNMSMGGGGRG-------YGRGYGRGNGYGYGAPYGYGAPY  84
+             +G     G     G             R          R  G G     G P   GAP 
+Sbjct  225  RSGAPSRPGAPTRAGAPAKPGAPSRPTPRPELVGKPVPRRPAGTGVPQRQGGPSRPGAPT  284
+
+Query  85   GYGAPYGYGAPYG----YGAP-----YGAMPYGAMPPQMPAAPAQPQ  122
+              G P             G P               P  P AP +P 
+Sbjct  285  RQGRPGMPPRSGNTLELVGKPIRRDGSTTGSGRPGAPTRPGAPGRPG  331
+
+
+ Score = 51.3 bits (121),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 25/80 (31%), Positives = 30/80 (38%), Gaps = 8/80 (10%)
+
+Query  55   MGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGY-------GAPYGAMPY  107
+                    G+G  +      GAP   GAP   GAP   GAP          G P    P 
+Sbjct  207  GSPARPTPGQGQPKPQIIRSGAPSRPGAPTRAGAPAKPGAPSRPTPRPELVGKPVPRRPA  266
+
+Query  108  GAMPPQMPAAPAQPQAAPSR  127
+            G   PQ    P++P  AP+R
+Sbjct  267  GTGVPQRQGGPSRP-GAPTR  285
+
+
+> sp|Q318P8|IF2_PROM9 Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus (strain MIT 9312) OX=74546 GN=infB PE=3 
+SV=1
+Length=1128
+
+ Score = 53.6 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 21/118 (18%), Positives = 23/118 (19%), Gaps = 26/118 (22%)
+
+Query  35   GLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYG-------------  81
+            G      D                    G     G     G P   G             
+Sbjct  233  GAPIRRDDPNKQNNKQNITFKQTVSNRPGTPNRPGTPNRPGMPNRPGLRNKPTDQGRPGS  292
+
+Query  82   -----APYGYGAPYGYGAPYGYGAPYGAMPYG-------AMPPQMPAAPAQPQAAPSR  127
+                  P   GAP   G P   G        G          P    AP +P   P+R
+Sbjct  293  FNRQANPNRAGAPNRPGMPNRPGLRNKPTDQGRPGSFNRQANPNRAGAPNRP-GMPNR  349
+
+
+ Score = 53.6 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 26/101 (26%), Gaps = 9/101 (9%)
+
+Query  32   YGNGLWDNMGDMFGDGYGD-FNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAP  89
+            +   + +  G     G  +   M    G R         G+      P   GAP   G P
+Sbjct  252  FKQTVSNRPGTPNRPGTPNRPGMPNRPGLRNKPTDQGRPGSFNRQANPNRAGAPNRPGMP  311
+
+Query  90   YGYGAPYGYGAPYGAM-------PYGAMPPQMPAAPAQPQA  123
+               G                   P  A  P  P  P +P +
+Sbjct  312  NRPGLRNKPTDQGRPGSFNRQANPNRAGAPNRPGMPNRPGS  352
+
+
+ Score = 53.2 bits (126),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 17/102 (17%), Positives = 22/102 (22%), Gaps = 9/102 (9%)
+
+Query  29   GPGYGNGLWDNMG---DMFGDGYGD-----FNMSMGGGGRGYGRGYGRGNGYGYGAPYGY  80
+            G     G+ +  G        G         N +  G     G     G           
+Sbjct  267  GTPNRPGMPNRPGLRNKPTDQGRPGSFNRQANPNRAGAPNRPGMPNRPGLRNKPTDQGRP  326
+
+Query  81   GAPYGYGAPYGYGAPYGYGAPYGAMPY-GAMPPQMPAAPAQP  121
+            G+      P   GAP   G P        +        P  P
+Sbjct  327  GSFNRQANPNRAGAPNRPGMPNRPGSRFNSQKSTGIRKPVSP  368
+
+
+> sp|Q2HH63|SEC24_CHAGB Protein transport protein SEC24 OS=Chaetomium 
+globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 / 
+NBRC 6347 / NRRL 1970) OX=306901 GN=SEC24 PE=3 SV=1
+Length=947
+
+ Score = 53.6 bits (127),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 26/88 (30%), Positives = 31/88 (35%), Gaps = 16/88 (18%)
+
+Query  56   GGGGRGYGRGYGRGNGYG---------YGAPYGYGAPY---GYGAPYGY----GAPYGYG  99
+              G  GY +   +   YG            PYG  AP    GY AP  Y    GAP   G
+Sbjct  83   APGYGGYPQPEAQPATYGAQPAAYGAQPQQPYGMPAPAPAVGYQAPEPYYPSAGAPPVPG  142
+
+Query  100  APYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+               G     +     P A  QPQ  P++
+Sbjct  143  DVAGLASGMSAMNLGPGAHQQPQQVPAQ  170
+
+
+> sp|A2QWA2|VPS27_ASPNC Vacuolar protein sorting-associated protein 
+27 OS=Aspergillus niger (strain CBS 513.88 / FGSC A1513) 
+OX=425011 GN=vps27 PE=3 SV=1
+Length=703
+
+ Score = 53.2 bits (126),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 23/74 (31%), Positives = 24/74 (32%), Gaps = 1/74 (1%)
+
+Query  53   MSMGGGGRGYGRGY-GRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMP  111
+              M       G     R   Y   AP     P   G   GYG       P  A+ Y   P
+Sbjct  591  RPMEPDMPYQGSPVMQRETPYQPTAPSAPDLPADQGPASGYGLQRQPTDPSAALYYAPQP  650
+
+Query  112  PQMPAAPAQPQAAP  125
+            PQ    PA PQ AP
+Sbjct  651  PQGTPYPAYPQGAP  664
+
+
+> sp|P0CR70|SPT5_CRYNJ Transcription elongation factor SPT5 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain JEC21 
+/ ATCC MYA-565) OX=214684 GN=SPT5 PE=3 SV=1
+Length=1152
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 31/103 (30%), Positives = 35/103 (34%), Gaps = 8/103 (8%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYG--YGAPYG  85
+             G  G     +   G    +  G     M      Y   Y      G GAP     G PY 
+Sbjct  908   GPSGGRTPAYGAYGRP--EASGSRPSVMAPPSAPYSAPYSAPTPAGNGAPTPAIPGNPYT  965
+
+Query  86    YGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQ--AAPS  126
+               AP  YGAP  Y AP   MP  + P   P A   P    AP+
+Sbjct  966   --APTPYGAPTPYAAPTPGMPSLSAPTPGPGAGIAPTPFGAPT  1006
+
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/100 (25%), Positives = 32/100 (32%), Gaps = 5/100 (5%)
+
+Query  28   GGPGYGNGLWDNMG-DMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            GG     G+      + +       +         YGR    G+           APY  
+Sbjct  885  GGKTPAYGMQGGKTPNAYAMAPPGPSGGRTPAYGAYGRPEASGS--RPSVMAPPSAPYS-  941
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+             APY    P G GAP  A+P        P     P AAP+
+Sbjct  942  -APYSAPTPAGNGAPTPAIPGNPYTAPTPYGAPTPYAAPT  980
+
+
+> sp|P0CR71|SPT5_CRYNB Transcription elongation factor SPT5 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain B-3501A) 
+OX=283643 GN=SPT5 PE=3 SV=1
+Length=1152
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 31/103 (30%), Positives = 35/103 (34%), Gaps = 8/103 (8%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYG--YGAPYG  85
+             G  G     +   G    +  G     M      Y   Y      G GAP     G PY 
+Sbjct  908   GPSGGRTPAYGAYGRP--EASGSRPSVMAPPSAPYSAPYSAPTPAGNGAPTPAIPGNPYT  965
+
+Query  86    YGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQ--AAPS  126
+               AP  YGAP  Y AP   MP  + P   P A   P    AP+
+Sbjct  966   --APTPYGAPTPYAAPTPGMPSLSAPTPGPGAGIAPTPFGAPT  1006
+
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/100 (25%), Positives = 32/100 (32%), Gaps = 5/100 (5%)
+
+Query  28   GGPGYGNGLWDNMG-DMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            GG     G+      + +       +         YGR    G+           APY  
+Sbjct  885  GGKTPAYGMQGGKTPNAYAMAPPGPSGGRTPAYGAYGRPEASGS--RPSVMAPPSAPYS-  941
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+             APY    P G GAP  A+P        P     P AAP+
+Sbjct  942  -APYSAPTPAGNGAPTPAIPGNPYTAPTPYGAPTPYAAPT  980
+
+
+> sp|P12111|CO6A3_HUMAN Collagen alpha-3(VI) chain OS=Homo sapiens 
+OX=9606 GN=COL6A3 PE=1 SV=5
+Length=3177
+
+ Score = 52.1 bits (123),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 25/92 (27%), Positives = 27/92 (29%), Gaps = 7/92 (8%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYG-  85
+             GG G   G     GD   DG G        G RG  G    +GN    G   G   P G 
+Sbjct  2282  GGIGNR-GPRGETGDDGRDGVGSEGRRGKKGERGFPGYPGPKGNPGEPGL-NGTTGPKGI  2339
+
+Query  86    ---YGAPYGYGAPYGYGAPYGAMPYGAMPPQM  114
+                 G     G     G P    P G    + 
+Sbjct  2340  RGRRGNSGPPGIVGQKGDPGYPGPAGPKGNRG  2371
+
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 19/100 (19%), Positives = 23/100 (23%), Gaps = 11/100 (11%)
+
+Query  33    GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+               G     G+      G+     G G RG     G     G G+    G     G P   
+Sbjct  2265  RTGPLGRKGEP-----GEPGPKGGIGNRGPRGETGDDGRDGVGSEGRRGKKGERGFPGYP  2319
+
+Query  93    GAPYGYGAPYGAMPYGA------MPPQMPAAPAQPQAAPS  126
+             G     G P      G            P      +  P 
+Sbjct  2320  GPKGNPGEPGLNGTTGPKGIRGRRGNSGPPGIVGQKGDPG  2359
+
+
+> sp|A1R516|IF2_PAEAT Translation initiation factor IF-2 OS=Paenarthrobacter 
+aurescens (strain TC1) OX=290340 GN=infB PE=3 
+SV=1
+Length=958
+
+ Score = 51.3 bits (121),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 28/116 (24%), Positives = 30/116 (26%), Gaps = 12/116 (10%)
+
+Query  19   ASFSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPY  78
+            A   A A  GG     G      + F    G      G G R    G         G P 
+Sbjct  137  AETPAPARQGGQAPRPGGPRPGNNPFATSQGMPRGRGGDGDRPPRPGNNPFAP-SQGMPR  195
+
+Query  79   G--------YGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+            G         G P       G     G G P    P     P  P AP +P   P 
+Sbjct  196  GERRNDGERPGGPRPAAGAGGPRPAAGTGGPRPGAP-RPGAP-RPGAP-RPAGGPG  248
+
+
+ Score = 50.9 bits (120),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 26/102 (25%), Positives = 28/102 (27%), Gaps = 9/102 (9%)
+
+Query  28   GGPGYGNGL----WDNMGDMFGDGYGDFNMSMGGGGRGYGRGYG--RGNGYGYGAPYGYG  81
+            GGP  GN              GDG               G   G  R +G   G P    
+Sbjct  153  GGPRPGNNPFATSQGMPRGRGGDGDRPPRPGNNPFAPSQGMPRGERRNDGERPGGPRPAA  212
+
+Query  82   APYGYGAPYGYGAPYGYGAPYG--AMPYGAMPPQMPAAPAQP  121
+               G     G G P   GAP      P    P   P A  +P
+Sbjct  213  GAGGPRPAAGTGGPR-PGAPRPGAPRPGAPRPAGGPGAGNRP  253
+
+
+> sp|A7H9F3|IF2_ANADF Translation initiation factor IF-2 OS=Anaeromyxobacter 
+sp. (strain Fw109-5) OX=404589 GN=infB PE=3 SV=1
+Length=970
+
+ Score = 51.3 bits (121),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 24/78 (31%), Gaps = 12/78 (15%)
+
+Query  58   GGRGYGRGYGRGNG----YGYG-APYGYG-APYGYGA----PYGYGAPYGYGAPYGAMPY  107
+            G +  G               G  P   G  P G G     P G  AP    AP  A P+
+Sbjct  186  GAQPPGAPVRPAAPGVRPAAPGVRPAAPGVRPTGPGVRPSVPGGPRAPGQPTAPMAAAPH  245
+
+Query  108  GAMPPQMPAAPAQPQAAP  125
+            G      P  PA P   P
+Sbjct  246  GPGA--QPGQPAAPGPDP  261
+
+
+ Score = 44.4 bits (103),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 18/66 (27%), Positives = 19/66 (29%), Gaps = 5/66 (8%)
+
+Query  64   RGYGRGNGYGYGAPYGYGAPYGYG-APYGYG-APYGYGA-PYGAM--PYGAMPPQMPAAP  118
+            R        G   P     P   G  P   G  P   G  P G    P     P+ P  P
+Sbjct  177  RPPAPSVPAGAQPPGAPVRPAAPGVRPAAPGVRPAAPGVRPTGPGVRPSVPGGPRAPGQP  236
+
+Query  119  AQPQAA  124
+              P AA
+Sbjct  237  TAPMAA  242
+
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 15/75 (20%), Positives = 17/75 (23%), Gaps = 2/75 (3%)
+
+Query  33   GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRG-NGYGYGAPYGYGAPYGYGAPYG  91
+            G             G       +     G  R  G G      G P   G P    A   
+Sbjct  186  GAQPPGAPVRPAAPGVRPAAPGVRPAAPGV-RPTGPGVRPSVPGGPRAPGQPTAPMAAAP  244
+
+Query  92   YGAPYGYGAPYGAMP  106
+            +G     G P    P
+Sbjct  245  HGPGAQPGQPAAPGP  259
+
+
+> sp|A5DIP0|DHH1_PICGU ATP-dependent RNA helicase DHH1 OS=Meyerozyma 
+guilliermondii (strain ATCC 6260 / CBS 566 / DSM 6381 
+/ JCM 1539 / NBRC 10279 / NRRL Y-324) OX=294746 GN=DHH1 PE=3 
+SV=1
+Length=547
+
+ Score = 50.9 bits (120),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 22/115 (19%), Positives = 32/115 (28%), Gaps = 29/115 (25%)
+
+Query  40   MGDMFGDGYGDFNMSMGGGGRG-YGRGYG---------RGNGYGYGAPYGY----GAPYG  85
+             G+        +        +G   +            +G+    G         G+P G
+Sbjct  420  KGNEHSRKRNGYEYRGQPTSQGFPQQPPQANTGYNQVPQGSPQAQGLQGSPQGLQGSPQG  479
+
+Query  86   --YGAPYG----------YGAPYGY-GAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+               G+P G           G P    G P G  P G    Q    P  PQ  P++
+Sbjct  480  IPQGSPQGIPQGIPQGLPQGVPQFPQGYPQGIPPQGPQAYQNYQIP--PQQVPAQ  532
+
+
+> sp|Q9DDT5|SPT5H_DANRE Transcription elongation factor SPT5 OS=Danio 
+rerio OX=7955 GN=supt5h PE=1 SV=1
+Length=1084
+
+ Score = 50.5 bits (119),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 27/109 (25%), Positives = 31/109 (28%), Gaps = 23/109 (21%)
+
+Query  30   PGYGNGLW--DNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGY-GAPYGY  86
+            P YG+     D        G  D N                 + Y +        +P GY
+Sbjct  798  PHYGSQTPLHDGSRTPGQSGAWDPN--------NPNTPSRPDDEYEFAYDDEPSPSPQGY  849
+
+Query  87   GAPYGYGAPYGYGAPYGAMPY--GAMPPQMPAAPA-------QPQAAPS  126
+            G   G   P   G P    P       PQ P  PA        P AAPS
+Sbjct  850  G---GTPNPQTPGYPEVPSPQVNPQYNPQTPGTPAMYNTDQYSPYAAPS  895
+
+
+ Score = 44.4 bits (103),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 22/121 (18%), Positives = 26/121 (21%), Gaps = 20/121 (17%)
+
+Query  23   ASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGA  82
+            + AW   P   N       D +   Y D       G  G       G             
+Sbjct  816  SGAW--DPNNPN-TPSRPDDEYEFAYDDEPSPSPQGYGGTPNPQTPGYPEVPSPQVNPQY  872
+
+Query  83   -PYGYGAP-------YGYGAPYGYGAPYGAMPY---------GAMPPQMPAAPAQPQAAP  125
+             P   G P       Y   A       Y   P            +  Q   +PA     P
+Sbjct  873  NPQTPGTPAMYNTDQYSPYAAPSPQGSYQPSPSPQSYHQVAPSPVGYQNTHSPASYHPTP  932
+
+Query  126  S  126
+            S
+Sbjct  933  S  933
+
+
+> sp|Q0I7K2|IF2_SYNS3 Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain CC9311) OX=64471 GN=infB PE=3 SV=1
+Length=1129
+
+ Score = 49.7 bits (117),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 18/80 (23%), Positives = 23/80 (29%), Gaps = 0/80 (0%)
+
+Query  48   YGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPY  107
+                 ++ G   R   +    G      A  G         P     P G       MP 
+Sbjct  219  QPKAPVNRGAPARPAPKPELVGRPQPKRAAPGAPVRQIGQRPGVSPRPSGPPGQRANMPQ  278
+
+Query  108  GAMPPQMPAAPAQPQAAPSR  127
+                 Q P AP +P  APS+
+Sbjct  279  RPAGSQRPGAPTRPGNAPSK  298
+
+
+> sp|Q5R539|SRRT_PONAB Serrate RNA effector molecule homolog OS=Pongo 
+abelii OX=9601 GN=SRRT PE=2 SV=1
+Length=871
+
+ Score = 49.0 bits (115),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 21/78 (27%), Positives = 25/78 (32%), Gaps = 9/78 (12%)
+
+Query  50   DFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYG---YGAPYGYGAPYGYGAPYGAMP  106
+            D         +   +  G       G PY +  P G   YG P      YG GA   A+P
+Sbjct  755  DAKRPALPEIK-PAQPPGPAQSLTPGLPYPHQTPQGLMPYGQPRPPILGYGAGAVRPAVP  813
+
+Query  107  YGAMPPQMPAAPAQPQAA  124
+             G      P  P  P  A
+Sbjct  814  TG-----GPPYPHAPYGA  826
+
+
+> sp|Q8C6K9|CO6A6_MOUSE Collagen alpha-6(VI) chain OS=Mus musculus 
+OX=10090 GN=Col6a6 PE=1 SV=2
+Length=2265
+
+ Score = 49.0 bits (115),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 21/94 (22%), Positives = 23/94 (24%), Gaps = 10/94 (11%)
+
+Query  17    AGASFSASAWWGGPGYG------NGLWDNMGDMFGDGYGD-FNMSMGGGGRGYGRGYGRG  69
+             A     A    G PG         G     GD+   G           G R     +GR 
+Sbjct  1497  AAGDRGAKGLRGDPGTPGRDSSIQGPKGLKGDLGRQGRRGWPGSPGTPGSRRKMVVHGRR  1556
+
+Query  70    NGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYG  103
+                G       G P   G     G   G   P G
+Sbjct  1557  GHIGP--QGNPGTPGPDGLAGSPGL-RGPQGPRG  1587
+
+
+ Score = 48.2 bits (113),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 25/119 (21%), Positives = 30/119 (25%), Gaps = 23/119 (19%)
+
+Query  28    GGPGYG--NGLWDNMGDMFGDGY-GDFNMSMGGGGRG-YGRGYGRGNGYG----------  73
+             G PG     G   + G+    G  GD       G  G  GR        G          
+Sbjct  1475  GIPGRRGEKGDEGSQGNPGRRGAAGDRGAKGLRGDPGTPGRDSSIQGPKGLKGDLGRQGR  1534
+
+Query  74    ---YGAPYGYGA------PYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+                 G+P   G+          G     G P   G    A   G   PQ P      + 
+Sbjct  1535  RGWPGSPGTPGSRRKMVVHGRRGHIGPQGNPGTPGPDGLAGSPGLRGPQGPRGEVGEKG  1593
+
+
+ Score = 46.3 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/101 (22%), Positives = 25/101 (25%), Gaps = 10/101 (10%)
+
+Query  34    NGLWDNMGDMFGDG-YGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYG-  91
+             +G   + G     G  GD       G R  G    RG     G P   G       P G 
+Sbjct  1468  DGEQGDHGIPGRRGEKGDEGSQGNPGRR--GAAGDRGAKGLRGDPGTPGRDSSIQGPKGL  1525
+
+Query  92    ------YGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+                    G     G+P        M          PQ  P 
+Sbjct  1526  KGDLGRQGRRGWPGSPGTPGSRRKMVVHGRRGHIGPQGNPG  1566
+
+
+ Score = 41.3 bits (95),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 20/87 (23%), Positives = 24/87 (28%), Gaps = 6/87 (7%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+             G  G+  G   N G+      GD       G  G     G     GYG+    G     G
+Sbjct  1614  GSQGHL-GSQGNKGEP-----GDLGEKGAAGFPGPRGLQGDDGSPGYGSIGRKGTKGQEG  1667
+
+Query  88    APYGYGAPYGYGAPYGAMPYGAMPPQM  114
+              P   G     G P      G    + 
+Sbjct  1668  FPGESGLKGDIGDPGDPGEAGPKGARG  1694
+
+
+> sp|P15989|CO6A3_CHICK Collagen alpha-3(VI) chain OS=Gallus gallus 
+OX=9031 GN=COL6A3 PE=2 SV=2
+Length=3137
+
+ Score = 46.7 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 21/115 (18%), Positives = 22/115 (19%), Gaps = 23/115 (20%)
+
+Query  29    GPGYGNGLWDNMGDMFGDGYGDFNMSMGG----GGRGYGRGYGRGNGYGYGAPYGYGAPY  84
+             G     G     G   G G        G     G +G     G     G   P G     
+Sbjct  2182  GQMGEPGPAGQRGQDGGVGRKGMAGRRGPIGVKGTKGALGQPGPAGEQGMRGPQGPPGQI  2241
+
+Query  85    G-YGAPYGYGAPY-----------------GY-GAPYGAMPYGAMPPQMPAAPAQ  120
+             G  G     G P                  G  G        G   P     P  
+Sbjct  2242  GTPGIRGEQGIPGPRAGGGQPGAPGERGRIGPLGRKGEPGNPGPRGPNGQQGPRG  2296
+
+
+ Score = 44.7 bits (104),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 24/115 (21%), Positives = 28/115 (24%), Gaps = 9/115 (8%)
+
+Query  21    FSASAWWGGPGYGNGLWDNMGDMFGDG-YGDFNMSMGG-------GGRGYGRGYGRGNGY  72
+             FS    + G     G     G+    G  GD   S          G +G     G     
+Sbjct  2131  FSGEKGFSGRRGSKGAKGERGERGDRGLRGDPGESGADNTQRGTRGQKGEIGQMGEPGPA  2190
+
+Query  73    GYGAPYGYGAPYGYGAPYGY-GAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+             G     G     G     G  G     GA     P G    + P  P      P 
+Sbjct  2191  GQRGQDGGVGRKGMAGRRGPIGVKGTKGALGQPGPAGEQGMRGPQGPPGQIGTPG  2245
+
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 23/98 (23%), Positives = 23/98 (23%), Gaps = 5/98 (5%)
+
+Query  28    GGPGYGNGLWDNMGDMFGDGY-GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+             G PG         G     G  G        G RG   G GR    G   P G     G 
+Sbjct  2160  GDPGESGADNTQRGTRGQKGEIGQMGEPGPAGQRGQDGGVGRKGMAGRRGPIGVKGTKGA  2219
+
+Query  87    GAPYGYGAPYGYGAPYGAMPY----GAMPPQMPAAPAQ  120
+                 G     G   P G        G    Q    P  
+Sbjct  2220  LGQPGPAGEQGMRGPQGPPGQIGTPGIRGEQGIPGPRA  2257
+
+
+> sp|C0ZYA5|IF2_RHOE4 Translation initiation factor IF-2 OS=Rhodococcus 
+erythropolis (strain PR4 / NBRC 100887) OX=234621 GN=infB 
+PE=3 SV=1
+Length=981
+
+ Score = 46.3 bits (108),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 16/61 (26%), Positives = 18/61 (30%), Gaps = 0/61 (0%)
+
+Query  56   GGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMP  115
+              G  G     G+G         G     G G P       G     G+MP    P  MP
+Sbjct  213  APGQGGPRPAPGQGGPRPAPGQGGPRPAPGQGGPRPPAGQGGPRPSPGSMPPRPNPGAMP  272
+
+Query  116  A  116
+            A
+Sbjct  273  A  273
+
+
+> sp|Q3AZB7|IF2_SYNS9 Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain CC9902) OX=316279 GN=infB PE=3 SV=1
+Length=1176
+
+ Score = 45.9 bits (107),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 23/103 (22%), Positives = 25/103 (24%), Gaps = 11/103 (11%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA  88
+            G     G          +  G       GG     R  G G     G P   GAP   G 
+Sbjct  303  GAPTKTGTPARP-TPRPELVGKPVPRRTGGVGAPQRP-GTGVPQRQGGPARPGAPTRTGK  360
+
+Query  89   PYGYGAPYGYGAPYGAMP---------YGAMPPQMPAAPAQPQ  122
+            P     P G        P              P  P AP +P 
+Sbjct  361  PGAPTRPGGNTLELVGKPIRRDGSSASGRPGAPTRPGAPTRPG  403
+
+
+ Score = 44.7 bits (104),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 20/97 (21%), Positives = 24/97 (25%), Gaps = 10/97 (10%)
+
+Query  40   MGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGA-----  94
+                        +      G+        G     G P   GAP   G P          
+Sbjct  262  PSRPTPRPAAAPSRPGAPQGQKPQIVSRAGAPPRPGTPPRVGAPTKTGTPARPTPRPELV  321
+
+Query  95   ----PYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                P   G        G   PQ    PA+P  AP+R
+Sbjct  322  GKPVPRRTGGVGAPQRPGTGVPQRQGGPARP-GAPTR  357
+
+
+> sp|A6QPB3|COHA1_BOVIN Collagen alpha-1(XVII) chain OS=Bos taurus 
+OX=9913 GN=COL17A1 PE=2 SV=1
+Length=1473
+
+ Score = 45.5 bits (106),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 18/90 (20%), Positives = 22/90 (24%), Gaps = 6/90 (7%)
+
+Query  34   NGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+             G     G+    G          G +G     G     G       G P   G     G
+Sbjct  709  KGPRGLTGEPGLKGLP--GAVGEPGAKGAMGPAGPDGHQGPRGEQ--GLPGMPGTRGLPG  764
+
+Query  94   APYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+                 G P    P G     +P  P +P  
+Sbjct  765  PSGDPGKPGLTGPQGPQG--IPGTPGRPGV  792
+
+
+> sp|Q7S4P3|SEC24_NEUCR Protein transport protein sec24 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / 
+DSM 1257 / FGSC 987) OX=367110 GN=sec24 PE=3 SV=1
+Length=950
+
+ Score = 45.1 bits (105),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 12/76 (16%), Positives = 14/76 (18%), Gaps = 1/76 (1%)
+
+Query  49   GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYG  108
+            G+  +        YG           G P        YGAP           P       
+Sbjct  70   GNAVVGGQPAATQYGIPQ-PAAPGFGGYPAQDAQQVAYGAPTTPYGAPQPAVPGVGGYQA  128
+
+Query  109  AMPPQMPAAPAQPQAA  124
+              P      P      
+Sbjct  129  PDPYYSQGVPPAAVGP  144
+
+
+> sp|Q99PG2|OGFR_MOUSE Opioid growth factor receptor OS=Mus musculus 
+OX=10090 GN=Ogfr PE=1 SV=1
+Length=633
+
+ Score = 45.1 bits (105),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 18/91 (20%), Positives = 28/91 (31%), Gaps = 8/91 (9%)
+
+Query  45   GDGYGDFNMSMGGGGR----GYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGA  100
+            G+G  D    +G        G      +       +  G   P G   P       G   
+Sbjct  465  GNGPEDPKSQVGPEDPKSQVGPEDPKSQVGPEDPKSQVGPEDPKGQVEPEDPKGQVGPED  524
+
+Query  101  PYGAM----PYGAMPPQMPAAPAQPQAAPSR  127
+            P G +    P G + P+ P +   P+   S+
+Sbjct  525  PKGQVGPEDPKGQVGPEDPKSQVGPEDPKSQ  555
+
+
+ Score = 43.2 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 19/104 (18%), Positives = 29/104 (28%), Gaps = 5/104 (5%)
+
+Query  29   GPGYGNGLWDNMGDMF-GDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+             P    G  D  G +   D  G        G  G     G+       +  G   P    
+Sbjct  497  DPKSQVGPEDPKGQVEPEDPKGQVGPEDPKGQVGPEDPKGQVGPEDPKSQVGPEDPKSQV  556
+
+Query  88   APYGYGAPYGYGAPYGAM----PYGAMPPQMPAAPAQPQAAPSR  127
+             P    +      P   +    P   + P+ P +   P+ A S+
+Sbjct  557  EPEDPKSQVEPEDPKSQVEPEDPKSQVGPEDPQSQVGPEQAASK  600
+
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 16/104 (15%), Positives = 27/104 (26%), Gaps = 5/104 (5%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGR-GYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+             P    G  D    +  +             + G     G+          G   P G  
+Sbjct  470  DPKSQVGPEDPKSQVGPEDPKSQVGPEDPKSQVGPEDPKGQVEPEDPKGQVGPEDPKGQV  529
+
+Query  88   APYGYGAPYGYGAPYGAM----PYGAMPPQMPAAPAQPQAAPSR  127
+             P       G   P   +    P   + P+ P +  +P+   S+
+Sbjct  530  GPEDPKGQVGPEDPKSQVGPEDPKSQVEPEDPKSQVEPEDPKSQ  573
+
+
+ Score = 41.3 bits (95),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 13/85 (15%), Positives = 21/85 (25%), Gaps = 4/85 (5%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-  105
+                        G G      +       +  G   P     P    +  G   P G + 
+Sbjct  453  PTPSECPESQKDGNGPEDPKSQVGPEDPKSQVGPEDPKSQVGPEDPKSQVGPEDPKGQVE  512
+
+Query  106  ---PYGAMPPQMPAAPAQPQAAPSR  127
+               P G + P+ P     P+    +
+Sbjct  513  PEDPKGQVGPEDPKGQVGPEDPKGQ  537
+
+
+> sp|Q9JMH4|COHA1_MESAU Collagen alpha-1(XVII) chain OS=Mesocricetus 
+auratus OX=10036 GN=COL17A1 PE=2 SV=1
+Length=1431
+
+ Score = 44.4 bits (103),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/94 (20%), Positives = 26/94 (28%), Gaps = 7/94 (7%)
+
+Query  35   GLWDNMGDMFGDG-YGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYG----YGAP  89
+            G   + G+    G  G+  +    G  G     G     G     G     G     G  
+Sbjct  710  GPKGDQGEKGPRGLTGEPGVRGLPGAVGEPGAKGAMGPAGPDGQQGPRGEQGLTGMPGTR  769
+
+Query  90   YGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+               G     G P    P G     +P +P +P  
+Sbjct  770  GLPGPSGDPGKPGVTGPQGPQG--LPGSPGRPGT  801
+
+
+> sp|A1VG83|IF2_DESVV Translation initiation factor IF-2 OS=Desulfovibrio 
+vulgaris subsp. vulgaris (strain DP4) OX=391774 GN=infB 
+PE=3 SV=1
+Length=1079
+
+ Score = 44.0 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 20/97 (21%), Positives = 21/97 (22%), Gaps = 5/97 (5%)
+
+Query  33   GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+            G               G        GG   G       GY  G P      Y  GAP   
+Sbjct  301  GQRPEGGYRPEGQREGGYRPEGQREGGYRPGGAPRPEGGYRPGGP-RPEGGYRPGAPRPE  359
+
+Query  93   GAPYGYGAPYG----AMPYGAMPPQMPAAPAQPQAAP  125
+            G     G P         Y    P+          AP
+Sbjct  360  GGYRPAGGPRPEGQREGGYRPGAPRPEGGYRPAGGAP  396
+
+
+ Score = 44.0 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/85 (21%), Positives = 19/85 (22%), Gaps = 1/85 (1%)
+
+Query  42   DMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAP  101
+               G          G    GY     R  GY  G        Y  G P      Y  GAP
+Sbjct  298  RPGGQRPEGGYRPEGQREGGYRPEGQREGGYRPGGAPRPEGGYRPGGPR-PEGGYRPGAP  356
+
+Query  102  YGAMPYGAMPPQMPAAPAQPQAAPS  126
+                 Y       P    +    P 
+Sbjct  357  RPEGGYRPAGGPRPEGQREGGYRPG  381
+
+
+> sp|Q72ER1|IF2_DESVH Translation initiation factor IF-2 OS=Desulfovibrio 
+vulgaris (strain Hildenborough / ATCC 29579 / DSM 
+644 / NCIMB 8303) OX=882 GN=infB PE=3 SV=1
+Length=1079
+
+ Score = 44.0 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 20/97 (21%), Positives = 21/97 (22%), Gaps = 5/97 (5%)
+
+Query  33   GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+            G               G        GG   G       GY  G P      Y  GAP   
+Sbjct  301  GQRPEGGYRPEGQREGGYRPEGQREGGYRPGGAPRPEGGYRPGGP-RPEGGYRPGAPRPE  359
+
+Query  93   GAPYGYGAPYG----AMPYGAMPPQMPAAPAQPQAAP  125
+            G     G P         Y    P+          AP
+Sbjct  360  GGYRPAGGPRPEGQREGGYRPGAPRPEGGYRPAGGAP  396
+
+
+ Score = 44.0 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/85 (21%), Positives = 19/85 (22%), Gaps = 1/85 (1%)
+
+Query  42   DMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAP  101
+               G          G    GY     R  GY  G        Y  G P      Y  GAP
+Sbjct  298  RPGGQRPEGGYRPEGQREGGYRPEGQREGGYRPGGAPRPEGGYRPGGPR-PEGGYRPGAP  356
+
+Query  102  YGAMPYGAMPPQMPAAPAQPQAAPS  126
+                 Y       P    +    P 
+Sbjct  357  RPEGGYRPAGGPRPEGQREGGYRPG  381
+
+
+> sp|Q08DF4|DYN1_BOVIN Dynamin-1 OS=Bos taurus OX=9913 GN=DNM1 
+PE=2 SV=1
+Length=856
+
+ Score = 44.0 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 17/80 (21%), Positives = 20/80 (25%), Gaps = 2/80 (3%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMP  106
+            G      S     R       R    G             GAP     P     P+G  P
+Sbjct  771  GRRSPTSSPTPQRRAPAVPPARPGSRGPAPGPPPAGSALGGAPPVPSRPGASPDPFGPPP  830
+
+Query  107  YGAMPPQM--PAAPAQPQAA  124
+                 P    P  P+QP  +
+Sbjct  831  QVPSRPNRAPPGVPSQPIGS  850
+
+
+> sp|P19246|NFH_MOUSE Neurofilament heavy polypeptide OS=Mus musculus 
+OX=10090 GN=Nefh PE=1 SV=3
+Length=1090
+
+ Score = 43.6 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 12/69 (17%), Positives = 14/69 (20%), Gaps = 1/69 (1%)
+
+Query  59   GRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAM-PYGAMPPQMPAA  117
+             +  G     G           G     G     G       P     P      + PA 
+Sbjct  521  AKSPGEAKSPGEAKSPAEAKSPGEAKSPGEAKSPGEAKSPAEPKSPAEPKSPAEAKSPAE  580
+
+Query  118  PAQPQAAPS  126
+            P  P    S
+Sbjct  581  PKSPATVKS  589
+
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 12/89 (13%), Positives = 15/89 (17%), Gaps = 1/89 (1%)
+
+Query  39   NMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGY  98
+                  G+          G  +  G     G       P     P           P   
+Sbjct  525  GEAKSPGEAKSPAEAKSPGEAKSPGEAKSPGEAKSPAEPKSPAEPKSPAEAKSPAEPKSP  584
+
+Query  99   GAPYGAMP-YGAMPPQMPAAPAQPQAAPS  126
+                           + PA    P  A S
+Sbjct  585  ATVKSPGEAKSPSEAKSPAEAKSPAEAKS  613
+
+
+> sp|P25439|BRM_DROME ATP-dependent helicase brm OS=Drosophila 
+melanogaster OX=7227 GN=brm PE=1 SV=2
+Length=1638
+
+ Score = 43.6 bits (101),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 14/61 (23%), Positives = 15/61 (25%), Gaps = 4/61 (7%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYG----YGAPYGYGAPYGYGAPYGYGAPYGYGAPY  102
+              G   +SMG  G                   G P G   P   G P     P G   P 
+Sbjct  330  PNGGKPLSMGPSGGQPLIPSSPMQPQVRGTLPGMPPGSQVPQPGGGPQRQVPPAGMPMPK  389
+
+Query  103  G  103
+             
+Sbjct  390  P  390
+
+
+> sp|A0JUU0|IF2_ARTS2 Translation initiation factor IF-2 OS=Arthrobacter 
+sp. (strain FB24) OX=290399 GN=infB PE=3 SV=1
+Length=968
+
+ Score = 43.2 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/87 (20%), Positives = 19/87 (22%), Gaps = 2/87 (2%)
+
+Query  28   GGPGYGNGLWD-NMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            GG G          G+             GG      R          G P   G+    
+Sbjct  153  GGQGSAPRPGGPRPGNNPFATSQGMPRGRGGDNERPPRPGNNPFAPSQGMPRPGGSRTEG  212
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPPQ  113
+              P G     G G P    P      Q
+Sbjct  213  ERPGGPRPAAGAGGPRPGAP-RPGGTQ  238
+
+
+> sp|P15988|CO6A2_CHICK Collagen alpha-2(VI) chain OS=Gallus gallus 
+OX=9031 GN=COL6A2 PE=2 SV=1
+Length=1022
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 20/96 (21%), Positives = 24/96 (25%), Gaps = 3/96 (3%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYG  87
+            G PG   G     G++   G          G RG     G     G     G   P G  
+Sbjct  445  GDPGP-EGPRGLPGEVGNKGARGDQ--GLPGPRGPTGAVGEPGNIGSRGDPGDLGPRGDA  501
+
+Query  88   APYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+             P G     G        P G    +       P+ 
+Sbjct  502  GPPGPKGDRGRPGFSYPGPRGPQGDKGEKGQPGPKG  537
+
+
+ Score = 42.0 bits (97),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 24/109 (22%), Positives = 28/109 (26%), Gaps = 11/109 (10%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMG-------GGGRGYGRGYGRGNGYGY-GAPYG  79
+            G PG   G     G     G        G        G RG     G     G  G P  
+Sbjct  427  GDPG-TKGSKGGPGAKGERGDPGPEGPRGLPGEVGNKGARGDQGLPGPRGPTGAVGEPGN  485
+
+Query  80   YGAPYGYG--APYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+             G+    G   P G   P G     G   +    P+ P      +  P 
+Sbjct  486  IGSRGDPGDLGPRGDAGPPGPKGDRGRPGFSYPGPRGPQGDKGEKGQPG  534
+
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 23/105 (22%), Positives = 27/105 (26%), Gaps = 13/105 (12%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMG----GGGRGY-GRG----YGRGNGYGYGAPYG  79
+            GP    G     G++   G        G     G +G  GR      G     G     G
+Sbjct  472  GPRGPTGAVGEPGNIGSRGDPGDLGPRGDAGPPGPKGDRGRPGFSYPGPRGPQGDKGEKG  531
+
+Query  80   YGAPYGYGAPYGYGAPYG----YGAPYGAMPYGAMPPQMPAAPAQ  120
+               P G     G     G     G P    P G    + P   A 
+Sbjct  532  QPGPKGGRGELGPKGTQGTKGEKGEPGDPGPRGEPGTRGPPGEAG  576
+
+
+ Score = 40.1 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/90 (22%), Positives = 22/90 (24%), Gaps = 2/90 (2%)
+
+Query  39   NMGDMFGDG-YGDFNMSMGGGGRGYGRGYG-RGNGYGYGAPYGYGAPYGYGAPYGYGAPY  96
+              GD    G  G        G  G     G  G     GA    G P   G     G P 
+Sbjct  425  RRGDPGTKGSKGGPGAKGERGDPGPEGPRGLPGEVGNKGARGDQGLPGPRGPTGAVGEPG  484
+
+Query  97   GYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+              G+       G      P  P   +  P 
+Sbjct  485  NIGSRGDPGDLGPRGDAGPPGPKGDRGRPG  514
+
+
+> sp|P12110|CO6A2_HUMAN Collagen alpha-2(VI) chain OS=Homo sapiens 
+OX=9606 GN=COL6A2 PE=1 SV=4
+Length=1019
+
+ Score = 42.8 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 24/104 (23%), Positives = 25/104 (24%), Gaps = 11/104 (11%)
+
+Query  33   GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYG-  91
+              G     G    DG          G  G     G     G     G   P G     G 
+Sbjct  425  RRGDPGTKGSPGSDGPKGEKGD--PGPEGPRGLAGEVGNKGAKGDRGLPGPRGPQGALGE  482
+
+Query  92   YGAPYGYGAPYGAMPYG----AMPPQMPAAP----AQPQAAPSR  127
+             G     G P  A P G      P   P  P      P+ AP  
+Sbjct  483  PGKQGSRGDPGDAGPRGDSGQPGPKGDPGRPGFSYPGPRGAPGE  526
+
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 24/94 (26%), Gaps = 12/94 (13%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDG----------YGDFNMSMGGGGRGYGRGYGRGNGYGYGAP  77
+            G PG  +G     GD   +G           G        G RG     G     G    
+Sbjct  433  GSPG-SDGPKGEKGDPGPEGPRGLAGEVGNKGAKGDRGLPGPRGPQGALGEPGKQGSRGD  491
+
+Query  78   YGYGAPYGY-GAPYGYGAPYGYGAPYGAMPYGAM  110
+             G   P G  G P   G P   G  Y        
+Sbjct  492  PGDAGPRGDSGQPGPKGDPGRPGFSYPGPRGAPG  525
+
+
+> sp|P0CP46|PABP_CRYNJ Polyadenylate-binding protein, cytoplasmic 
+and nuclear OS=Cryptococcus neoformans var. neoformans serotype 
+D (strain JEC21 / ATCC MYA-565) OX=214684 GN=PAB1 PE=3 
+SV=1
+Length=673
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/91 (23%), Positives = 24/91 (26%), Gaps = 5/91 (5%)
+
+Query  37   WDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPY  96
+             +      G                 G     G      AP   G     G P   GAP 
+Sbjct  486  PNGQPLPGGVPAYGM-PPQVPYPGAPGYPVRPGGARIPAAPNANGP--RNGGPSPVGAPQ  542
+
+Query  97   GYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+              G P G++P G   P  P   A P     R
+Sbjct  543  --GLPAGSIPRGGQMPARPHEQAAPAPQAGR  571
+
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/124 (19%), Positives = 26/124 (21%), Gaps = 32/124 (26%)
+
+Query  32   YGNGLWDNMGDM------------FGDGYGDFNMSMGGGGRGYGRGYG------------  67
+            YG G     G M            +G          G      G                
+Sbjct  429  YGAGFPGMQGYMGQPMYGYPPMPGYGQPMPGMPPVRGPMMGYPGAPQNMMQSRPRFNPNG  488
+
+Query  68   ---RGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGA-----PYGAMPYGAMPPQMPAAPA  119
+                G    YG P     P   G P   G      A     P    P     PQ   A +
+Sbjct  489  QPLPGGVPAYGMPPQVPYPGAPGYPVRPGGARIPAAPNANGPRNGGPSPVGAPQGLPAGS  548
+
+Query  120  QPQA  123
+             P+ 
+Sbjct  549  IPRG  552
+
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 25/95 (26%), Gaps = 4/95 (4%)
+
+Query  34   NGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+              +    G     GY    M       GYG+                GAP          
+Sbjct  425  QRMQYGAGFPGMQGYMGQPMYGYPPMPGYGQPMPGMPPVRGPMMGYPGAPQNMMQSRPRF  484
+
+Query  94   APYGYGAPYGAMPYGAMP----PQMPAAPAQPQAA  124
+             P G   P G   YG  P    P  P  P +P  A
+Sbjct  485  NPNGQPLPGGVPAYGMPPQVPYPGAPGYPVRPGGA  519
+
+
+ Score = 38.6 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 25/121 (21%), Positives = 29/121 (24%), Gaps = 16/121 (13%)
+
+Query  18   GASFSA-SAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGA  76
+            GA F     + G P YG          +G          G      G             
+Sbjct  430  GAGFPGMQGYMGQPMYGYPPMPG----YGQPMPGMPPVRGPMMGYPGAPQNMMQSRPRFN  485
+
+Query  77   PYGYGAPYG---YGAPYGYGAPYGYGAP-YGAMPYGAMPPQ-------MPAAPAQPQAAP  125
+            P G   P G   YG P     P   G P           P         P+    PQ  P
+Sbjct  486  PNGQPLPGGVPAYGMPPQVPYPGAPGYPVRPGGARIPAAPNANGPRNGGPSPVGAPQGLP  545
+
+Query  126  S  126
+            +
+Sbjct  546  A  546
+
+
+> sp|P0CP47|PABP_CRYNB Polyadenylate-binding protein, cytoplasmic 
+and nuclear OS=Cryptococcus neoformans var. neoformans serotype 
+D (strain B-3501A) OX=283643 GN=PAB1 PE=3 SV=1
+Length=673
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 21/91 (23%), Positives = 24/91 (26%), Gaps = 5/91 (5%)
+
+Query  37   WDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPY  96
+             +      G                 G     G      AP   G     G P   GAP 
+Sbjct  486  PNGQPLPGGVPAYGM-PPQVPYPGAPGYPVRPGGARIPAAPNANGP--RNGGPSPVGAPQ  542
+
+Query  97   GYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+              G P G++P G   P  P   A P     R
+Sbjct  543  --GLPAGSIPRGGQMPARPHEQAAPAPQAGR  571
+
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 23/124 (19%), Positives = 26/124 (21%), Gaps = 32/124 (26%)
+
+Query  32   YGNGLWDNMGDM------------FGDGYGDFNMSMGGGGRGYGRGYG------------  67
+            YG G     G M            +G          G      G                
+Sbjct  429  YGAGFPGMQGYMGQPMYGYPPMPGYGQPMPGMPPVRGPMMGYPGAPQNMMQSRPRFNPNG  488
+
+Query  68   ---RGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGA-----PYGAMPYGAMPPQMPAAPA  119
+                G    YG P     P   G P   G      A     P    P     PQ   A +
+Sbjct  489  QPLPGGVPAYGMPPQVPYPGAPGYPVRPGGARIPAAPNANGPRNGGPSPVGAPQGLPAGS  548
+
+Query  120  QPQA  123
+             P+ 
+Sbjct  549  IPRG  552
+
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 25/95 (26%), Gaps = 4/95 (4%)
+
+Query  34   NGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+              +    G     GY    M       GYG+                GAP          
+Sbjct  425  QRMQYGAGFPGMQGYMGQPMYGYPPMPGYGQPMPGMPPVRGPMMGYPGAPQNMMQSRPRF  484
+
+Query  94   APYGYGAPYGAMPYGAMP----PQMPAAPAQPQAA  124
+             P G   P G   YG  P    P  P  P +P  A
+Sbjct  485  NPNGQPLPGGVPAYGMPPQVPYPGAPGYPVRPGGA  519
+
+
+ Score = 38.6 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 25/121 (21%), Positives = 29/121 (24%), Gaps = 16/121 (13%)
+
+Query  18   GASFSA-SAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGA  76
+            GA F     + G P YG          +G          G      G             
+Sbjct  430  GAGFPGMQGYMGQPMYGYPPMPG----YGQPMPGMPPVRGPMMGYPGAPQNMMQSRPRFN  485
+
+Query  77   PYGYGAPYG---YGAPYGYGAPYGYGAP-YGAMPYGAMPPQ-------MPAAPAQPQAAP  125
+            P G   P G   YG P     P   G P           P         P+    PQ  P
+Sbjct  486  PNGQPLPGGVPAYGMPPQVPYPGAPGYPVRPGGARIPAAPNANGPRNGGPSPVGAPQGLP  545
+
+Query  126  S  126
+            +
+Sbjct  546  A  546
+
+
+> sp|Q9PU36|PCLO_CHICK Protein piccolo (Fragment) OS=Gallus gallus 
+OX=9031 GN=PCLO PE=2 SV=1
+Length=5120
+
+ Score = 42.8 bits (99),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 17/102 (17%), Positives = 21/102 (21%), Gaps = 4/102 (4%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA  88
+            GP              G        S G       +            P           
+Sbjct  187  GPQKSQLQQSEPTKP-GQQQTSAKTSAGPTKPLPQQPDSAKTSSQAPPPTKPSLQQSGSV  245
+
+Query  89   PYGYGAPYGYGAPYGAMPYGAMPP-QMPAA--PAQPQAAPSR  127
+                  P   G P       A PP Q P +  P   Q  P++
+Sbjct  246  KQPSQQPARQGGPVKPSAQQAGPPKQQPGSEKPTAQQTGPAK  287
+
+
+> sp|A5GNJ0|IF2_SYNPW Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain WH7803) OX=32051 GN=infB PE=3 SV=1
+Length=1123
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 24/101 (24%), Gaps = 9/101 (9%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYG--YG  87
+            P   N                 N +     R   +    G       P G     G   G
+Sbjct  204  PRPANAPPSRP-----QPKTPVNRTAPPPQRPAAKPELVGRPQ-PRRPEGPPTRQGAGPG  257
+
+Query  88   APYGYGAPYGYG-APYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            +P    +P          MP      Q P AP +P     R
+Sbjct  258  SPRPAVSPRPSAPGSQRNMPQRPAGAQRPGAPTRPGTGAGR  298
+
+
+> sp|Q67P86|IF2_SYMTH Translation initiation factor IF-2 OS=Symbiobacterium 
+thermophilum (strain T / IAM 14863) OX=292459 GN=infB 
+PE=3 SV=1
+Length=1044
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 27/101 (27%), Positives = 27/101 (27%), Gaps = 14/101 (14%)
+
+Query  37   WDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGA---------PYGYGAPYGYG  87
+                    G G G       GG  G G     G     GA         P    A  G  
+Sbjct  299  PGQPARPAGSGIGVPVKPAAGGKSGLGLPTRPGEKAADGARGGGSGIGLPVKPAAGQGTA  358
+
+Query  88   A-PYGYGAPYGY--GAPYGAMPYGAMPPQMPAAPAQPQAAP  125
+            A   G G P     GAP      G   PQ P     P A P
+Sbjct  359  ARAGGLGLPQKPKAGAPRPGG--GLGAPQRPGRRGAPLAIP  397
+
+
+> sp|P14106|C1QB_MOUSE Complement C1q subcomponent subunit B OS=Mus 
+musculus OX=10090 GN=C1qb PE=1 SV=2
+Length=253
+
+ Score = 41.7 bits (96),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 14/62 (23%), Positives = 18/62 (29%), Gaps = 0/62 (0%)
+
+Query  63   GRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQ  122
+            G+    G     G P   G    +G     G P   G      P G      P+ P  P+
+Sbjct  49   GQPGTPGIKGEKGLPGLAGDLGEFGEKGDPGIPGTPGKVGPKGPVGPKGTPGPSGPRGPK  108
+
+Query  123  AA  124
+              
+Sbjct  109  GD  110
+
+
+ Score = 38.6 bits (88),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 13/60 (22%), Positives = 17/60 (28%), Gaps = 0/60 (0%)
+
+Query  67   GRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+              G     G     G     G     G P   G P    P G + P+    P+ P+    
+Sbjct  50   QPGTPGIKGEKGLPGLAGDLGEFGEKGDPGIPGTPGKVGPKGPVGPKGTPGPSGPRGPKG  109
+
+
+> sp|Q9QYX7|PCLO_MOUSE Protein piccolo OS=Mus musculus OX=10090 
+GN=Pclo PE=1 SV=4
+Length=5068
+
+ Score = 42.0 bits (97),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 15/97 (15%), Positives = 19/97 (20%), Gaps = 5/97 (5%)
+
+Query  35   GLWDNMGDMFGDGYGDFNMSMGGGGRGYGRG----YGRGNGYGYGAPYGYGAPYGYGAPY  90
+            G       + G G        G       +                     AP      +
+Sbjct  370  GPTKTPAQLSGPGKTPAQQP-GPTKPSPQQPIPAKPQPQQPVATKPQPQQPAPAKPQPQH  428
+
+Query  91   GYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+               A      P  A P    P      P QP  A  +
+Sbjct  429  PTPAKPQPQHPTPAKPQPQQPTPAKPQPQQPTPAKPQ  465
+
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 14/98 (14%), Positives = 19/98 (19%), Gaps = 3/98 (3%)
+
+Query  31   GYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGY-GAPYGYGAP  89
+            G G       G           +      +       +        P      P      
+Sbjct  380  GPGKTPAQQPGPT--KPSPQQPIPAKPQPQQPVATKPQPQQPAPAKPQPQHPTPAKPQPQ  437
+
+Query  90   YGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+            +   A      P  A P    P      P QP  A  +
+Sbjct  438  HPTPAKPQPQQPTPAKPQPQQPTPAKPQPQQPTPAKPQ  475
+
+
+ Score = 40.5 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 11/98 (11%), Positives = 15/98 (15%), Gaps = 1/98 (1%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAP  89
+            PG                                +     +         +  P      
+Sbjct  389  PGPTKPSPQQPIPAKPQPQQPVATKPQPQQPAPAKPQ-PQHPTPAKPQPQHPTPAKPQPQ  447
+
+Query  90   YGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                A      P  A P    P      P  P  A  +
+Sbjct  448  QPTPAKPQPQQPTPAKPQPQQPTPAKPQPQHPTPAKPQ  485
+
+
+ Score = 39.0 bits (89),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 15/95 (16%), Positives = 17/95 (18%), Gaps = 0/95 (0%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA  88
+            GPG      D           +       G     +            P           
+Sbjct  221  GPGKEVIPQDIPSKSVSSQQAEKTKPQAPGTAKPSQQSPAQTPAQQAKPVAQQPGPAKAT  280
+
+Query  89   PYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+                G       P G     A PP     PAQ   
+Sbjct  281  VQQPGPAKSPAQPAGTGKSPAQPPVTAKPPAQQAG  315
+
+
+ Score = 38.6 bits (88),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/95 (18%), Positives = 20/95 (21%), Gaps = 4/95 (4%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYG-APYGYGA  88
+            PG G                    +   G +        G         G G  P     
+Sbjct  333  PGQGKVPPGPAKSPAQQPGTAKLPAQQPGPQT--AAKVPGPTKTPAQLSGPGKTPAQQPG  390
+
+Query  89   PYGYGAPYG-YGAPYGAMPYGAMPPQMPAAPAQPQ  122
+            P            P    P    P     APA+PQ
+Sbjct  391  PTKPSPQQPIPAKPQPQQPVATKPQPQQPAPAKPQ  425
+
+
+ Score = 38.2 bits (87),  Expect = 0.010, Method: Composition-based stats.
+ Identities = 10/72 (14%), Positives = 15/72 (21%), Gaps = 1/72 (1%)
+
+Query  56   GGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMP  115
+                    +   +        P     P          A      P  A P    P    
+Sbjct  435  QPQHPTPAKPQPQQPTPAKPQPQQP-TPAKPQPQQPTPAKPQPQHPTPAKPQPQQPGLGK  493
+
+Query  116  AAPAQPQAAPSR  127
+             +  QP  + S+
+Sbjct  494  PSAQQPSKSISQ  505
+
+
+> sp|Q02788|CO6A2_MOUSE Collagen alpha-2(VI) chain OS=Mus musculus 
+OX=10090 GN=Col6a2 PE=1 SV=3
+Length=1034
+
+ Score = 41.7 bits (96),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 25/92 (27%), Positives = 27/92 (29%), Gaps = 13/92 (14%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDG----------YGDFNMSMGGGGRGYGRGYGRGNGYGYGAP  77
+            GGPG  +G     GD   +G           G        G RG     G     G    
+Sbjct  448  GGPG-SDGPKGEKGDPGPEGPRGLAGEVGSKGAKGDRGLPGPRGPQGALGEPGKQGSRGD  506
+
+Query  78   YGYGAPYGY-GAPYGYGAPYGYGAPYGAMPYG  108
+             G   P G  G P   G P   G  Y   P G
+Sbjct  507  PGDAGPRGDSGQPGPKGDPGRPGFSY-PGPRG  537
+
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 18/87 (21%), Positives = 21/87 (24%), Gaps = 7/87 (8%)
+
+Query  48   YGDFNMSMGGGGRGYGRGYGRGNGYGY---GAPYGYGAPYGYGAPYGYGAPYG----YGA  100
+             GD     G G  G     G     G        G     G     G   P G     G 
+Sbjct  441  RGDPGTKGGPGSDGPKGEKGDPGPEGPRGLAGEVGSKGAKGDRGLPGPRGPQGALGEPGK  500
+
+Query  101  PYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                   G   P+  +    P+  P R
+Sbjct  501  QGSRGDPGDAGPRGDSGQPGPKGDPGR  527
+
+
+> sp|Q9LFT8|CDKC1_ARATH Cyclin-dependent kinase C-1 OS=Arabidopsis 
+thaliana OX=3702 GN=CDKC-1 PE=1 SV=1
+Length=505
+
+ Score = 41.7 bits (96),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 19/74 (26%), Positives = 21/74 (28%), Gaps = 4/74 (5%)
+
+Query  51   FNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY---GAPYGYGAPYGYGAPYGAMPY  107
+              +  G     YG+  G      Y         Y     G   G   P G GAPY A P 
+Sbjct  405  PQVPAGPSHNFYGKPRGPPGPNRYPPSGNQSGGYNQSRGGYSSGSYPPQGRGAPYVAGPR  464
+
+Query  108  GA-MPPQMPAAPAQ  120
+            G    P     P  
+Sbjct  465  GPSGGPYGVGPPNY  478
+
+
+> sp|P15711|104K_THEPA 104 kDa microneme/rhoptry antigen OS=Theileria 
+parva OX=5875 GN=TP04_0437 PE=2 SV=1
+Length=924
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 29/99 (29%), Gaps = 7/99 (7%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGA-PYGYG  87
+            GPG         GD  G   G    S G      G+  G G   G    +     P    
+Sbjct  511  GPGASGLPPKAPGDKEG-SEGHKGPSKGSDSSKEGKKPGSGKKPGPAREHKPSKIPTLSK  569
+
+Query  88   APYGYGAPYGYGAPYGA----MPYGAMPPQMPAAPAQPQ  122
+             P G   P     P        P  A P + P +P  PQ
+Sbjct  570  KPSGPKDPKHPRDPKEPRKSKSPRTASPTRRP-SPKLPQ  607
+
+
+ Score = 40.5 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 16/113 (14%), Positives = 24/113 (21%), Gaps = 19/113 (17%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNM-SMGGGGRGYGRGYGRGN----GYGYGAPYGYGAPY  84
+            PG   G   + G   G            G   G  R +              P     P 
+Sbjct  522  PGDKEGSEGHKGPSKGSDSSKEGKKPGSGKKPGPAREHKPSKIPTLSKKPSGPKDPKHPR  581
+
+Query  85   GYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPA--------------APAQPQA  123
+                P    +P          P      ++P               +P +P+ 
+Sbjct  582  DPKEPRKSKSPRTASPTRRPSPKLPQLSKLPKSTSPRSPPPPTRPSSPERPEG  634
+
+
+> sp|A5GVG4|IF2_SYNR3 Translation initiation factor IF-2 OS=Synechococcus 
+sp. (strain RCC307) OX=316278 GN=infB PE=3 SV=1
+Length=1106
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 20/85 (24%), Positives = 22/85 (26%), Gaps = 5/85 (6%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMP  106
+            G           GR  G     G   G   P   G       P     P G G       
+Sbjct  309  GKPIRREPNAPQGRQGGAPSRPGGPGGMRKPVSPGELMQLQKPGSRPTP-GDGPRRPPAR  367
+
+Query  107  YGAMPPQMPAA----PAQPQAAPSR  127
+             G+  P+ P      P  P A P R
+Sbjct  368  PGSEAPRRPGEAPNRPNAPTAPPRR  392
+
+
+ Score = 38.6 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 20/127 (16%), Positives = 23/127 (18%), Gaps = 36/127 (28%)
+
+Query  37   WDNMGDMFGDGYGDFN-MSMGGGGRGYGRGYGRGNGYGYGAPYG----------------  79
+             +                    G    G     G     G P                  
+Sbjct  241  QNRPAVPMRPPNQQQRPSPQRSGPPRSGAPIRPGAPQRPGMPGRGGAPQQRRGPGGPGGR  300
+
+Query  80   ---------------YGAPYGY--GAPYGYGAPYGYGAPYGAMP--YGAMPPQMPAAPAQ  120
+                             AP G   GAP   G P G   P           P   P     
+Sbjct  301  PPSSLELVGKPIRREPNAPQGRQGGAPSRPGGPGGMRKPVSPGELMQLQKPGSRPTPGDG  360
+
+Query  121  PQAAPSR  127
+            P+  P+R
+Sbjct  361  PRRPPAR  367
+
+
+> sp|A8IG20|IF2_AZOC5 Translation initiation factor IF-2 OS=Azorhizobium 
+caulinodans (strain ATCC 43989 / DSM 5975 / JCM 20966 
+/ NBRC 14845 / NCIMB 13405 / ORS 571) OX=438753 GN=infB 
+PE=3 SV=1
+Length=1058
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 13/60 (22%), Positives = 15/60 (25%), Gaps = 0/60 (0%)
+
+Query  64   RGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQA  123
+            R    G      AP   G   G G P    +    G P      G      P    Q  +
+Sbjct  211  RPAAGGAQRSGAAPQRPGTSGGPGRPGAPASGQRSGGPGSDRRGGPGGQNRPGQNRQGGS  270
+
+
+ Score = 40.9 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 12/57 (21%), Positives = 13/57 (23%), Gaps = 5/57 (9%)
+
+Query  55   MGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAP-----YGYGAPYGYGAPYGAMP  106
+             GG  R        G   G G P    +    G P      G G     G       
+Sbjct  214  AGGAQRSGAAPQRPGTSGGPGRPGAPASGQRSGGPGSDRRGGPGGQNRPGQNRQGGS  270
+
+
+> sp|P20785|CO6A1_CHICK Collagen alpha-1(VI) chain OS=Gallus gallus 
+OX=9031 GN=COL6A1 PE=2 SV=1
+Length=1019
+
+ Score = 41.7 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 26/122 (21%), Positives = 28/122 (23%), Gaps = 29/122 (24%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGG----GGRGYGRGYGRGNG------------  71
+            G PG  +G     G     G        G     G  G     GR               
+Sbjct  411  GSPG-ADGPPGERGSNGERGPPGSPGDRGPRGDLGEPGPPGDQGREGPLGPPGDQGEPGP  469
+
+Query  72   ------YGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAP  125
+                   G   P G   P G       GAP   G P      G   P        P  AP
+Sbjct  470  PGPKGYRGDDGPRGNEGPKG-----SPGAPGLPGDPGLMGERGEDGPPGNGTIGFP-GAP  523
+
+Query  126  SR  127
+             +
+Sbjct  524  GQ  525
+
+
+ Score = 38.6 bits (88),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 16/74 (22%), Positives = 22/74 (30%), Gaps = 1/74 (1%)
+
+Query  54   SMGGGGRG-YGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPP  112
+                G +G  G    +G     G P   G     G+P   G P   G+     P G+   
+Sbjct  377  DGKPGRQGIPGSPGEKGAPGNRGEPGPLGETGDEGSPGADGPPGERGSNGERGPPGSPGD  436
+
+Query  113  QMPAAPAQPQAAPS  126
+            + P         P 
+Sbjct  437  RGPRGDLGEPGPPG  450
+
+
+> sp|C0ZPK5|FTSH_RHOE4 ATP-dependent zinc metalloprotease FtsH 
+OS=Rhodococcus erythropolis (strain PR4 / NBRC 100887) OX=234621 
+GN=ftsH PE=3 SV=1
+Length=854
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/105 (19%), Positives = 24/105 (23%), Gaps = 9/105 (9%)
+
+Query  21   FSASAWWGGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGY  80
+            + A A W  PG+      +                 GG  G           G      +
+Sbjct  710  YGAPAGWSAPGWPPRENPSPTYPG---------QQSGGYTGGQNPTPPNQSQGQYGQPQH  760
+
+Query  81   GAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAP  125
+            G P      YG   P     P    P    P Q       P   P
+Sbjct  761  GQPQPDQGQYGQPHPGQQAYPEQPHPGRRYPAQPDYPVQYPDGGP  805
+
+
+> sp|P0CQ80|DHH1_CRYNJ ATP-dependent RNA helicase DHH1 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain JEC21 
+/ ATCC MYA-565) OX=214684 GN=DHH1 PE=3 SV=1
+Length=625
+
+ Score = 40.9 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 12/63 (19%), Positives = 16/63 (25%), Gaps = 0/63 (0%)
+
+Query  65   GYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAA  124
+             YG+G                  AP    +        G  P  + PP     P  P   
+Sbjct  487  AYGQGPPQPQALFQQQPNSSPAPAPLPSYSQQAPTQAQGPAPVQSPPPAPSTQPQAPAQT  546
+
+Query  125  PSR  127
+            P +
+Sbjct  547  PIQ  549
+
+
+> sp|P0CQ81|DHH1_CRYNB ATP-dependent RNA helicase DHH1 OS=Cryptococcus 
+neoformans var. neoformans serotype D (strain B-3501A) 
+OX=283643 GN=DHH1 PE=3 SV=1
+Length=625
+
+ Score = 40.9 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 12/63 (19%), Positives = 16/63 (25%), Gaps = 0/63 (0%)
+
+Query  65   GYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAA  124
+             YG+G                  AP    +        G  P  + PP     P  P   
+Sbjct  487  AYGQGPPQPQALFQQQPNSSPAPAPLPSYSQQAPTQAQGPAPVQSPPPAPSTQPQAPAQT  546
+
+Query  125  PSR  127
+            P +
+Sbjct  547  PIQ  549
+
+
+> sp|Q46J13|IF2_PROMT Translation initiation factor IF-2 OS=Prochlorococcus 
+marinus (strain NATL2A) OX=59920 GN=infB PE=3 SV=1
+Length=1183
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 21/113 (19%), Positives = 27/113 (24%), Gaps = 15/113 (13%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMS--MGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            G     G     G     G     ++     G    G     G     G+P   G     
+Sbjct  331  GSNNRIGGTGRPGSPNRQGPNRGGVANRTTQGQNRPGANNRAGAPVRSGSPNRGGMQNRP  390
+
+Query  87   GAPY-----------GYGAPYGYGAPYGAMP--YGAMPPQMPAAPAQPQAAPS  126
+            G P              G P G   P           P   P AP +   +P+
+Sbjct  391  GVPTRSLGGPNRSNNRPGVPSGMRKPVAPSELMQLQKPQARPNAPQRKTDSPT  443
+
+
+ Score = 40.9 bits (94),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/100 (13%), Positives = 21/100 (21%), Gaps = 8/100 (8%)
+
+Query  35   GLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGA  94
+            G            + +   +        G           G     G+    G     G+
+Sbjct  285  GAPIRKEKPVNKPHTNEVRNKPVMPSRPGAPKPPTAANRQGLSNRPGSNNRIGGTGRPGS  344
+
+Query  95   PYGYGAPYGA-------MPYGAMPPQMPAAPAQPQAAPSR  127
+            P   G   G                    AP +   +P+R
+Sbjct  345  PNRQGPNRGGVANRTTQGQNRPGANNRAGAPVR-SGSPNR  383
+
+
+> sp|Q9JKS6|PCLO_RAT Protein piccolo OS=Rattus norvegicus OX=10116 
+GN=Pclo PE=1 SV=1
+Length=5085
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 12/108 (11%), Positives = 16/108 (15%), Gaps = 11/108 (10%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYG---------RGYGRGNGYGYGAPYG  79
+            GP     +                 +   G              +               
+Sbjct  362  GPQTAAKVPGPTKTPAQQSGPGKTPAQQPGPTKPSPQQPIPAKPQPQQPVATKTQPQQSA  421
+
+Query  80   YGAPYG--YGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAP  125
+               P                   P    P  A P   P    +PQ  P
+Sbjct  422  PAKPQPQQPAPAKPQPQQPTPAKPQPQPPTPAKPQPQPPTATKPQPQP  469
+
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/100 (17%), Positives = 20/100 (20%), Gaps = 5/100 (5%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAP  89
+            PG         G            +             +             A      P
+Sbjct  351  PGTAKHPAQQPGPQTAAKVPGPTKTPAQQSGPGKTPAQQPGPTKPSPQQPIPAKPQPQQP  410
+
+Query  90   YGYGAPYGYGAPYGAMPYGAMP----PQMPAAPAQPQAAP  125
+                      AP    P    P    PQ P  PA+PQ  P
+Sbjct  411  VATKTQPQQSAPAKPQPQQPAPAKPQPQQP-TPAKPQPQP  449
+
+
+> sp|P21575|DYN1_RAT Dynamin-1 OS=Rattus norvegicus OX=10116 GN=Dnm1 
+PE=1 SV=2
+Length=864
+
+ Score = 40.5 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/81 (21%), Positives = 18/81 (22%), Gaps = 5/81 (6%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMP  106
+            G      S     R       R    G             GAP     P     P+G  P
+Sbjct  771  GRRSPTSSPTPQRRAPAVPPARPGSRGPAPGPPPAGSALGGAPPVPSRPGASPDPFGPPP  830
+
+Query  107  YGAMPPQMPAAPAQPQAAPSR  127
+                 P        P   PSR
+Sbjct  831  QVPSRPNR-----APPGVPSR  846
+
+
+> sp|Q05193|DYN1_HUMAN Dynamin-1 OS=Homo sapiens OX=9606 GN=DNM1 
+PE=1 SV=2
+Length=864
+
+ Score = 40.5 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/81 (21%), Positives = 18/81 (22%), Gaps = 5/81 (6%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMP  106
+            G      S     R       R    G             GAP     P     P+G  P
+Sbjct  771  GRRSPTSSPTPQRRAPAVPPARPGSRGPAPGPPPAGSALGGAPPVPSRPGASPDPFGPPP  830
+
+Query  107  YGAMPPQMPAAPAQPQAAPSR  127
+                 P        P   PSR
+Sbjct  831  QVPSRPNR-----APPGVPSR  846
+
+
+> sp|P97384|ANX11_MOUSE Annexin A11 OS=Mus musculus OX=10090 GN=Anxa11 
+PE=1 SV=2
+Length=503
+
+ Score = 40.1 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/51 (33%), Positives = 17/51 (33%), Gaps = 2/51 (4%)
+
+Query  76   APYGYGAPYGYGAPYGYGAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+             P   GAP   G P         GA Y   P    P Q P  P   Q  PS
+Sbjct  119  YPAYPGAPV-PGQPMPPTGQQPPGA-YPGQPPMTYPGQSPMPPPGQQPVPS  167
+
+
+> sp|Q9Y6V0|PCLO_HUMAN Protein piccolo OS=Homo sapiens OX=9606 
+GN=PCLO PE=1 SV=4
+Length=5065
+
+ Score = 40.5 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/104 (17%), Positives = 28/104 (27%), Gaps = 10/104 (10%)
+
+Query  30   PGYGNGLWDNMGD---MFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGY  86
+            PG G       G              ++   G +   +  G         P         
+Sbjct  395  PGVGKTPAQQPGPAKPPTQQVGTPKPLAQQPGLQSPAKAPGPTKTPVQAKPPS----QQP  450
+
+Query  87   GAPYGYGAPYGYGAPYGAMPYGAMPP-QMPAA--PAQPQAAPSR  127
+            G+        G   P    P    PP Q P +  P+  Q +P++
+Sbjct  451  GSTKPPPQQPGPAKPSPQQPGSTKPPSQQPGSAKPSAQQPSPAK  494
+
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/105 (16%), Positives = 21/105 (20%), Gaps = 6/105 (6%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNG--YGYGAPYGYGAPYG  85
+            G     +            G G       G  +   +  G         G      AP  
+Sbjct  377  GSEKPSSEQPGPKALAQPPGVGKTPAQQPGPAKPPTQQVGTPKPLAQQPGLQSPAKAPGP  436
+
+Query  86   YGAPYGYGAPYGYGAPYGAMPYGAMP----PQMPAAPAQPQAAPS  126
+               P     P          P    P    PQ P +   P   P 
+Sbjct  437  TKTPVQAKPPSQQPGSTKPPPQQPGPAKPSPQQPGSTKPPSQQPG  481
+
+
+> sp|B2RNN3|C1T9B_HUMAN Complement C1q and tumor necrosis factor-related 
+protein 9B OS=Homo sapiens OX=9606 GN=C1QTNF9B PE=1 
+SV=1
+Length=333
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 28/116 (24%), Positives = 31/116 (27%), Gaps = 18/116 (16%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGY-------GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGY  80
+            G PG  +G     G+   DG        GD       G  G     G     G     G 
+Sbjct  62   GSPG-KDGTSGEKGERGADGKVEAKGIKGDQGSRGSPGKHGPKGLAGPMGEKGLRGETGP  120
+
+Query  81   GAPYGYGAPYGYGAPYGY----------GAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+                G     G   P G           G P    P G   P+  A P  PQ  P 
+Sbjct  121  QGQKGNKGDVGPTGPEGPRGNIGPLGPTGLPGPMGPIGKPGPKGEAGPTGPQGEPG  176
+
+
+> sp|Q4JV51|IF2_CORJK Translation initiation factor IF-2 OS=Corynebacterium 
+jeikeium (strain K411) OX=306537 GN=infB PE=3 SV=1
+Length=922
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 26/102 (25%), Positives = 29/102 (28%), Gaps = 5/102 (5%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGR-GYGRGNGYGYGAPYGYGAPYGYGA  88
+            P          G   G   G        G +  GR      N +  GAP    AP   G 
+Sbjct  133  PKTAAKPTPKPGAKPGPKPGGAKPGAKPGPKPGGRAPRVANNPFSSGAPAERPAPRPRGG  192
+
+Query  89   PYGYGAPYGYGA-PYGAMPYGAMPP---QMPAAPAQPQAAPS  126
+              G G     G+ P GA   G  P    Q       P   PS
+Sbjct  193  QAGPGDMPRPGSRPGGAKKAGPKPGGAKQGGGRRPSPAMMPS  234
+
+
+> sp|Q4P2B6|SEC31_USTMA Protein transport protein SEC31 OS=Ustilago 
+maydis (strain 521 / FGSC 9021) OX=237631 GN=SEC31 PE=3 
+SV=1
+Length=1416
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 20/80 (25%), Positives = 20/80 (25%), Gaps = 3/80 (4%)
+
+Query  49    GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA-PYGYGAPYGYGAPYGAMPY  107
+                  S G   R                      P G GA           GAP  A P 
+Sbjct  1216  SQAAPSAGPYARPPAGPGAPSANGMQQQQQPGAPPVGPGAGALRPPGQALPGAPGLAGP-  1274
+
+Query  108   GAMPPQMPAAPAQPQAAPSR  127
+                 PQ  A P     APSR
+Sbjct  1275  -PGVPQRSATPGGGAGAPSR  1293
+
+
+> sp|P75330|P30_MYCPN P30 adhesin OS=Mycoplasma pneumoniae (strain 
+ATCC 29342 / M129) OX=272634 GN=p30 PE=4 SV=1
+Length=274
+
+ Score = 39.0 bits (89),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 20/74 (27%), Positives = 20/74 (27%), Gaps = 1/74 (1%)
+
+Query  53   MSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYG-APYGAMPYGAMP  111
+                G     G     G     G     G P   G     G P   G AP   MP     
+Sbjct  180  APRPGMPPHPGMAPRPGFPPQPGMAPRPGMPPHPGMAPRPGFPPQPGMAPRPGMPPHPGM  239
+
+Query  112  PQMPAAPAQPQAAP  125
+               P  P QP  AP
+Sbjct  240  APRPGFPPQPGMAP  253
+
+
+ Score = 38.2 bits (87),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 18/73 (25%), Positives = 18/73 (25%), Gaps = 1/73 (1%)
+
+Query  54   SMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYG-APYGAMPYGAMPP  112
+               G     G     G     G     G P   G     G P   G AP    P      
+Sbjct  169  PRTGFPPQPGMAPRPGMPPHPGMAPRPGFPPQPGMAPRPGMPPHPGMAPRPGFPPQPGMA  228
+
+Query  113  QMPAAPAQPQAAP  125
+              P  P  P  AP
+Sbjct  229  PRPGMPPHPGMAP  241
+
+
+> sp|Q1IIT3|IF2_KORVE Translation initiation factor IF-2 OS=Koribacter 
+versatilis (strain Ellin345) OX=204669 GN=infB PE=3 
+SV=1
+Length=1011
+
+ Score = 39.0 bits (89),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 19/95 (20%), Positives = 22/95 (23%), Gaps = 7/95 (7%)
+
+Query  33   GNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGY  92
+              G     G       G             G   G G     G P   G       P+  
+Sbjct  292  SQGAGTRPGMPV---RGQPIFQRRPQSGPGGGSGGPGGFQRPGGPPRPGD--RPRGPHPT  346
+
+Query  93   GAPYGYGAPYGAMPYGAMPPQMPAAPAQPQAAPSR  127
+                    P      G  PP  PA     + AP+R
+Sbjct  347  R--QFPSGPRPMGGIGLAPPGAPANKPAGRPAPAR  379
+
+
+> sp|A0PQC4|IF2_MYCUA Translation initiation factor IF-2 OS=Mycobacterium 
+ulcerans (strain Agy99) OX=362242 GN=infB PE=3 SV=1
+Length=945
+
+ Score = 39.0 bits (89),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 18/85 (21%), Positives = 22/85 (26%), Gaps = 6/85 (7%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAP  89
+            P  G       G +   G     +          +   R            GAP   GAP
+Sbjct  169  PHPGMAPGARPGPVPKQGVRTPRVGNNPFSSA--QPVDRPIPRPQAP--RPGAPR-PGAP  223
+
+Query  90   YGYGAPYGYGAPYGAMPY-GAMPPQ  113
+               GA  G   P       G  PP+
+Sbjct  224  RPGGASSGNMPPRPGGASGGPRPPR  248
+
+
+> sp|Q9UMD9|COHA1_HUMAN Collagen alpha-1(XVII) chain OS=Homo sapiens 
+OX=9606 GN=COL17A1 PE=1 SV=3
+Length=1497
+
+ Score = 39.0 bits (89),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 20/88 (23%), Positives = 23/88 (26%), Gaps = 1/88 (1%)
+
+Query  35   GLWDNMGDMFGDG-YGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYG  93
+            G   +MG     G  G        G  G+    G     G     G   P G     G  
+Sbjct  570  GPKGDMGSPGPKGDRGFPGTPGIPGPLGHPGPQGPKGQKGSVGDPGMEGPMGQRGREGPM  629
+
+Query  94   APYGYGAPYGAMPYGAMPPQMPAAPAQP  121
+             P G   P G+   G         P  P
+Sbjct  630  GPRGEAGPPGSGEKGERGAAGEPGPHGP  657
+
+
+ Score = 38.6 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 20/79 (25%), Positives = 24/79 (30%), Gaps = 7/79 (9%)
+
+Query  52   NMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGY----GAPYGAMPY  107
+            N+    G +G     G     G+  P   G P   G P G   P G     G P    P 
+Sbjct  564  NLRGSPGPKGDMGSPGPKGDRGF--PGTPGIPGPLGHP-GPQGPKGQKGSVGDPGMEGPM  620
+
+Query  108  GAMPPQMPAAPAQPQAAPS  126
+            G    + P  P      P 
+Sbjct  621  GQRGREGPMGPRGEAGPPG  639
+
+
+> sp|P0C862|C1T9A_HUMAN Complement C1q and tumor necrosis factor-related 
+protein 9A OS=Homo sapiens OX=9606 GN=C1QTNF9 PE=1 
+SV=1
+Length=333
+
+ Score = 38.6 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 28/116 (24%), Positives = 31/116 (27%), Gaps = 18/116 (16%)
+
+Query  28   GGPGYGNGLWDNMGDMFGDGY-------GDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGY  80
+            G PG  +G     G+   DG        GD       G  G     G     G     G 
+Sbjct  62   GSPG-KDGTSGEKGERGADGKVEAKGIKGDQGSRGSPGKHGPKGLAGPMGEKGLRGETGP  120
+
+Query  81   GAPYGYGAPYGYGAPYGY----------GAPYGAMPYGAMPPQMPAAPAQPQAAPS  126
+                G     G   P G           G P    P G   P+  A P  PQ  P 
+Sbjct  121  QGQKGNKGDVGPTGPEGPRGNIGPLGPTGLPGPMGPIGKPGPKGEAGPTGPQGEPG  176
+
+
+> sp|Q2UY09|COSA1_HUMAN Collagen alpha-1(XXVIII) chain OS=Homo 
+sapiens OX=9606 GN=COL28A1 PE=2 SV=2
+Length=1125
+
+ Score = 38.6 bits (88),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 18/86 (21%), Positives = 21/86 (24%), Gaps = 3/86 (3%)
+
+Query  34   NGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYG-RGNGYGYGAPYGYGAPYGYGAPYGY  92
+             G+    G     G          G  G     G  G     G   G+  P G     G 
+Sbjct  362  QGIKGERGQEGRPGAPGPIGVGEPGQPGPRGPEGVPGERGLPGE--GFPGPKGEKGSEGP  419
+
+Query  93   GAPYGYGAPYGAMPYGAMPPQMPAAP  118
+              P G          G + P  P  P
+Sbjct  420  TGPQGLQGLSIKGEKGDIGPVGPQGP  445
+
+
+> sp|P39053|DYN1_MOUSE Dynamin-1 OS=Mus musculus OX=10090 GN=Dnm1 
+PE=1 SV=2
+Length=867
+
+ Score = 38.6 bits (88),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 16/80 (20%), Positives = 17/80 (21%), Gaps = 5/80 (6%)
+
+Query  47   GYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGAPYGYGAPYGYGAPYGAMP  106
+            G      S     R       R    G             GAP     P     P+G  P
+Sbjct  771  GRRSPTSSPTPQRRAPAVPPARPGSRGPAPGPPPAGSALGGAPPVPSRPGASPDPFGPPP  830
+
+Query  107  YGAMPPQMPAAPAQPQAAPS  126
+                 P        P   PS
+Sbjct  831  QVPSRPNR-----APPGVPS  845
+
+
+> sp|Q04118|PRB3_HUMAN Basic salivary proline-rich protein 3 OS=Homo 
+sapiens OX=9606 GN=PRB3 PE=1 SV=2
+Length=309
+
+ Score = 38.2 bits (87),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 26/109 (24%), Positives = 29/109 (27%), Gaps = 14/109 (13%)
+
+Query  29   GPGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGAPYGYGAPYGYGA  88
+            G     G     G   G      N S G       R          G     G P   G 
+Sbjct  85   GGNQSQGPPPRPGKPEGQPPQGGNQSQGP----PPRPGKPEGPPPQGGNQSQGPPPRPGK  140
+
+Query  89   PYGY---------GAPYGYGAPYGAMPYGAMPPQMPAA-PAQPQAAPSR  127
+            P G          G P   G P G  P G    Q P   P +P+  P +
+Sbjct  141  PEGPPPQGGNQSQGPPPHPGKPEGPPPQGGNQSQGPPPRPGKPEGPPPQ  189
+
+
+> sp|A6W7Z2|IF2_KINRD Translation initiation factor IF-2 OS=Kineococcus 
+radiotolerans (strain ATCC BAA-149 / DSM 14245 / SRS30216) 
+OX=266940 GN=infB PE=3 SV=1
+Length=1044
+
+ Score = 38.2 bits (87),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 18/93 (19%), Positives = 22/93 (24%), Gaps = 9/93 (10%)
+
+Query  30   PGYGNGLWDNMGDMFGDGYGDFNMSMGGGGRGYGRGYGRGNGYGYGA----PYGYGAPYG  85
+            P  G+    +         G+        G   GR    G     GA    P        
+Sbjct  215  PDRGDRPQGDRPRS-DRPQGERQQGDRPQGDRPGRPGAPGGAPRPGAGAPRPGNNPFAPS  273
+
+Query  86   YGAPYGYGAPYGYGAPYG---AMPYGAMPPQMP  115
+             G P   G   G GAP             P+  
+Sbjct  274  QGMPRSQGDRPG-GAPRPGNNPFASNQGMPRPQ  305
+
+
+
+Lambda      K        H        a         alpha
+   0.300    0.127    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0392    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5027495986
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

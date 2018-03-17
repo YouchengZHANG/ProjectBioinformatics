@@ -1,0 +1,212 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= FANC_ECOLX
+
+Length=181
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P18103|FANC_ECOLX K99 fimbrial protein OS=Escherichia coli O...  365     2e-128
+  sp|P25394|FMF7_ECOLX F107 fimbrial protein OS=Escherichia coli ...  70.1    7e-14 
+
+
+> sp|P18103|FANC_ECOLX K99 fimbrial protein OS=Escherichia coli 
+OX=562 GN=fanC PE=3 SV=1
+Length=181
+
+ Score = 365 bits (937),  Expect = 2e-128, Method: Compositional matrix adjust.
+ Identities = 181/181 (100%), Positives = 181/181 (100%), Gaps = 0/181 (0%)
+
+Query  1    MKKTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAIS  60
+            MKKTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAIS
+Sbjct  1    MKKTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAIS  60
+
+Query  61   GHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV  120
+            GHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV
+Sbjct  61   GHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV  120
+
+Query  121  GNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVTY  180
+            GNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVTY
+Sbjct  121  GNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVTY  180
+
+Query  181  M  181
+            M
+Sbjct  181  M  181
+
+
+> sp|P25394|FMF7_ECOLX F107 fimbrial protein OS=Escherichia coli 
+OX=562 GN=fedA PE=3 SV=1
+Length=170
+
+ Score = 70.1 bits (170),  Expect = 7e-14, Method: Compositional matrix adjust.
+ Identities = 55/181 (30%), Positives = 85/181 (47%), Gaps = 16/181 (9%)
+
+Query  3    KTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAISGH  62
+            K L+ I    ++    +A A  G + F G +++ TC + P+++G    TI LG  A SG 
+Sbjct  2    KRLVFISFVALSMTAGSAMAQQGDVKFFGNVSATTCNLTPQISGTVGDTIQLGTVAPSGT  61
+
+Query  63   GTVVDFKLKPAPGSNDC--LAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV  120
+            G+ + F LK +     C  L+   A I WSG +   GF N   G  A   Y + L+  N 
+Sbjct  62   GSEIPFALKASSNVGGCASLSTKTADITWSGQLTEKGFAN--QGGVANDSY-VALKTVN-  117
+
+Query  121  GNGSGGANINTSFTTAEYTHTSA-IQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVT  179
+               + G  +  S +T  +  + A  + F ++AQLK        GG   G F  +A++ VT
+Sbjct  118  -GKTQGQEVKASNSTVSFDASKATTEGFKFTAQLK--------GGQTPGDFQGAAAYAVT  168
+
+Query  180  Y  180
+            Y
+Sbjct  169  Y  169
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.126    0.359    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9826506784
+Results from round 2
+
+
+Query= FANC_ECOLX
+
+Length=181
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P18103|FANC_ECOLX K99 fimbrial protein OS=Escherichia coli O...  219     7e-71
+  sp|P25394|FMF7_ECOLX F107 fimbrial protein OS=Escherichia coli ...  169     2e-51
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q03011|MRPA_PROMH Major MR/P fimbria protein OS=Proteus mira...  40.6    0.002
+
+
+> sp|P18103|FANC_ECOLX K99 fimbrial protein OS=Escherichia coli 
+OX=562 GN=fanC PE=3 SV=1
+Length=181
+
+ Score = 219 bits (557),  Expect = 7e-71, Method: Composition-based stats.
+ Identities = 181/181 (100%), Positives = 181/181 (100%), Gaps = 0/181 (0%)
+
+Query  1    MKKTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAIS  60
+            MKKTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAIS
+Sbjct  1    MKKTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAIS  60
+
+Query  61   GHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV  120
+            GHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV
+Sbjct  61   GHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV  120
+
+Query  121  GNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVTY  180
+            GNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVTY
+Sbjct  121  GNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVTY  180
+
+Query  181  M  181
+            M
+Sbjct  181  M  181
+
+
+> sp|P25394|FMF7_ECOLX F107 fimbrial protein OS=Escherichia coli 
+OX=562 GN=fedA PE=3 SV=1
+Length=170
+
+ Score = 169 bits (427),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 55/181 (30%), Positives = 85/181 (47%), Gaps = 16/181 (9%)
+
+Query  3    KTLLAIILGGMAFATTNASANTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQAAISGH  62
+            K L+ I    ++    +A A  G + F G +++ TC + P+++G    TI LG  A SG 
+Sbjct  2    KRLVFISFVALSMTAGSAMAQQGDVKFFGNVSATTCNLTPQISGTVGDTIQLGTVAPSGT  61
+
+Query  63   GTVVDFKLKPAPGSNDC--LAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLRATNV  120
+            G+ + F LK +     C  L+   A I WSG +   GF N   G  A   Y + L+  N 
+Sbjct  62   GSEIPFALKASSNVGGCASLSTKTADITWSGQLTEKGFAN--QGGVANDSY-VALKTVN-  117
+
+Query  121  GNGSGGANINTSFTTAEYTHTSA-IQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASFLVT  179
+               + G  +  S +T  +  + A  + F ++AQLK        GG   G F  +A++ VT
+Sbjct  118  -GKTQGQEVKASNSTVSFDASKATTEGFKFTAQLK--------GGQTPGDFQGAAAYAVT  168
+
+Query  180  Y  180
+            Y
+Sbjct  169  Y  169
+
+
+> sp|Q03011|MRPA_PROMH Major MR/P fimbria protein OS=Proteus mirabilis 
+(strain HI4320) OX=529507 GN=mrpA PE=1 SV=1
+Length=175
+
+ Score = 40.6 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 42/184 (23%), Positives = 69/184 (38%), Gaps = 14/184 (8%)
+
+Query  1    MKKTLLAIILG-GMAFATTNASA---NTGTINFNGKITSATCTIDPEVNGNRTSTIDLGQ  56
+            MK   LA++LG G++    +A A     GT+ F G I  A C+I P+          +  
+Sbjct  1    MKLNKLALVLGLGLSVVAGSALAADQGHGTVKFVGSIIDAPCSITPDTENQTVPLGQIST  60
+
+Query  57   AAISGHGTVVDFKLKPAPGSNDCLAKTNARIDWSGSMNSLGFNNTASGNTAAKGYHMTLR  116
+            AA+   G       K +  +         +  ++GS  +        G+   +G  +   
+Sbjct  61   AALKDGGRSNSRDFKISLENCTTETYKTVQTTFTGSEAT----EVLEGSLGIEG--IAKN  114
+
+Query  117  ATNVGNGSGGANINTSFTTAEYTHTSAIQSFNYSAQLKKDDRAPSNGGYKAGVFTTSASF  176
+            A  V   +GG  I     +A           N++A L+      +      G FT  A+F
+Sbjct  115  AAVVITDAGGKQIKLGTPSAAQNLRDGNNDLNFAAYLQGSASEAA----VPGDFTAIATF  170
+
+Query  177  LVTY  180
+             +TY
+Sbjct  171  ALTY  174
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.123    0.314    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0355    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9826506784
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

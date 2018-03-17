@@ -1,0 +1,427 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= C562_ECOLX
+
+Length=128
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P0ABE7|C562_ECOLX Soluble cytochrome b562 OS=Escherichia col...  257     2e-87
+  sp|P0ABE8|C562_ECO57 Soluble cytochrome b562 OS=Escherichia col...  253     4e-86
+  sp|Q8CVG7|C562_ECOL6 Soluble cytochrome b562 OS=Escherichia col...  252     1e-85
+  sp|P63727|C562_SALTY Soluble cytochrome b562 OS=Salmonella typh...  209     9e-69
+  sp|P63728|C562_SALTI Soluble cytochrome b562 OS=Salmonella typh...  209     9e-69
+  sp|Q8ZAU2|C5622_YERPE Probable soluble cytochrome b562 2 OS=Yer...  134     3e-39
+  sp|Q9X6B1|C5621_YERPE Probable soluble cytochrome b562 1 OS=Yer...  127     2e-36
+  sp|Q9CMY0|Y670_PASMU Uncharacterized protein PM0670 OS=Pasteure...  45.1    8e-06
+
+
+> sp|P0ABE7|C562_ECOLX Soluble cytochrome b562 OS=Escherichia coli 
+OX=562 GN=cybC PE=1 SV=1
+Length=128
+
+ Score = 257 bits (656),  Expect = 2e-87, Method: Compositional matrix adjust.
+ Identities = 128/128 (100%), Positives = 128/128 (100%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR
+Sbjct  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+
+Query  121  NAYHQKYR  128
+            NAYHQKYR
+Sbjct  121  NAYHQKYR  128
+
+
+> sp|P0ABE8|C562_ECO57 Soluble cytochrome b562 OS=Escherichia coli 
+O157:H7 OX=83334 GN=cybC PE=3 SV=1
+Length=128
+
+ Score = 253 bits (647),  Expect = 4e-86, Method: Compositional matrix adjust.
+ Identities = 125/128 (98%), Positives = 128/128 (100%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKV+EKADNAAQVKDALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVVEKADNAAQVKDALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR
+Sbjct  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+
+Query  121  NAYHQKYR  128
+            N+YH+KYR
+Sbjct  121  NSYHKKYR  128
+
+
+> sp|Q8CVG7|C562_ECOL6 Soluble cytochrome b562 OS=Escherichia coli 
+O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=cybC 
+PE=3 SV=1
+Length=128
+
+ Score = 252 bits (644),  Expect = 1e-85, Method: Compositional matrix adjust.
+ Identities = 125/128 (98%), Positives = 126/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKV+EKADNA QVKDALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVVEKADNAVQVKDALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLE KSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR
+Sbjct  61   DAQKATPPKLEGKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+
+Query  121  NAYHQKYR  128
+            NAYHQKYR
+Sbjct  121  NAYHQKYR  128
+
+
+> sp|P63727|C562_SALTY Soluble cytochrome b562 OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=cybC 
+PE=1 SV=1
+Length=128
+
+ Score = 209 bits (532),  Expect = 9e-69, Method: Compositional matrix adjust.
+ Identities = 110/128 (86%), Positives = 118/128 (92%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVF SA FAADLEDNM+ LNDNLKV+EK D+A ++K ALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFGSAVFAADLEDNMDILNDNLKVVEKTDSAPELKAALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDK+PDSPEMKDFRHGFDILVGQID ALKLANEG VKEA+AAAE LKTTR
+Sbjct  61   DAQKATPPKLEDKAPDSPEMKDFRHGFDILVGQIDGALKLANEGNVKEAKAAAEALKTTR  120
+
+Query  121  NAYHQKYR  128
+            N YH+KYR
+Sbjct  121  NTYHKKYR  128
+
+
+> sp|P63728|C562_SALTI Soluble cytochrome b562 OS=Salmonella typhi 
+OX=90370 GN=cybC PE=3 SV=1
+Length=128
+
+ Score = 209 bits (532),  Expect = 9e-69, Method: Compositional matrix adjust.
+ Identities = 110/128 (86%), Positives = 118/128 (92%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVF SA FAADLEDNM+ LNDNLKV+EK D+A ++K ALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFGSAVFAADLEDNMDILNDNLKVVEKTDSAPELKAALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDK+PDSPEMKDFRHGFDILVGQID ALKLANEG VKEA+AAAE LKTTR
+Sbjct  61   DAQKATPPKLEDKAPDSPEMKDFRHGFDILVGQIDGALKLANEGNVKEAKAAAEALKTTR  120
+
+Query  121  NAYHQKYR  128
+            N YH+KYR
+Sbjct  121  NTYHKKYR  128
+
+
+> sp|Q8ZAU2|C5622_YERPE Probable soluble cytochrome b562 2 OS=Yersinia 
+pestis OX=632 GN=cybC2 PE=3 SV=1
+Length=128
+
+ Score = 134 bits (337),  Expect = 3e-39, Method: Compositional matrix adjust.
+ Identities = 66/128 (52%), Positives = 90/128 (70%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            M K+L+A++  + L  SS   AA + D+MET+ ++   + KAD+ A +K  L  MR AA+
+Sbjct  1    MGKTLMALITAALLSTSSLVMAASVADDMETIAEHYGKVLKADSTAVIKQDLQAMRVAAV  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQK  P KL+ K  DSPEMKDFRHG D+L+G+ID AL LA++GK+ EA+ AA+  K TR
+Sbjct  61   DAQKGIPTKLKSKVEDSPEMKDFRHGMDVLIGEIDGALALADQGKLDEAKQAAQDFKDTR  120
+
+Query  121  NAYHQKYR  128
+            N YH+KYR
+Sbjct  121  NTYHKKYR  128
+
+
+> sp|Q9X6B1|C5621_YERPE Probable soluble cytochrome b562 1 OS=Yersinia 
+pestis OX=632 GN=cybC1 PE=3 SV=1
+Length=127
+
+ Score = 127 bits (318),  Expect = 2e-36, Method: Compositional matrix adjust.
+ Identities = 60/128 (47%), Positives = 85/128 (66%), Gaps = 1/128 (1%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRK +  I  V SL+ +S +FAA L+D+M  L  NL ++  + +   +  +L KMR AAL
+Sbjct  1    MRK-IPIIAGVFSLLITSCTFAASLQDDMNILIANLGIVSSSTDTKVITSSLEKMRNAAL  59
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKA PPKLE K+ DSPE+KD+RHGFD+L+ QID   + A EG ++E + +  ++   R
+Sbjct  60   DAQKAIPPKLEGKAEDSPEIKDYRHGFDLLIEQIDKTKQWAEEGNIQEVKKSVGEVINIR  119
+
+Query  121  NAYHQKYR  128
+            N YH +YR
+Sbjct  120  NTYHSRYR  127
+
+
+> sp|Q9CMY0|Y670_PASMU Uncharacterized protein PM0670 OS=Pasteurella 
+multocida (strain Pm70) OX=272843 GN=PM0670 PE=3 SV=1
+Length=124
+
+ Score = 45.1 bits (105),  Expect = 8e-06, Method: Compositional matrix adjust.
+ Identities = 31/125 (25%), Positives = 63/125 (50%), Gaps = 5/125 (4%)
+
+Query  5    LLAILAVSSLVFSSAS-FAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQ  63
+            LL +L+++ +  S A+   A++   M  +      +  A + A+ +++   +R  A  + 
+Sbjct  4    LLKLLSITLIGLSVATGVQANVRAEMNQMKTVAATLTNAKDVAEFQESAKILREIAQQSS  63
+
+Query  64   KATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAY  123
+            +  P  +     +  + K ++ G    +  +D+A KLA EG +  A+ AA++L   RN Y
+Sbjct  64   EKRPSSI----TNDADFKGYQEGMKEFITALDEADKLAQEGNLDAAKTAAKKLFDIRNVY  119
+
+Query  124  HQKYR  128
+            H+KY+
+Sbjct  120  HKKYK  124
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.125    0.327    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008563936
+Results from round 2
+
+
+Query= C562_ECOLX
+
+Length=128
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q9X6B1|C5621_YERPE Probable soluble cytochrome b562 1 OS=Yer...  178     2e-56
+  sp|P63727|C562_SALTY Soluble cytochrome b562 OS=Salmonella typh...  172     4e-54
+  sp|P63728|C562_SALTI Soluble cytochrome b562 OS=Salmonella typh...  172     4e-54
+  sp|Q8CVG7|C562_ECOL6 Soluble cytochrome b562 OS=Escherichia col...  171     1e-53
+  sp|P0ABE8|C562_ECO57 Soluble cytochrome b562 OS=Escherichia col...  170     3e-53
+  sp|P0ABE7|C562_ECOLX Soluble cytochrome b562 OS=Escherichia col...  169     7e-53
+  sp|Q8ZAU2|C5622_YERPE Probable soluble cytochrome b562 2 OS=Yer...  157     4e-48
+  sp|Q9CMY0|Y670_PASMU Uncharacterized protein PM0670 OS=Pasteure...  126     3e-36
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q9X6B1|C5621_YERPE Probable soluble cytochrome b562 1 OS=Yersinia 
+pestis OX=632 GN=cybC1 PE=3 SV=1
+Length=127
+
+ Score = 178 bits (450),  Expect = 2e-56, Method: Composition-based stats.
+ Identities = 60/128 (47%), Positives = 85/128 (66%), Gaps = 1/128 (1%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRK +  I  V SL+ +S +FAA L+D+M  L  NL ++  + +   +  +L KMR AAL
+Sbjct  1    MRK-IPIIAGVFSLLITSCTFAASLQDDMNILIANLGIVSSSTDTKVITSSLEKMRNAAL  59
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKA PPKLE K+ DSPE+KD+RHGFD+L+ QID   + A EG ++E + +  ++   R
+Sbjct  60   DAQKAIPPKLEGKAEDSPEIKDYRHGFDLLIEQIDKTKQWAEEGNIQEVKKSVGEVINIR  119
+
+Query  121  NAYHQKYR  128
+            N YH +YR
+Sbjct  120  NTYHSRYR  127
+
+
+> sp|P63727|C562_SALTY Soluble cytochrome b562 OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=cybC 
+PE=1 SV=1
+Length=128
+
+ Score = 172 bits (435),  Expect = 4e-54, Method: Composition-based stats.
+ Identities = 110/128 (86%), Positives = 118/128 (92%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVF SA FAADLEDNM+ LNDNLKV+EK D+A ++K ALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFGSAVFAADLEDNMDILNDNLKVVEKTDSAPELKAALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDK+PDSPEMKDFRHGFDILVGQID ALKLANEG VKEA+AAAE LKTTR
+Sbjct  61   DAQKATPPKLEDKAPDSPEMKDFRHGFDILVGQIDGALKLANEGNVKEAKAAAEALKTTR  120
+
+Query  121  NAYHQKYR  128
+            N YH+KYR
+Sbjct  121  NTYHKKYR  128
+
+
+> sp|P63728|C562_SALTI Soluble cytochrome b562 OS=Salmonella typhi 
+OX=90370 GN=cybC PE=3 SV=1
+Length=128
+
+ Score = 172 bits (435),  Expect = 4e-54, Method: Composition-based stats.
+ Identities = 110/128 (86%), Positives = 118/128 (92%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVF SA FAADLEDNM+ LNDNLKV+EK D+A ++K ALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFGSAVFAADLEDNMDILNDNLKVVEKTDSAPELKAALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDK+PDSPEMKDFRHGFDILVGQID ALKLANEG VKEA+AAAE LKTTR
+Sbjct  61   DAQKATPPKLEDKAPDSPEMKDFRHGFDILVGQIDGALKLANEGNVKEAKAAAEALKTTR  120
+
+Query  121  NAYHQKYR  128
+            N YH+KYR
+Sbjct  121  NTYHKKYR  128
+
+
+> sp|Q8CVG7|C562_ECOL6 Soluble cytochrome b562 OS=Escherichia coli 
+O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=cybC 
+PE=3 SV=1
+Length=128
+
+ Score = 171 bits (432),  Expect = 1e-53, Method: Composition-based stats.
+ Identities = 125/128 (98%), Positives = 126/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKV+EKADNA QVKDALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVVEKADNAVQVKDALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLE KSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR
+Sbjct  61   DAQKATPPKLEGKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+
+Query  121  NAYHQKYR  128
+            NAYHQKYR
+Sbjct  121  NAYHQKYR  128
+
+
+> sp|P0ABE8|C562_ECO57 Soluble cytochrome b562 OS=Escherichia coli 
+O157:H7 OX=83334 GN=cybC PE=3 SV=1
+Length=128
+
+ Score = 170 bits (429),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 125/128 (98%), Positives = 128/128 (100%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKV+EKADNAAQVKDALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVVEKADNAAQVKDALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR
+Sbjct  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+
+Query  121  NAYHQKYR  128
+            N+YH+KYR
+Sbjct  121  NSYHKKYR  128
+
+
+> sp|P0ABE7|C562_ECOLX Soluble cytochrome b562 OS=Escherichia coli 
+OX=562 GN=cybC PE=1 SV=1
+Length=128
+
+ Score = 169 bits (427),  Expect = 7e-53, Method: Composition-based stats.
+ Identities = 128/128 (100%), Positives = 128/128 (100%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL
+Sbjct  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR
+Sbjct  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+
+Query  121  NAYHQKYR  128
+            NAYHQKYR
+Sbjct  121  NAYHQKYR  128
+
+
+> sp|Q8ZAU2|C5622_YERPE Probable soluble cytochrome b562 2 OS=Yersinia 
+pestis OX=632 GN=cybC2 PE=3 SV=1
+Length=128
+
+ Score = 157 bits (396),  Expect = 4e-48, Method: Composition-based stats.
+ Identities = 66/128 (52%), Positives = 90/128 (70%), Gaps = 0/128 (0%)
+
+Query  1    MRKSLLAILAVSSLVFSSASFAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAAL  60
+            M K+L+A++  + L  SS   AA + D+MET+ ++   + KAD+ A +K  L  MR AA+
+Sbjct  1    MGKTLMALITAALLSTSSLVMAASVADDMETIAEHYGKVLKADSTAVIKQDLQAMRVAAV  60
+
+Query  61   DAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTR  120
+            DAQK  P KL+ K  DSPEMKDFRHG D+L+G+ID AL LA++GK+ EA+ AA+  K TR
+Sbjct  61   DAQKGIPTKLKSKVEDSPEMKDFRHGMDVLIGEIDGALALADQGKLDEAKQAAQDFKDTR  120
+
+Query  121  NAYHQKYR  128
+            N YH+KYR
+Sbjct  121  NTYHKKYR  128
+
+
+> sp|Q9CMY0|Y670_PASMU Uncharacterized protein PM0670 OS=Pasteurella 
+multocida (strain Pm70) OX=272843 GN=PM0670 PE=3 SV=1
+Length=124
+
+ Score = 126 bits (316),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 31/125 (25%), Positives = 63/125 (50%), Gaps = 5/125 (4%)
+
+Query  5    LLAILAVSSLVFSSAS-FAADLEDNMETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQ  63
+            LL +L+++ +  S A+   A++   M  +      +  A + A+ +++   +R  A  + 
+Sbjct  4    LLKLLSITLIGLSVATGVQANVRAEMNQMKTVAATLTNAKDVAEFQESAKILREIAQQSS  63
+
+Query  64   KATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAY  123
+            +  P  +     +  + K ++ G    +  +D+A KLA EG +  A+ AA++L   RN Y
+Sbjct  64   EKRPSSI----TNDADFKGYQEGMKEFITALDEADKLAQEGNLDAAKTAAKKLFDIRNVY  119
+
+Query  124  HQKYR  128
+            H+KY+
+Sbjct  120  HKKYK  124
+
+
+
+Lambda      K        H        a         alpha
+   0.299    0.120    0.280    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0376    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5008563936
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

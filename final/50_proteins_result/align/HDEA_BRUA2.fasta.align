@@ -1,0 +1,437 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= HDEA_BRUA2
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|A9WY36|HDEA_BRUSI Probable acid stress chaperone HdeA OS=Bru...  226     1e-75
+  sp|Q8YBJ4|HDEA_BRUME Probable acid stress chaperone HdeA OS=Bru...  226     1e-75
+  sp|A9ME89|HDEA_BRUC2 Probable acid stress chaperone HdeA OS=Bru...  226     1e-75
+  sp|Q577F1|HDEA_BRUAB Probable acid stress chaperone HdeA OS=Bru...  226     1e-75
+  sp|Q2YK18|HDEA_BRUA2 Probable acid stress chaperone HdeA OS=Bru...  226     1e-75
+  sp|Q8FWV4|HDEA_BRUSU Probable acid stress chaperone HdeA OS=Bru...  224     3e-75
+  sp|A5VU57|HDEA_BRUO2 Probable acid stress chaperone HdeA OS=Bru...  223     2e-74
+  sp|P0AET1|HDEA_SHIFL Acid stress chaperone HdeA OS=Shigella fle...  83.2    7e-20
+  sp|P0AES9|HDEA_ECOLI Acid stress chaperone HdeA OS=Escherichia ...  83.2    7e-20
+  sp|P0AET0|HDEA_ECO57 Acid stress chaperone HdeA OS=Escherichia ...  83.2    7e-20
+
+
+> sp|A9WY36|HDEA_BRUSI Probable acid stress chaperone HdeA OS=Brucella 
+suis (strain ATCC 23445 / NCTC 10510) OX=470137 GN=hdeA 
+PE=3 SV=1
+Length=114
+
+ Score = 226 bits (575),  Expect = 1e-75, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q8YBJ4|HDEA_BRUME Probable acid stress chaperone HdeA OS=Brucella 
+melitensis biotype 1 (strain 16M / ATCC 23456 / NCTC 
+10094) OX=224914 GN=hdeA PE=3 SV=2
+Length=114
+
+ Score = 226 bits (575),  Expect = 1e-75, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|A9ME89|HDEA_BRUC2 Probable acid stress chaperone HdeA OS=Brucella 
+canis (strain ATCC 23365 / NCTC 10854) OX=483179 GN=hdeA 
+PE=3 SV=1
+Length=114
+
+ Score = 226 bits (575),  Expect = 1e-75, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q577F1|HDEA_BRUAB Probable acid stress chaperone HdeA OS=Brucella 
+abortus biovar 1 (strain 9-941) OX=262698 GN=hdeA PE=3 
+SV=1
+Length=114
+
+ Score = 226 bits (575),  Expect = 1e-75, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q2YK18|HDEA_BRUA2 Probable acid stress chaperone HdeA OS=Brucella 
+abortus (strain 2308) OX=359391 GN=hdeA PE=1 SV=1
+Length=114
+
+ Score = 226 bits (575),  Expect = 1e-75, Method: Compositional matrix adjust.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q8FWV4|HDEA_BRUSU Probable acid stress chaperone HdeA OS=Brucella 
+suis biovar 1 (strain 1330) OX=204722 GN=hdeA PE=3 SV=1
+Length=114
+
+ Score = 224 bits (572),  Expect = 3e-75, Method: Compositional matrix adjust.
+ Identities = 113/114 (99%), Positives = 113/114 (99%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAV ILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVTILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|A5VU57|HDEA_BRUO2 Probable acid stress chaperone HdeA OS=Brucella 
+ovis (strain ATCC 25840 / 63/290 / NCTC 10512) OX=444178 
+GN=hdeA PE=3 SV=1
+Length=114
+
+ Score = 223 bits (567),  Expect = 2e-74, Method: Compositional matrix adjust.
+ Identities = 112/114 (98%), Positives = 112/114 (98%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIK LFNKNTALAAVAILALSG AMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKTLFNKNTALAAVAILALSGSAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|P0AET1|HDEA_SHIFL Acid stress chaperone HdeA OS=Shigella flexneri 
+OX=623 GN=hdeA PE=3 SV=1
+Length=110
+
+ Score = 83.2 bits (204),  Expect = 7e-20, Method: Compositional matrix adjust.
+ Identities = 42/88 (48%), Positives = 57/88 (65%), Gaps = 0/88 (0%)
+
+Query  26   AESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTVVGWVVGFNKKGKEEDAVIDVDGIET  85
+            + +A   K    KK V+  TCEDF  ++ESF+PT VG+    N K K EDAV+DV GI T
+Sbjct  19   SNAADAQKAADNKKPVNSWTCEDFLAVDESFQPTAVGFAEALNNKDKPEDAVLDVQGIAT  78
+
+Query  86   VTPAIIEACKQEPKASFWKKAEAELKKV  113
+            VTPAI++AC Q+ +A+F  K + E  K+
+Sbjct  79   VTPAIVQACTQDKQANFKDKVKGEWDKI  106
+
+
+> sp|P0AES9|HDEA_ECOLI Acid stress chaperone HdeA OS=Escherichia 
+coli (strain K12) OX=83333 GN=hdeA PE=1 SV=1
+Length=110
+
+ Score = 83.2 bits (204),  Expect = 7e-20, Method: Compositional matrix adjust.
+ Identities = 42/88 (48%), Positives = 57/88 (65%), Gaps = 0/88 (0%)
+
+Query  26   AESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTVVGWVVGFNKKGKEEDAVIDVDGIET  85
+            + +A   K    KK V+  TCEDF  ++ESF+PT VG+    N K K EDAV+DV GI T
+Sbjct  19   SNAADAQKAADNKKPVNSWTCEDFLAVDESFQPTAVGFAEALNNKDKPEDAVLDVQGIAT  78
+
+Query  86   VTPAIIEACKQEPKASFWKKAEAELKKV  113
+            VTPAI++AC Q+ +A+F  K + E  K+
+Sbjct  79   VTPAIVQACTQDKQANFKDKVKGEWDKI  106
+
+
+> sp|P0AET0|HDEA_ECO57 Acid stress chaperone HdeA OS=Escherichia 
+coli O157:H7 OX=83334 GN=hdeA PE=3 SV=1
+Length=110
+
+ Score = 83.2 bits (204),  Expect = 7e-20, Method: Compositional matrix adjust.
+ Identities = 42/88 (48%), Positives = 57/88 (65%), Gaps = 0/88 (0%)
+
+Query  26   AESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTVVGWVVGFNKKGKEEDAVIDVDGIET  85
+            + +A   K    KK V+  TCEDF  ++ESF+PT VG+    N K K EDAV+DV GI T
+Sbjct  19   SNAADAQKAADNKKPVNSWTCEDFLAVDESFQPTAVGFAEALNNKDKPEDAVLDVQGIAT  78
+
+Query  86   VTPAIIEACKQEPKASFWKKAEAELKKV  113
+            VTPAI++AC Q+ +A+F  K + E  K+
+Sbjct  79   VTPAIVQACTQDKQANFKDKVKGEWDKI  106
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.128    0.360    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4927763328
+Results from round 2
+
+
+Query= HDEA_BRUA2
+
+Length=114
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q8FWV4|HDEA_BRUSU Probable acid stress chaperone HdeA OS=Bru...  181     3e-58
+  sp|A9WY36|HDEA_BRUSI Probable acid stress chaperone HdeA OS=Bru...  165     7e-52
+  sp|Q8YBJ4|HDEA_BRUME Probable acid stress chaperone HdeA OS=Bru...  165     7e-52
+  sp|A9ME89|HDEA_BRUC2 Probable acid stress chaperone HdeA OS=Bru...  165     7e-52
+  sp|Q577F1|HDEA_BRUAB Probable acid stress chaperone HdeA OS=Bru...  165     7e-52
+  sp|Q2YK18|HDEA_BRUA2 Probable acid stress chaperone HdeA OS=Bru...  165     7e-52
+  sp|A5VU57|HDEA_BRUO2 Probable acid stress chaperone HdeA OS=Bru...  162     2e-50
+  sp|P0AET1|HDEA_SHIFL Acid stress chaperone HdeA OS=Shigella fle...  128     3e-37
+  sp|P0AES9|HDEA_ECOLI Acid stress chaperone HdeA OS=Escherichia ...  128     3e-37
+  sp|P0AET0|HDEA_ECO57 Acid stress chaperone HdeA OS=Escherichia ...  128     3e-37
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q8FWV4|HDEA_BRUSU Probable acid stress chaperone HdeA OS=Brucella 
+suis biovar 1 (strain 1330) OX=204722 GN=hdeA PE=3 SV=1
+Length=114
+
+ Score = 181 bits (460),  Expect = 3e-58, Method: Composition-based stats.
+ Identities = 113/114 (99%), Positives = 113/114 (99%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAV ILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVTILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|A9WY36|HDEA_BRUSI Probable acid stress chaperone HdeA OS=Brucella 
+suis (strain ATCC 23445 / NCTC 10510) OX=470137 GN=hdeA 
+PE=3 SV=1
+Length=114
+
+ Score = 165 bits (418),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q8YBJ4|HDEA_BRUME Probable acid stress chaperone HdeA OS=Brucella 
+melitensis biotype 1 (strain 16M / ATCC 23456 / NCTC 
+10094) OX=224914 GN=hdeA PE=3 SV=2
+Length=114
+
+ Score = 165 bits (418),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|A9ME89|HDEA_BRUC2 Probable acid stress chaperone HdeA OS=Brucella 
+canis (strain ATCC 23365 / NCTC 10854) OX=483179 GN=hdeA 
+PE=3 SV=1
+Length=114
+
+ Score = 165 bits (418),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q577F1|HDEA_BRUAB Probable acid stress chaperone HdeA OS=Brucella 
+abortus biovar 1 (strain 9-941) OX=262698 GN=hdeA PE=3 
+SV=1
+Length=114
+
+ Score = 165 bits (418),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|Q2YK18|HDEA_BRUA2 Probable acid stress chaperone HdeA OS=Brucella 
+abortus (strain 2308) OX=359391 GN=hdeA PE=1 SV=1
+Length=114
+
+ Score = 165 bits (418),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 114/114 (100%), Positives = 114/114 (100%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|A5VU57|HDEA_BRUO2 Probable acid stress chaperone HdeA OS=Brucella 
+ovis (strain ATCC 25840 / 63/290 / NCTC 10512) OX=444178 
+GN=hdeA PE=3 SV=1
+Length=114
+
+ Score = 162 bits (409),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 112/114 (98%), Positives = 112/114 (98%), Gaps = 0/114 (0%)
+
+Query  1    MIKALFNKNTALAAVAILALSGGAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+            MIK LFNKNTALAAVAILALSG AMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV
+Sbjct  1    MIKTLFNKNTALAAVAILALSGSAMAESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTV  60
+
+Query  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+            VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF
+Sbjct  61   VGWVVGFNKKGKEEDAVIDVDGIETVTPAIIEACKQEPKASFWKKAEAELKKVF  114
+
+
+> sp|P0AET1|HDEA_SHIFL Acid stress chaperone HdeA OS=Shigella flexneri 
+OX=623 GN=hdeA PE=3 SV=1
+Length=110
+
+ Score = 128 bits (321),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 42/88 (48%), Positives = 57/88 (65%), Gaps = 0/88 (0%)
+
+Query  26   AESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTVVGWVVGFNKKGKEEDAVIDVDGIET  85
+            + +A   K    KK V+  TCEDF  ++ESF+PT VG+    N K K EDAV+DV GI T
+Sbjct  19   SNAADAQKAADNKKPVNSWTCEDFLAVDESFQPTAVGFAEALNNKDKPEDAVLDVQGIAT  78
+
+Query  86   VTPAIIEACKQEPKASFWKKAEAELKKV  113
+            VTPAI++AC Q+ +A+F  K + E  K+
+Sbjct  79   VTPAIVQACTQDKQANFKDKVKGEWDKI  106
+
+
+> sp|P0AES9|HDEA_ECOLI Acid stress chaperone HdeA OS=Escherichia 
+coli (strain K12) OX=83333 GN=hdeA PE=1 SV=1
+Length=110
+
+ Score = 128 bits (321),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 42/88 (48%), Positives = 57/88 (65%), Gaps = 0/88 (0%)
+
+Query  26   AESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTVVGWVVGFNKKGKEEDAVIDVDGIET  85
+            + +A   K    KK V+  TCEDF  ++ESF+PT VG+    N K K EDAV+DV GI T
+Sbjct  19   SNAADAQKAADNKKPVNSWTCEDFLAVDESFQPTAVGFAEALNNKDKPEDAVLDVQGIAT  78
+
+Query  86   VTPAIIEACKQEPKASFWKKAEAELKKV  113
+            VTPAI++AC Q+ +A+F  K + E  K+
+Sbjct  79   VTPAIVQACTQDKQANFKDKVKGEWDKI  106
+
+
+> sp|P0AET0|HDEA_ECO57 Acid stress chaperone HdeA OS=Escherichia 
+coli O157:H7 OX=83334 GN=hdeA PE=3 SV=1
+Length=110
+
+ Score = 128 bits (321),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 42/88 (48%), Positives = 57/88 (65%), Gaps = 0/88 (0%)
+
+Query  26   AESAKTHKTDMAKKKVSELTCEDFNGLEESFKPTVVGWVVGFNKKGKEEDAVIDVDGIET  85
+            + +A   K    KK V+  TCEDF  ++ESF+PT VG+    N K K EDAV+DV GI T
+Sbjct  19   SNAADAQKAADNKKPVNSWTCEDFLAVDESFQPTAVGFAEALNNKDKPEDAVLDVQGIAT  78
+
+Query  86   VTPAIIEACKQEPKASFWKKAEAELKKV  113
+            VTPAI++AC Q+ +A+F  K + E  K+
+Sbjct  79   VTPAIVQACTQDKQANFKDKVKGEWDKI  106
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.132    0.362    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0406    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4927763328
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

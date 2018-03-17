@@ -1,0 +1,305 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= C56H_ECOLI
+
+Length=176
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P76345|C56H_ECOLI Cytochrome b561 homolog 1 OS=Escherichia c...  360     1e-126
+  sp|Q9X6B2|C561_YERPE Probable cytochrome b561 OS=Yersinia pesti...  120     7e-33 
+  sp|P0ABE6|C561_SHIFL Cytochrome b561 OS=Shigella flexneri OX=62...  102     7e-26 
+  sp|P0ABE5|C561_ECOLI Cytochrome b561 OS=Escherichia coli (strai...  102     7e-26 
+  sp|P75925|C56I_ECOLI Cytochrome b561 homolog 2 OS=Escherichia c...  42.0    0.001 
+
+
+> sp|P76345|C56H_ECOLI Cytochrome b561 homolog 1 OS=Escherichia 
+coli (strain K12) OX=83333 GN=yodB PE=1 SV=2
+Length=176
+
+ Score = 360 bits (924),  Expect = 1e-126, Method: Compositional matrix adjust.
+ Identities = 176/176 (100%), Positives = 176/176 (100%), Gaps = 0/176 (0%)
+
+Query  1    MNRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSR  60
+            MNRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSR
+Sbjct  1    MNRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSR  60
+
+Query  61   LIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNV  120
+            LIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNV
+Sbjct  61   LIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNV  120
+
+Query  121  SPFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+            SPFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK
+Sbjct  121  SPFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+
+
+> sp|Q9X6B2|C561_YERPE Probable cytochrome b561 OS=Yersinia pestis 
+OX=632 GN=cybB PE=3 SV=1
+Length=176
+
+ Score = 120 bits (302),  Expect = 7e-33, Method: Compositional matrix adjust.
+ Identities = 70/175 (40%), Positives = 109/175 (62%), Gaps = 2/175 (1%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSRL  61
+             ++S  QI +HW+ LL V I ++++ELRG+ P+    +  M+  H++ GI + VLM +R+
+Sbjct  3    KKYSCLQIGIHWLVLLLVIIAWSSIELRGFAPRSYQPW--MKMIHFSCGIAILVLMMTRI  60
+
+Query  62   IIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNVS  121
+            +I+ RY  P IVP P    +  A + H ++Y+ F+ALP++GIA++   G SW   G  + 
+Sbjct  61   LIQLRYPTPPIVPKPSPMIVGLAHVGHWVIYLLFIALPIIGIAILYCRGSSWIAFGLIMP  120
+
+Query  122  PFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+                 N ++   +K  H   AN+ YF+I  HA AAL HHY+ KDNTLLRMMP+++
+Sbjct  121  HAEQANFDLADTLKAYHLLLANMSYFVIGLHALAALLHHYVLKDNTLLRMMPKKR  175
+
+
+> sp|P0ABE6|C561_SHIFL Cytochrome b561 OS=Shigella flexneri OX=623 
+GN=cybB PE=3 SV=1
+Length=176
+
+ Score = 102 bits (255),  Expect = 7e-26, Method: Compositional matrix adjust.
+ Identities = 74/175 (42%), Positives = 105/175 (60%), Gaps = 2/175 (1%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSRL  61
+            N++S+ QI +HW+  L V   Y AME RG+FP+      L+   H + GI + VLM  RL
+Sbjct  3    NKYSRLQISIHWLVFLLVIAAYCAMEFRGFFPRSDRP--LINMIHVSCGISILVLMVVRL  60
+
+Query  62   IIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNVS  121
+            +++ +Y  P I+P P       A L H+++Y+ F+ALP++G+ +M   G  W   G  + 
+Sbjct  61   LLRLKYPTPPIIPKPKPMMTGLAHLGHLVIYLLFIALPVIGLVMMYNRGNPWFAFGLTMP  120
+
+Query  122  PFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+                 N E    +K+ HET AN+GYF+I  HA AAL HHY  KDNTLLRMMPR++
+Sbjct  121  YASEANFERVDSLKSWHETLANLGYFVIGLHAAAALAHHYFWKDNTLLRMMPRKR  175
+
+
+> sp|P0ABE5|C561_ECOLI Cytochrome b561 OS=Escherichia coli (strain 
+K12) OX=83333 GN=cybB PE=1 SV=1
+Length=176
+
+ Score = 102 bits (255),  Expect = 7e-26, Method: Compositional matrix adjust.
+ Identities = 74/175 (42%), Positives = 105/175 (60%), Gaps = 2/175 (1%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSRL  61
+            N++S+ QI +HW+  L V   Y AME RG+FP+      L+   H + GI + VLM  RL
+Sbjct  3    NKYSRLQISIHWLVFLLVIAAYCAMEFRGFFPRSDRP--LINMIHVSCGISILVLMVVRL  60
+
+Query  62   IIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNVS  121
+            +++ +Y  P I+P P       A L H+++Y+ F+ALP++G+ +M   G  W   G  + 
+Sbjct  61   LLRLKYPTPPIIPKPKPMMTGLAHLGHLVIYLLFIALPVIGLVMMYNRGNPWFAFGLTMP  120
+
+Query  122  PFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+                 N E    +K+ HET AN+GYF+I  HA AAL HHY  KDNTLLRMMPR++
+Sbjct  121  YASEANFERVDSLKSWHETLANLGYFVIGLHAAAALAHHYFWKDNTLLRMMPRKR  175
+
+
+> sp|P75925|C56I_ECOLI Cytochrome b561 homolog 2 OS=Escherichia 
+coli (strain K12) OX=83333 GN=yceJ PE=1 SV=1
+Length=188
+
+ Score = 42.0 bits (97),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 41/183 (22%), Positives = 71/183 (39%), Gaps = 15/183 (8%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAA-------MELRGWFPKGSSTYLLMRETHYNAGIFVW  54
+             R+       HW++ + V   +A            GW+ K         E H + GI + 
+Sbjct  8    ERYGVISAAFHWLSAIIVYGMFALGLWMVTLSYYDGWYHKAP-------ELHKSIGILLM  60
+
+Query  55   VLMFSRLIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWS  114
+            + +  R++ +     P  +P        AA   H+ LY+   A+ + G  +    GK  S
+Sbjct  61   MGLVIRVLWRVISPPPGPLPSYSPMTRLAARAGHLALYLLLFAIGISGYLISTADGKPIS  120
+
+Query  115  FLGFNVSPFVTPNSEIKALIKNIHETWANIGYFLIAA-HAGAALFHHYIQKDNTLLRMMP  173
+              G+   P    ++  +A        W      +++  H   AL HH+I KD+TL RM+ 
+Sbjct  121  VFGWFDVPATLADAGAQADFAGALHFWLAWSVVVLSVMHGFMALKHHFIDKDDTLKRMLG  180
+
+Query  174  RRK  176
+            +  
+Sbjct  181  KSS  183
+
+
+
+Lambda      K        H        a         alpha
+   0.329    0.139    0.450    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9134499264
+Results from round 2
+
+
+Query= C56H_ECOLI
+
+Length=176
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P76345|C56H_ECOLI Cytochrome b561 homolog 1 OS=Escherichia c...  227     4e-74
+  sp|Q9X6B2|C561_YERPE Probable cytochrome b561 OS=Yersinia pesti...  205     1e-65
+  sp|P75925|C56I_ECOLI Cytochrome b561 homolog 2 OS=Escherichia c...  190     1e-59
+  sp|P0ABE6|C561_SHIFL Cytochrome b561 OS=Shigella flexneri OX=62...  181     3e-56
+  sp|P0ABE5|C561_ECOLI Cytochrome b561 OS=Escherichia coli (strai...  181     3e-56
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P76345|C56H_ECOLI Cytochrome b561 homolog 1 OS=Escherichia 
+coli (strain K12) OX=83333 GN=yodB PE=1 SV=2
+Length=176
+
+ Score = 227 bits (578),  Expect = 4e-74, Method: Composition-based stats.
+ Identities = 176/176 (100%), Positives = 176/176 (100%), Gaps = 0/176 (0%)
+
+Query  1    MNRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSR  60
+            MNRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSR
+Sbjct  1    MNRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSR  60
+
+Query  61   LIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNV  120
+            LIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNV
+Sbjct  61   LIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNV  120
+
+Query  121  SPFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+            SPFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK
+Sbjct  121  SPFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+
+
+> sp|Q9X6B2|C561_YERPE Probable cytochrome b561 OS=Yersinia pestis 
+OX=632 GN=cybB PE=3 SV=1
+Length=176
+
+ Score = 205 bits (522),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 70/175 (40%), Positives = 109/175 (62%), Gaps = 2/175 (1%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSRL  61
+             ++S  QI +HW+ LL V I ++++ELRG+ P+    +  M+  H++ GI + VLM +R+
+Sbjct  3    KKYSCLQIGIHWLVLLLVIIAWSSIELRGFAPRSYQPW--MKMIHFSCGIAILVLMMTRI  60
+
+Query  62   IIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNVS  121
+            +I+ RY  P IVP P    +  A + H ++Y+ F+ALP++GIA++   G SW   G  + 
+Sbjct  61   LIQLRYPTPPIVPKPSPMIVGLAHVGHWVIYLLFIALPIIGIAILYCRGSSWIAFGLIMP  120
+
+Query  122  PFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+                 N ++   +K  H   AN+ YF+I  HA AAL HHY+ KDNTLLRMMP+++
+Sbjct  121  HAEQANFDLADTLKAYHLLLANMSYFVIGLHALAALLHHYVLKDNTLLRMMPKKR  175
+
+
+> sp|P75925|C56I_ECOLI Cytochrome b561 homolog 2 OS=Escherichia 
+coli (strain K12) OX=83333 GN=yceJ PE=1 SV=1
+Length=188
+
+ Score = 190 bits (483),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 41/183 (22%), Positives = 71/183 (39%), Gaps = 15/183 (8%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAA-------MELRGWFPKGSSTYLLMRETHYNAGIFVW  54
+             R+       HW++ + V   +A            GW+ K         E H + GI + 
+Sbjct  8    ERYGVISAAFHWLSAIIVYGMFALGLWMVTLSYYDGWYHKAP-------ELHKSIGILLM  60
+
+Query  55   VLMFSRLIIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWS  114
+            + +  R++ +     P  +P        AA   H+ LY+   A+ + G  +    GK  S
+Sbjct  61   MGLVIRVLWRVISPPPGPLPSYSPMTRLAARAGHLALYLLLFAIGISGYLISTADGKPIS  120
+
+Query  115  FLGFNVSPFVTPNSEIKALIKNIHETWANIGYFLIAA-HAGAALFHHYIQKDNTLLRMMP  173
+              G+   P    ++  +A        W      +++  H   AL HH+I KD+TL RM+ 
+Sbjct  121  VFGWFDVPATLADAGAQADFAGALHFWLAWSVVVLSVMHGFMALKHHFIDKDDTLKRMLG  180
+
+Query  174  RRK  176
+            +  
+Sbjct  181  KSS  183
+
+
+> sp|P0ABE6|C561_SHIFL Cytochrome b561 OS=Shigella flexneri OX=623 
+GN=cybB PE=3 SV=1
+Length=176
+
+ Score = 181 bits (459),  Expect = 3e-56, Method: Composition-based stats.
+ Identities = 74/175 (42%), Positives = 105/175 (60%), Gaps = 2/175 (1%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSRL  61
+            N++S+ QI +HW+  L V   Y AME RG+FP+      L+   H + GI + VLM  RL
+Sbjct  3    NKYSRLQISIHWLVFLLVIAAYCAMEFRGFFPRSDRP--LINMIHVSCGISILVLMVVRL  60
+
+Query  62   IIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNVS  121
+            +++ +Y  P I+P P       A L H+++Y+ F+ALP++G+ +M   G  W   G  + 
+Sbjct  61   LLRLKYPTPPIIPKPKPMMTGLAHLGHLVIYLLFIALPVIGLVMMYNRGNPWFAFGLTMP  120
+
+Query  122  PFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+                 N E    +K+ HET AN+GYF+I  HA AAL HHY  KDNTLLRMMPR++
+Sbjct  121  YASEANFERVDSLKSWHETLANLGYFVIGLHAAAALAHHYFWKDNTLLRMMPRKR  175
+
+
+> sp|P0ABE5|C561_ECOLI Cytochrome b561 OS=Escherichia coli (strain 
+K12) OX=83333 GN=cybB PE=1 SV=1
+Length=176
+
+ Score = 181 bits (459),  Expect = 3e-56, Method: Composition-based stats.
+ Identities = 74/175 (42%), Positives = 105/175 (60%), Gaps = 2/175 (1%)
+
+Query  2    NRFSKTQIYLHWITLLFVAITYAAMELRGWFPKGSSTYLLMRETHYNAGIFVWVLMFSRL  61
+            N++S+ QI +HW+  L V   Y AME RG+FP+      L+   H + GI + VLM  RL
+Sbjct  3    NKYSRLQISIHWLVFLLVIAAYCAMEFRGFFPRSDRP--LINMIHVSCGISILVLMVVRL  60
+
+Query  62   IIKHRYSDPSIVPPPPAWQMKAASLMHIMLYITFLALPLLGIALMAYSGKSWSFLGFNVS  121
+            +++ +Y  P I+P P       A L H+++Y+ F+ALP++G+ +M   G  W   G  + 
+Sbjct  61   LLRLKYPTPPIIPKPKPMMTGLAHLGHLVIYLLFIALPVIGLVMMYNRGNPWFAFGLTMP  120
+
+Query  122  PFVTPNSEIKALIKNIHETWANIGYFLIAAHAGAALFHHYIQKDNTLLRMMPRRK  176
+                 N E    +K+ HET AN+GYF+I  HA AAL HHY  KDNTLLRMMPR++
+Sbjct  121  YASEANFERVDSLKSWHETLANLGYFVIGLHAAAALAHHYFWKDNTLLRMMPRKR  175
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.378    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0404    0.140     1.90     42.6     43.6 
+
+Effective search space used: 9134499264
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 15, 2018  8:10 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
