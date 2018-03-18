@@ -1,7 +1,7 @@
 
 
 #  User_Manual
-#  PSSM_Based_Predicter and PFM_Based_Predicter
+#  PSSM_Based_Predictor , PFM_Based_Predictor , Sequences_Based_Predictor
 
 
 #  Name: Youcheng ZHANG
