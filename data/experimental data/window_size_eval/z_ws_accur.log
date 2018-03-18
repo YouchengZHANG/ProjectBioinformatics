@@ -1,0 +1,191 @@
+Program is running...
+***Start training a new model***
+Start processing window-size...
+Window size: 1 -> 0+0
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:01:50.966995
+Finish model training at 2018-03-18 11:01:53.239602
+Model Training Time: 0:00:02.272607
+[0.60571429]
+[0.04257047]
+Window size: 3 -> 1+1
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:01:53.301652
+Finish model training at 2018-03-18 11:01:58.194123
+Model Training Time: 0:00:04.892471
+[0.66285714]
+[0.01069045]
+Window size: 7 -> 3+3
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:01:58.348254
+Finish model training at 2018-03-18 11:02:09.719293
+Model Training Time: 0:00:11.371039
+[0.74428571]
+[0.00116642]
+Window size: 11 -> 5+5
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:02:09.923445
+Finish model training at 2018-03-18 11:02:27.146660
+Model Training Time: 0:00:17.223215
+[0.79666667]
+[0.01214052]
+Window size: 15 -> 7+7
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:02:27.384825
+Finish model training at 2018-03-18 11:02:50.885496
+Model Training Time: 0:00:23.500671
+[0.82238095]
+[0.00269374]
+Window size: 17 -> 8+8
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:02:51.279777
+Finish model training at 2018-03-18 11:03:12.588898
+Model Training Time: 0:00:21.309121
+[0.83]
+[0.00466569]
+Window size: 19 -> 9+9
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:03:12.854082
+Finish model training at 2018-03-18 11:03:42.686244
+Model Training Time: 0:00:29.832162
+[0.8347619]
+[0.00843812]
+Window size: 21 -> 10+10
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:03:43.022483
+Finish model training at 2018-03-18 11:04:07.932153
+Model Training Time: 0:00:24.909670
+[0.83571429]
+[0.00606092]
+Window size: 23 -> 11+11
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:04:08.363459
+Finish model training at 2018-03-18 11:04:32.698721
+Model Training Time: 0:00:24.335262
+[0.83714286]
+[0.00233285]
+Window size: 25 -> 12+12
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:04:32.928888
+Finish model training at 2018-03-18 11:05:08.208913
+Model Training Time: 0:00:35.280025
+[0.84]
+[0.00404061]
+Window size: 29 -> 14+14
+Start converting seq_window_input to proper format for model training...
+GridSearchCV(cv=KFold(n_splits=3, random_state=0, shuffle=True),
+       error_score='raise',
+       estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False),
+       fit_params=None, iid=True, n_jobs=1,
+       param_grid={'class_weight': ['balanced']}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score='warn', scoring='accuracy',
+       verbose=0)
+Start model training at 2018-03-18 11:05:08.704266
+Finish model training at 2018-03-18 11:05:52.894613
+Model Training Time: 0:00:44.190347
+[0.84571429]
+[0.0042056]
+Total Running Time: 0:04:01.989669
