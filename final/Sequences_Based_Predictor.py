@@ -1,7 +1,7 @@
 
 
 
-#  Single Sequence Predictor (Updated)
+#  Sequences_Based_Predictor
 #  This is the PREDICTOR when runs takes all the sequences in a fasta file 
 #  and creates an input to sklearn and predict features from each sequence
 #  and finally writes all the predicted result on one output files
