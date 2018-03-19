@@ -5,9 +5,9 @@
 #  PSSM_Based_Predictor
 #  This is the PREDICTOR when runs takes all the sequences in a fasta file 
 #  and creates an input to sklearn and predict features from each sequence
-#  and finally writes all the predicted result on one output files
+#  and finally writes all the predicted result in one output file
 #  The predicted result will be saved in a new directory 
-#  which contains one Predict_Result.txt and two subfolders (*_result/fasta/ and *_result/pssm/)
+#  which contains one Predict_Result.txt and three subfolders (*_result/fasta/, *_result/align/ and *_result/pssm/)
 
 
 #  STEP 1: Import python library
