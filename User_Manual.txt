@@ -1,0 +1,45 @@
+
+
+#  User_Manual
+#  PSSM_Based_Predictor , PFM_Based_Predictor , Sequences_Based_Predictor
+
+
+#  Name: Youcheng ZHANG
+#  Course: Project in molecular Life science (KB8024/KB8025)
+#  Project: Signal Peptide in Gram-negative bacteria
+
+
+#  To properly run the predicters, users should follow the steps below.
+
+
+#  STEP 1: Check several essential files and paths
+	[1] Three predicters in /project/final/ folder (Default:  '/project/final/)
+	[2] Necessary module scripts in /project/scripts folder (Default:  '/project/scripts/)
+	[3] Swissprot database in /project/data/swissprot (Default: dir_db = '../../../data/swissprot/uniprot_sprot.fasta')
+	[4] If user-custom, change path in PSSM_Based_Predicter.py and PFM_Based_Predicter.py scripts '# STEP 2: Check Swissprot ...'
+
+#  STEP 2: Locate to the /project/final/ folder
+	[1] Run command in the terminal: $ cd ~/project/final/
+
+#  STEP 3: Place your input fasta file in same folder with the predictors
+	[1] Choose the predicter you want to use 
+	     Option 1: PSSM_Based_Predictor  |  Option 2: PFM_Based_Predictor  |  Option3: Sequences_Based_Predictor
+	[2] If Option 1, Run command: $ python3 PSSM_Based_Predictor.py FILENAME (e.g. 50_proteins.txt)
+	[3] If Option 2, Run command: $ python3 PFM_Based_Predictor.py FILENAME (e.g. 50_proteins.txt)
+	[4] if Option 3, Run command: $ python3 Sequences_Based_Predictor.py FILENAME (e.g. 50_proteins.txt)
+
+#  STEP 4: Check the predicted result
+	[1] When predictors run will first create a folder named FILENAME_result (e.g. /50_proteins_result/)
+	[2] Three subfolders are also created if run Option 1 and Option 2.
+	     Folder /fasta/ saves separated single protein and its sequence single fasta files
+	     Folder /pssm/ stores PSIBLAST pssm output for further prediction
+	     Folder /align/ saves PSIBLAST text output
+	[3] In the folder, 'Predict_Result.txt' is the predicted output (e.g. /50_proteins_result/Predict_Result.txt)
+
+
+#  Thanks for using.
+
+
+#  Updated Sat Mar 17th 2018
+#  by Youcheng ZHANG
+
